@@ -8,6 +8,7 @@
       "name": "oxygen-onboarding",
       "title": "OXYGEN Onboarding",
       "description": "Guide OXYGEN onboarding: company context, first leads, a reviewed sequence, sender and bounded launch; set up daily Oxygent routines when requested. Use for 'get me started' or the first campaign and morning briefing. For a GTM diagnosis or plan, use oxygen-gtm-consultant.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/day-1-first-win.md",
@@ -24,6 +25,7 @@
       "name": "oxygen-gtm-consultant",
       "title": "OXYGEN GTM Engineering Consultant",
       "description": "Be the user's GTM engineering consultant: assess the go-to-market from workspace data, find the binding constraint, agree the problem, design a custom motion and run it as a pilot with a success bar and a kill line. Use for 'pipeline is flat', 'outbound isn't working' or 'plan our GTM'.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "skill-metadata.json",
@@ -40,6 +42,7 @@
       "name": "oxygen-gtm",
       "title": "OXYGEN GTM",
       "description": "Route an OXYGEN GTM outcome to its native primitive and the feature skill that teaches it: Knowledge, Records, Tables, Messages, Posts, Signals, Dashboards, Ads, Tags, Sequences, Publishing, Workflows, Agents, Observability. Use as the fallback when no narrower skill matches.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "guides/cost-precheck.md",
@@ -55,6 +58,7 @@
       "name": "oxygen-tables",
       "title": "OXYGEN Tables",
       "description": "Build and run OXYGEN Tables: typed rows, choice fields, table links and lookups; AI, research, Classify, formula, tool, HTTP and template columns, reusable Functions, live feeds and webhooks, imports, follower orders, deduplication and folders. Covers pricing a column before it runs, one-row pilots, bounded batches and run reads.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/speed-to-lead.md",
@@ -73,6 +77,7 @@
       "name": "oxygen-enrichment",
       "title": "OXYGEN Enrichment",
       "description": "Enrich OXYGEN Table rows and single records: person and company profiles, funding, revenue, hiring and tech stack, work and personal email, mobile phone, LinkedIn URL and email or phone verification, through native waterfalls with free previews, one-row pilots and approved ceilings.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "references/email.md",
@@ -109,6 +114,7 @@
       "name": "oxygen-sourcing",
       "title": "OXYGEN Sourcing",
       "description": "Find companies and people that are not in the workspace yet and land them in OXYGEN Tables: account and TAM lists, lookalikes, hiring companies, local businesses, personas and contacts at named accounts, through free previews, typed plans, priced dry runs and approved live runs.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/icp-to-account-map.md",
@@ -134,6 +140,7 @@
       "name": "oxygen-crm",
       "title": "OXYGEN CRM",
       "description": "Operate OXYGEN Records, the native CRM: objects, fields, identities and relationships, notes, tasks and files, imports from HubSpot, Attio and Pipedrive, list imports with do-not-contact first, bidirectional sync, and binding and promoting table rows onto records.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/website-visitor-outreach.md",
@@ -150,6 +157,7 @@
       "name": "oxygen-recipes",
       "title": "OXYGEN Recipes",
       "description": "Search, read and install OXYGEN plays: proven GTM motions with prerequisites, credit posture, approval gates and an optional kit of native stages. Use when the user names a play or wants a proven motion to borrow from; to design a motion for their company, use oxygen-gtm-consultant.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "skill-metadata.json"
@@ -159,6 +167,7 @@
       "name": "oxygen-collaboration",
       "title": "OXYGEN Collaboration",
       "description": "Get a second party's documented go/no-go inside OXYGEN: threaded internal comments on any workspace object, approval requests assigned to named members, the opt-in gate that blocks a live launch until someone approves, and the restricted client role. Not for public comments on a published post, and not a substitute for a paid action's own approval.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "skill-metadata.json"
@@ -168,6 +177,7 @@
       "name": "oxygen-quickstart",
       "title": "OXYGEN Quickstart",
       "description": "Run a safe first OXYGEN CLI session: verify identity and workspace, search capabilities and exact commands, create a small hosted Table, inspect it, and discover provider operations without executing paid calls or external writes.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "skill-metadata.json"
@@ -177,6 +187,7 @@
       "name": "oxygen-workflow-authoring",
       "title": "OXYGEN Workflow Authoring",
       "description": "Build, run, or debug deterministic OXYGEN Workflows: schemas, triggers, branches, retries, approvals, durable runs, Blueprints, Teams notifications and MCP tools. Local files only author hosted definitions; adaptive goals use Agents and outreach cadence uses Sequences.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "references/blueprints.md",
@@ -189,6 +200,7 @@
       "name": "oxygen-knowledge",
       "title": "OXYGEN Knowledge Graph",
       "description": "Operate OXYGEN knowledge: index-first retrieval, wiki pages/folders, GitHub repository mounts, citations, revisions, sources, synthesis, proposals, and local mirror. Use for company/ICP context, positioning, offers, voice, prompts, rubrics, and learnings.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/client-workspace-launch.md",
@@ -201,6 +213,7 @@
       "name": "oxygen-unibox",
       "title": "OXYGEN Unibox",
       "description": "Use OXYGEN Messages and the Unibox to find, read, classify, tag, archive, draft and reply in existing email, LinkedIn and WhatsApp conversations, send one direct email, start one WhatsApp chat or delete a sent LinkedIn message. Net-new LinkedIn outreach uses Sequences.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/reply-to-meeting.md",
@@ -215,6 +228,7 @@
       "name": "oxygen-email-infra",
       "title": "OXYGEN Email Infrastructure",
       "description": "Plan, set up and run OXYGEN cold email sending infrastructure: playbooks by market (Google/Microsoft mix, inbox count sized from the TAM), lookalike domains and DNS, managed and imported mailboxes, sender profiles and photos, OAuth, warm-up, recovery, egress and wind-down; also connect a customer's own inbox for Unibox history and CRM.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "references/cold-email-playbook.md",
@@ -233,6 +247,7 @@
       "name": "oxygen-deliverability",
       "title": "OXYGEN Deliverability",
       "description": "Triage email deliverability, warmup and bounce evidence; compare workspace copies using Gmail Primary/categories and Microsoft Focused/Other; run approval-gated placement tests and manage monitoring. Results are directional; bounce auto-pause is authoritative.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "references/placement.md",
@@ -247,6 +262,7 @@
       "name": "oxygen-sequencer",
       "title": "OXYGEN Sequencer",
       "description": "Run OXYGEN Sequences: net-new LinkedIn outreach, even one message, and multistep email, LinkedIn, WhatsApp, call and CRM-task cadences. Covers the launch ladder, send ceilings, enrollment, do-not-contact, reply-stop and recovery. Existing-thread replies and direct email use Messages.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/inbound-led-outbound.md",
@@ -272,6 +288,7 @@
       "name": "oxygen-publishing",
       "title": "OXYGEN Publishing",
       "description": "Use OXYGEN Posts and Publishing to draft, queue, approve, schedule and read back LinkedIn and X posts, answer public comments on owned posts, and read post analytics. Covers approval axes, the uncertain-publish lock, mentions, media, X threads and polls.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "plays/founder-posting-system.md",
@@ -286,6 +303,9 @@
       "name": "oxygen-linkedin-content",
       "title": "OXYGEN LinkedIn content",
       "description": "Plan and write a week of LinkedIn posts from the workspace's Knowledge: pillars, funnel job, idea gate, hook, body, slop scrub, graphics rendered with OXYGEN visuals, review, hand-off to Publishing for approval, and learning from post analytics. Also a manual comment round.",
+      "dependencies": [
+        "oxygen-publishing"
+      ],
       "files": [
         "SKILL.md",
         "references/hooks.md",
@@ -300,6 +320,9 @@
       "name": "oxygen-signals",
       "title": "OXYGEN Signals",
       "description": "Capture and read OXYGEN Signals: your LinkedIn network, followers, viewers, invitations and post engagers; hiring, funding, tech and news signal searches; public profile watchers and keyword post search; competitor ads; standing auto-enroll into a Sequence.",
+      "dependencies": [
+        "oxygen-sequencer"
+      ],
       "files": [
         "SKILL.md",
         "plays/daily-warm-lead-queue.md",
@@ -324,6 +347,7 @@
       "name": "oxygen-table-tidy",
       "title": "OXYGEN Table Tidy",
       "description": "Tidy an OXYGEN Table: inspect duplicate columns, ordering, formatting, types, hide/archive candidates, and suspicious values; present findings by category; then apply only approved reversible fixes. This is table structure and cell formatting, not CRM record deduplication or merge.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "skill-metadata.json"
@@ -333,6 +357,9 @@
       "name": "oxygen-diagnostics",
       "title": "OXYGEN Diagnostics",
       "description": "Diagnose a running OXYGEN workspace: trace a cell or record value and its provenance, explain stuck or failed runs, sweep and retry table failures, explain plan, credit and rate-limit refusals, and explain or reduce credit spend. Read-only investigation first.",
+      "dependencies": [
+        "oxygen-gtm"
+      ],
       "files": [
         "SKILL.md",
         "plays/day-30-review.md",
@@ -347,6 +374,7 @@
       "name": "oxygen-feedback",
       "title": "OXYGEN Feedback",
       "description": "File feedback, praise, a feature request, or a reproducible OXYGEN bug report with the current transcript and environment context. Use only when the user explicitly wants to send feedback or agrees to file the report; diagnosing a run alone does not trigger submission.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "skill-metadata.json"
@@ -356,6 +384,9 @@
       "name": "oxygen-clay-migration",
       "title": "OXYGEN Clay Migration",
       "description": "Move a Clay workspace into OXYGEN through browser sign-in: discover accessible resources, transfer data, rebuild native Tables, Records and Workflows, and verify coverage. Also handles a user-supplied Clay export.",
+      "dependencies": [
+        "oxygen-tables"
+      ],
       "files": [
         "SKILL.md",
         "plays/migrate-from-clay.md",
@@ -367,6 +398,7 @@
       "name": "oxygen-ugc",
       "title": "OXYGEN UGC",
       "description": "Operate UGC programs and independent creators: invitations, shared live knowledge, voice, topic-based drafts, approvals, sponsorship and bounded amplification.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "operations.md",
@@ -377,6 +409,7 @@
       "name": "oxygen-custom-http",
       "title": "OXYGEN Custom HTTP",
       "description": "Register, connect, preview, run and remove reusable custom HTTP integrations: manifest schema, auth, path/query/body inputs, tool ids and Table tool columns.",
+      "dependencies": [],
       "files": [
         "SKILL.md",
         "skill-metadata.json"

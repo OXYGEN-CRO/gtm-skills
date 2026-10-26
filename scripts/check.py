@@ -28,7 +28,7 @@ for skill in lock["skills"]:
     if not re.search(r"^name:\s*" + re.escape(skill["name"]) + r"\s*$", front, re.M):
         errors.append(f"Frontmatter name mismatch: {skill['name']}")
     metadata = json.loads((path / "skill-metadata.json").read_text())
-    for dependency in metadata.get("dependencies", []):
+    for dependency in skill.get("dependencies", []):
         if dependency not in names:
             errors.append(f"Missing dependency: {skill['name']} -> {dependency}")
 for path in list((ROOT / "skills").rglob("*.md")) + [ROOT / "README.md"] + list((ROOT / "docs").glob("*.md")):

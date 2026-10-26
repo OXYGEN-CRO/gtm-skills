@@ -36,6 +36,8 @@ def main():
         manifest = read(f"{BASE}/{name}.manifest.ts").decode()
         block = manifest.split("files: [", 1)[1].split("],", 1)[0]
         paths = re.findall(r'"([^"\n]+)"', block)
+        dependencies_match = re.search(r"dependencies:\s*\[([^\]]*)\]", manifest)
+        dependencies = re.findall(r'"([^"\n]+)"', dependencies_match[1]) if dependencies_match else []
         if "SKILL.md" not in paths or "skill-metadata.json" not in paths:
             raise ValueError(f"Incomplete manifest: {name}")
         for relative in paths:
@@ -45,7 +47,8 @@ def main():
             files[f"skills/{name}/{relative}"] = read(f"{BASE}/{name}/{relative}")
         metadata = json.loads(files[f"skills/{name}/skill-metadata.json"])
         skills.append({"name": name, "title": metadata["title"],
-                       "description": metadata["description"], "files": paths})
+                       "description": metadata["description"],
+                       "dependencies": dependencies, "files": paths})
 
     files["LICENSE"] = read("agent-plugin/LICENSE")
     lock = {"source_repository": "OXYGEN-CRO/oxygen", "source_ref": args.ref,
