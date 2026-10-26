@@ -1,0 +1,100 @@
+OXYGEN Proprietary License
+Version 1.0 — October 15, 2026
+SPDX-License-Identifier: LicenseRef-OXYGEN-Proprietary
+
+Copyright (c) 2026 OXYGEN GTM Inc. All rights reserved.
+
+1. Ownership and scope
+
+OXYGEN GTM Inc. ("OXYGEN") and its licensors retain all right, title and
+interest in this package, including its code, prompts, skills, instructions,
+configuration, documentation, designs, icons and other assets (the
+"Materials"). The Materials are licensed, not sold. Public availability,
+source visibility and access through a repository or plugin directory grant
+no rights beyond those expressly stated below. All other rights are reserved.
+
+These terms govern this distribution and material first released under them.
+They do not revoke, narrow or replace rights lawfully obtained under an earlier
+license for an earlier release, or retroactively restrict material covered by
+those earlier grants. No exclusive protection of previously licensed material
+is represented by this license.
+
+2. Limited permission to use OXYGEN
+
+Subject to your compliance with this license and the OXYGEN Terms of Service
+at https://oxygen-agent.com/terms, OXYGEN grants you a limited, revocable,
+non-exclusive, non-transferable, non-sublicensable license to download,
+install and use unmodified Materials solely to access and operate the
+OXYGEN hosted service through an account you are authorized to use, for
+your own lawful business purposes. You may make only the local, cache and
+backup copies reasonably necessary for that use and must retain all notices.
+Your authorized employees and contractors may use those copies solely on
+your behalf, subject to these same restrictions; you remain responsible
+for their compliance.
+
+You may allow your chosen AI assistant or plugin host to process the
+Materials only as necessary to provide that authorized OXYGEN integration.
+This permission does not authorize training on the Materials or their
+reuse outside that integration. Plugin directories separately authorized
+by OXYGEN may host, cache and deliver unmodified copies solely to enable
+this installation and use, subject to their written agreement with OXYGEN.
+
+3. Restrictions
+
+Except as expressly permitted above or by OXYGEN's prior written consent,
+you must not, and must not enable another person or system to:
+
+(a) copy, modify, adapt, translate or create derivative works of the
+    Materials, or extract or reuse any part in another product, service,
+    plugin, skill, prompt library, template collection or repository;
+(b) publish, redistribute, sublicense, sell, rent, lease, assign, transfer,
+    commercially exploit or make the Materials available to third parties;
+(c) use the Materials to build, train, improve or support a competing or
+    substitute product or service, or use them independently of OXYGEN;
+(d) use the Materials or derivatives as training data, fine-tuning data,
+    evaluation datasets or a reusable knowledge base for any AI or machine
+    learning system, except transient processing expressly allowed above;
+(e) remove, alter or obscure proprietary notices, rebrand the Materials,
+    claim ownership, or imply OXYGEN's endorsement or affiliation;
+(f) reverse engineer, decompile or disassemble the Materials, or circumvent
+    license, authentication, access, usage or other technical controls.
+
+These restrictions apply only to the extent permitted by applicable law
+and do not restrict rights that mandatory law makes non-waivable.
+
+4. No additional rights
+
+No license to OXYGEN's patents, trademarks, trade names, logos, service
+implementation, non-public information or other intellectual property is
+granted, except displaying bundled branding as part of authorized,
+unmodified use. This license does not transfer rights in your own data or
+outputs, which remain governed by the OXYGEN Terms of Service. Any third-party
+material expressly identified as separately licensed remains subject to
+its own terms; this license does not replace those terms.
+
+5. Termination
+
+This license terminates automatically if you breach it or lose authorization
+to use the OXYGEN service. OXYGEN may also revoke it as permitted by the
+OXYGEN Terms of Service. Upon termination, stop using the Materials and
+delete all copies under your control, except copies required by law, which
+must remain unused. Ownership, restrictions, reserved rights, disclaimers,
+liability limits and accrued claims survive termination.
+
+6. Disclaimer and liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE MATERIALS ARE PROVIDED "AS IS"
+AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+NON-INFRINGEMENT. OXYGEN DOES NOT WARRANT UNINTERRUPTED OR ERROR-FREE USE.
+THE DISCLAIMER, LIABILITY LIMITATIONS, GOVERNING LAW AND DISPUTE PROVISIONS
+OF THE OXYGEN TERMS OF SERVICE APPLY TO THE MATERIALS. NOTHING HERE EXCLUDES
+LIABILITY OR RIGHTS THAT CANNOT LAWFULLY BE EXCLUDED.
+
+7. Separate permission
+
+Only a written agreement signed by an authorized OXYGEN representative can
+grant additional rights or waive these restrictions. If a provision is
+unenforceable, the remaining provisions continue to apply. Failure to
+enforce a provision is not a waiver. Contact support@oxygen-agent.com for
+permission requests.

@@ -1,0 +1,232 @@
+{
+  "title": "OXYGEN CRM",
+  "description": "Operate OXYGEN Records, the native CRM: objects, fields, identities and relationships, notes, tasks and files, imports from HubSpot, Attio and Pipedrive, list imports with do-not-contact first, bidirectional sync, and binding and promoting table rows onto records.",
+  "capability_ids": [
+    "records"
+  ],
+  "endpoint_sections": [
+    "crm"
+  ],
+  "documents": {
+    "plays/website-visitor-outreach.md": {
+      "kind": "play",
+      "title": "Turn de-anonymized website visitors into warm pipeline",
+      "tags": [
+        "website-visitors",
+        "visitor-identification",
+        "de-anonymization",
+        "rb2b",
+        "intent",
+        "warm-outreach",
+        "crm"
+      ],
+      "providers": []
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN CRM (Records)",
+      "tags": [
+        "oxygen",
+        "crm",
+        "records",
+        "objects",
+        "import",
+        "sync",
+        "do-not-contact",
+        "promote"
+      ],
+      "providers": []
+    },
+    "references/data-model.md": {
+      "kind": "reference",
+      "title": "CRM data model: objects, fields, identities",
+      "tags": [
+        "crm",
+        "records",
+        "objects",
+        "fields",
+        "identities",
+        "relationships",
+        "notes",
+        "tasks",
+        "files"
+      ],
+      "providers": []
+    },
+    "references/import.md": {
+      "kind": "reference",
+      "title": "CRM import (inbound, import-first)",
+      "tags": [
+        "crm",
+        "import",
+        "hubspot",
+        "pipedrive",
+        "attio",
+        "do-not-contact",
+        "lists"
+      ],
+      "providers": [
+        "hubspot",
+        "attio",
+        "pipedrive"
+      ]
+    },
+    "references/sync.md": {
+      "kind": "reference",
+      "title": "CRM sync (outbound and bidirectional)",
+      "tags": [
+        "crm",
+        "sync",
+        "bidirectional",
+        "max-rows",
+        "sync-columns"
+      ],
+      "providers": [
+        "hubspot",
+        "attio"
+      ]
+    },
+    "references/promote.md": {
+      "kind": "reference",
+      "title": "Table rows to native CRM records (bind and promote)",
+      "tags": [
+        "crm",
+        "bind",
+        "promote",
+        "dedupe",
+        "contacts",
+        "csv"
+      ],
+      "providers": []
+    },
+    "provider-runbooks/hubspot.md": {
+      "kind": "provider-runbook",
+      "title": "HubSpot Runbook",
+      "tags": [
+        "provider",
+        "crm",
+        "sync",
+        "lists",
+        "do-not-contact"
+      ],
+      "providers": [
+        "hubspot"
+      ]
+    },
+    "provider-runbooks/attio.md": {
+      "kind": "provider-runbook",
+      "title": "Attio Runbook",
+      "tags": [
+        "provider",
+        "crm",
+        "sync"
+      ],
+      "providers": [
+        "attio"
+      ]
+    }
+  },
+  "plays": {
+    "website-visitor-outreach": {
+      "path": "plays/website-visitor-outreach.md",
+      "title": "Turn de-anonymized website visitors into warm pipeline",
+      "label": "Website visitor outreach",
+      "summary": "See which companies visit your website and reach the good fits the same day.",
+      "prompt": "Show me which companies and people visit our website, put them in our CRM with the page they looked at, tell me which ones fit who we sell to, and help me reach the good ones once I approve.",
+      "icon": "monitor",
+      "trigger_phrases": [
+        "People visit our website but never convert",
+        "Who is on my site right now — and can we contact them?",
+        "Which companies visited our website this week?",
+        "Turn website traffic into leads",
+        "Set up visitor de-anonymization",
+        "Connect RB2B to OXYGEN"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "catch-warm-signals",
+      "stage": "day-7",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Most people who visit your website leave without a trace. RB2B names some of them; OXYGEN puts each named visitor in your CRM with the page they saw and scores their company against who you sell to, so the good fits can get a personal note the same day.",
+      "outcome": "Every visitor RB2B identifies lands in your CRM as a company and a person, with the visit on their timeline and their company scored for fit, plus a daily ranked list of who to contact first. Sending stays your call, through a small capped pilot.",
+      "leading_metric": "good-fit visitors contacted within a day, and their replies",
+      "benchmark": "RB2B identifies a minority of visits, mostly US business visitors (rough estimate: 20-40% on US-heavy sites), and only some of those fit who you sell to. A handful of good-fit visitors a week is normal early on; with little traffic it finds almost no one.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 20,
+        "time_to_value": "after OXYGEN support connects RB2B; visitors then arrive as they come",
+        "cadence": "one-time setup, then a daily look at new visitors"
+      },
+      "credits": {
+        "pilot": "0 to set up; then ~10 credits per new visitor for automatic CRM enrichment",
+        "full": "~10 credits per new visitor; +10 per number found if the US phone lookup is on; RB2B bills itself",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "Company profile filled in, including who you sell to: each visitor's company is scored against it.",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "integration",
+          "detail": "RB2B (a separate paid product) on your website, connected to this workspace by OXYGEN support. There is no self-serve connect step yet.",
+          "check": ""
+        },
+        {
+          "kind": "data",
+          "detail": "CRM lists for companies and people. Creating them also switches on automatic paid enrichment of every new company and person.",
+          "check": "oxygen crm setup --json"
+        }
+      ],
+      "primitives": [
+        "signals",
+        "records",
+        "workflows",
+        "knowledge-graph"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [
+        "crm-enrichment",
+        "signals-arm",
+        "rb2b-connect"
+      ],
+      "stages": [
+        {
+          "blueprint": "crm-website-visitor",
+          "title": "Write each website visitor into your CRM",
+          "gate": "signals-arm"
+        }
+      ],
+      "related": {
+        "recipes": [
+          "outbound-pilot-50",
+          "daily-warm-lead-queue",
+          "speed-to-lead",
+          "day-1-first-win"
+        ],
+        "guides": [
+          "oxygen-signals/SKILL.md",
+          "oxygen-crm/references/data-model.md",
+          "oxygen-diagnostics/runs-and-limits.md"
+        ]
+      },
+      "tags": [
+        "website-visitors",
+        "visitor-identification",
+        "de-anonymization",
+        "rb2b",
+        "intent",
+        "warm-outreach",
+        "crm"
+      ]
+    }
+  }
+}

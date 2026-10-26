@@ -1,0 +1,26 @@
+{
+  "title": "OXYGEN UGC",
+  "description": "Operate UGC programs and independent creators: invitations, shared live knowledge, voice, topic-based drafts, approvals, sponsorship and bounded amplification.",
+  "capability_ids": [
+    "publishing"
+  ],
+  "endpoint_sections": [
+    "publishing",
+    "ugc"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "skill",
+      "title": "OXYGEN UGC",
+      "tags": [
+        "ugc",
+        "creators",
+        "publishing",
+        "sponsorship"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    }
+  }
+}

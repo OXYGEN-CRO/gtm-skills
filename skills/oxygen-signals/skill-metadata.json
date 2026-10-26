@@ -1,0 +1,701 @@
+{
+  "title": "OXYGEN Signals",
+  "description": "Capture and read OXYGEN Signals: your LinkedIn network, followers, viewers, invitations and post engagers; hiring, funding, tech and news signal searches; public profile watchers and keyword post search; competitor ads; standing auto-enroll into a Sequence.",
+  "capability_ids": [
+    "tables",
+    "signals",
+    "ads",
+    "linkedin-public-research",
+    "connected-linkedin"
+  ],
+  "endpoint_sections": [
+    "action-columns",
+    "ads",
+    "callables",
+    "columns",
+    "company-enrichment",
+    "enrich-column",
+    "enrichment",
+    "functions",
+    "linkedin",
+    "migrations",
+    "projects",
+    "signals",
+    "signup-leads",
+    "supabase",
+    "table-action-items",
+    "table-action-runs",
+    "table-ingestion-runs",
+    "tables"
+  ],
+  "documents": {
+    "plays/daily-warm-lead-queue.md": {
+      "kind": "play",
+      "title": "A daily ranked queue of your warmest leads",
+      "tags": [
+        "warm-leads",
+        "signals",
+        "morning-briefing",
+        "lead-prioritization",
+        "morning-ritual",
+        "operating-rhythm",
+        "linkedin",
+        "profile-viewers",
+        "week-1",
+        "crm-hygiene",
+        "duplicates",
+        "merge"
+      ],
+      "providers": [
+        "unipile"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Signals",
+      "tags": [
+        "oxygen",
+        "signals",
+        "linkedin",
+        "captures",
+        "network",
+        "viewers",
+        "engagers",
+        "router"
+      ],
+      "providers": [
+        "linkedin",
+        "scraper"
+      ]
+    },
+    "references/linkedin.md": {
+      "kind": "reference",
+      "title": "LinkedIn captures from your own accounts",
+      "tags": [
+        "signals",
+        "linkedin",
+        "network",
+        "followers",
+        "connections",
+        "viewers",
+        "invitations",
+        "auto-enroll",
+        "engagers"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/public-research.md": {
+      "kind": "reference",
+      "title": "Public LinkedIn research and monitoring",
+      "tags": [
+        "signals",
+        "linkedin",
+        "scraper",
+        "cookieless",
+        "watcher",
+        "keyword-posts",
+        "company-followers",
+        "research-columns"
+      ],
+      "providers": [
+        "scraper"
+      ]
+    },
+    "references/audience-campaigns.md": {
+      "kind": "reference",
+      "title": "Audience to campaign",
+      "tags": [
+        "linkedin",
+        "audience",
+        "engagers",
+        "followers",
+        "qualification",
+        "outreach"
+      ],
+      "providers": []
+    },
+    "references/signal-feeds.md": {
+      "kind": "reference",
+      "title": "Signal searches and live signal tables",
+      "tags": [
+        "signals",
+        "hiring",
+        "funding",
+        "technology",
+        "news",
+        "feeds",
+        "ai-filter",
+        "schedulable"
+      ],
+      "providers": [
+        "blitzapi",
+        "predictleads",
+        "theirstack"
+      ]
+    },
+    "references/qualification.md": {
+      "kind": "reference",
+      "title": "Qualify a LinkedIn audience: company fit and person fit",
+      "tags": [
+        "signals",
+        "qualification",
+        "icp",
+        "rubric",
+        "company-fit",
+        "persona-fit",
+        "ai-column"
+      ],
+      "providers": []
+    },
+    "plays/post-engagers.md": {
+      "kind": "play",
+      "title": "Start conversations with the buyers who engage with your posts",
+      "tags": [
+        "linkedin",
+        "engagers",
+        "outreach",
+        "sequence",
+        "qualification"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "plays/profile-viewers-and-followers.md": {
+      "kind": "play",
+      "title": "Invite the buyers who view your profile or follow you",
+      "tags": [
+        "linkedin",
+        "viewers",
+        "followers",
+        "invite",
+        "outreach",
+        "qualification"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "plays/new-connections.md": {
+      "kind": "play",
+      "title": "Message the buyers among your new connections",
+      "tags": [
+        "linkedin",
+        "connections",
+        "message",
+        "outreach",
+        "qualification"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "plays/existing-network.md": {
+      "kind": "play",
+      "title": "Hand-written first messages to buyers already in your network",
+      "tags": [
+        "linkedin",
+        "network",
+        "warm",
+        "hand-written",
+        "approval",
+        "outreach"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "provider-runbooks/predictleads.md": {
+      "kind": "provider-runbook",
+      "title": "PredictLeads Runbook",
+      "tags": [
+        "provider",
+        "signals",
+        "funding",
+        "news",
+        "technographics"
+      ],
+      "providers": [
+        "predictleads"
+      ]
+    },
+    "provider-runbooks/builtwith.md": {
+      "kind": "provider-runbook",
+      "title": "BuiltWith Runbook",
+      "tags": [
+        "provider",
+        "technographics",
+        "signals"
+      ],
+      "providers": [
+        "builtwith"
+      ]
+    },
+    "provider-runbooks/signalbase.md": {
+      "kind": "provider-runbook",
+      "title": "Signalbase Runbook",
+      "tags": [
+        "provider",
+        "signals"
+      ],
+      "providers": [
+        "signalbase"
+      ]
+    },
+    "provider-runbooks/adyntel.md": {
+      "kind": "provider-runbook",
+      "title": "Ads: Adyntel Runbook",
+      "tags": [
+        "provider",
+        "ads",
+        "competitor",
+        "keywords"
+      ],
+      "providers": [
+        "adyntel"
+      ]
+    },
+    "provider-runbooks/whitewhale.md": {
+      "kind": "provider-runbook",
+      "title": "WhiteWhale Runbook",
+      "tags": [
+        "provider",
+        "signals",
+        "account-scoring",
+        "buying-signals"
+      ],
+      "providers": [
+        "whitewhale"
+      ]
+    }
+  },
+  "plays": {
+    "daily-warm-lead-queue": {
+      "path": "plays/daily-warm-lead-queue.md",
+      "title": "A daily ranked queue of your warmest leads",
+      "label": "Signal-based outbound",
+      "summary": "One ranked list of your warmest leads, every morning.",
+      "prompt": "Give me one ranked list every morning of the warmest people to contact, from website visitors, profile viewers, post engagers and new followers.",
+      "icon": "fire",
+      "featured_order": 4,
+      "trigger_phrases": [
+        "Who should I reach out to today?",
+        "Give me one ranked list of my warmest leads every morning",
+        "Turn all my intent signals into a daily to-do list",
+        "Make Oxygen do something while I'm not looking",
+        "What should I set up in my first week?",
+        "Set up a weekly CRM cleanup routine"
+      ],
+      "version": 4,
+      "status": "stable",
+      "category": "catch-warm-signals",
+      "stage": "ongoing",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "People who view your LinkedIn profile, follow you or visit your site stay interested for days, then go cold. One morning list ranks them strongest interest first so you reach them in time, and a short weekly cleanup keeps your contact list trustworthy.",
+      "outcome": "A connected warm source, a ranked who-to-contact-today list read in ten minutes each morning, one note per session, an optional capped briefing in the shared Workspace Oxygent chat and a weekly duplicate cleanup.",
+      "leading_metric": "warm people contacted from the morning list, and the replies they produce",
+      "benchmark": "Volume follows your LinkedIn activity and site traffic, not effort: single digits a day early on is normal. LinkedIn hides private viewers, so the list is a partial sample. An empty list needs a source-status check; it can mean no new results or unavailable coverage.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 15,
+        "time_to_value": "first warm people within hours of connecting LinkedIn",
+        "cadence": "10 minutes each morning; a 5-minute cleanup each week"
+      },
+      "credits": {
+        "pilot": "0: the list, imports and checks are free; LinkedIn reserves 3,400/month",
+        "full": "optional Oxygent routines use their exact previewed per-run and rolling caps; paid lookups stay off until approved",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "Company, offer and ICP saved, so the summary matches who you sell to; a person's fit also needs their company scored, a paid enrichment this play leaves off",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "data",
+          "detail": "Contact lists (CRM companies and people) exist; Steps 1-2 create them",
+          "check": "oxygen crm objects --json"
+        },
+        {
+          "kind": "sender",
+          "detail": "A connected LinkedIn account, the fastest warm source; it reserves 3,400 credits a month",
+          "check": "oxygen senders list --json"
+        }
+      ],
+      "primitives": [
+        "signals",
+        "records",
+        "knowledge-graph",
+        "agents",
+        "tables",
+        "observability"
+      ],
+      "providers": {
+        "managed": [
+          "unipile"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "linkedin-connect",
+        "routine-activate",
+        "merge-apply"
+      ],
+      "related": {
+        "recipes": [
+          "day-1-first-win",
+          "inbound-led-outbound",
+          "website-visitor-outreach",
+          "speed-to-lead",
+          "reply-to-meeting",
+          "outbound-pilot-50",
+          "day-30-review"
+        ],
+        "guides": [
+          "oxygen-signals/SKILL.md",
+          "oxygen-onboarding/references/daily-rhythm.md",
+          "oxygen-diagnostics/runs-and-limits.md",
+          "oxygen-diagnostics/error-sweep.md",
+          "oxygen-gtm/guides/cost-precheck.md"
+        ]
+      },
+      "tags": [
+        "warm-leads",
+        "signals",
+        "morning-briefing",
+        "lead-prioritization",
+        "morning-ritual",
+        "operating-rhythm",
+        "linkedin",
+        "profile-viewers",
+        "week-1",
+        "crm-hygiene",
+        "duplicates",
+        "merge"
+      ]
+    },
+    "post-engagers": {
+      "path": "plays/post-engagers.md",
+      "title": "Start conversations with the buyers who engage with your posts",
+      "label": "Post engagers",
+      "summary": "Message the buyers who react to or comment on your LinkedIn posts, after a fit check.",
+      "prompt": "Reach the people who react to or comment on my LinkedIn posts, but only the ones who fit who we sell to. Write each opener from what they actually commented and wait for my approval before anything sends.",
+      "icon": "chat",
+      "trigger_phrases": [
+        "Reach the people who engage with my LinkedIn posts",
+        "Message the people who commented on my post",
+        "Who reacted to my post, and are they buyers?",
+        "Turn my post engagers into conversations"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "catch-warm-signals",
+      "stage": "ongoing",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "People who react to or comment on your posts are not all buyers: in OXYGEN's own campaign most engagers who replied were not. Enroll only people with high company and person fit, and open from what they actually wrote.",
+      "outcome": "A harvest table of your post's engagers, enriched and qualified with lead-magnet commenters left out, and a manually enrolled Sequence: a message to first-degree engagers, a blank invite and then the message to everyone else.",
+      "leading_metric": "replies from buyers among the qualified engagers",
+      "benchmark": "Below the campaign acceptance kill line, pause and re-check the rubric before the copy; replies mostly from non-buyers mean tightening the rubric, not the opener.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 20,
+        "time_to_value": "after the first harvest is enriched and qualified",
+        "cadence": "daily for newly qualified rows"
+      },
+      "credits": {
+        "pilot": "capturing your own posts is free; enrichment is priced before it runs",
+        "full": "a daily watcher of 1-10 public profiles is paid per cycle",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "sender",
+          "detail": "A connected LinkedIn account that posts",
+          "check": "oxygen senders list --json"
+        }
+      ],
+      "primitives": [
+        "signals",
+        "posts",
+        "tables",
+        "sequences"
+      ],
+      "providers": {
+        "managed": [
+          "linkedin"
+        ],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "inbound-led-outbound",
+          "founder-posting-system",
+          "reply-to-meeting"
+        ],
+        "guides": [
+          "oxygen-signals/references/qualification.md",
+          "oxygen-signals/references/linkedin.md",
+          "oxygen-signals/references/public-research.md",
+          "oxygen-sequencer/references/linkedin-volume.md",
+          "oxygen-unibox/references/dm-conversion.md"
+        ]
+      },
+      "tags": [
+        "linkedin",
+        "engagers",
+        "outreach",
+        "sequence",
+        "qualification"
+      ]
+    },
+    "profile-viewers-and-followers": {
+      "path": "plays/profile-viewers-and-followers.md",
+      "title": "Invite the buyers who view your profile or follow you",
+      "label": "Profile viewers and followers",
+      "summary": "Invite the buyers among your profile viewers and followers, viewers first.",
+      "prompt": "Reach the people who viewed my LinkedIn profile or follow me without being connected, but only the ones who fit who we sell to. Start with viewers, add at most 10 new people a day, and wait for my approval before anything sends.",
+      "icon": "eye",
+      "trigger_phrases": [
+        "Reach out to the people who viewed my LinkedIn profile",
+        "Turn my LinkedIn followers into conversations",
+        "Invite my followers who aren't connected yet",
+        "Who viewed my profile, and should I contact them?"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "catch-warm-signals",
+      "stage": "ongoing",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Named profile viewers and followers who are not connected already know your name. In OXYGEN's own run, viewers passed the fit gate about three times as often as follow-only followers, so viewers go first.",
+      "outcome": "One scoring table of viewers and follow-only followers with a signal column, excluded and qualified before enrollment, and a Sequence that messages first-degree people and invites the rest, at most 10 new people a day.",
+      "leading_metric": "invite acceptance and replies from qualified viewers and followers",
+      "benchmark": "In OXYGEN's own run, viewers passed the fit gate about three times as often as follow-only followers. Below the campaign acceptance kill line, stop enrolling followers first.",
+      "benchmark_basis": "observed",
+      "effort": {
+        "setup_minutes": 20,
+        "time_to_value": "after the first capture walk is scored",
+        "cadence": "each capture walk; re-score new rows only"
+      },
+      "credits": {
+        "pilot": "captures are free; enrichment is priced before it runs",
+        "full": "enrichment of new rows only, never the whole table again",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "sender",
+          "detail": "A connected LinkedIn account",
+          "check": "oxygen senders list --json"
+        }
+      ],
+      "primitives": [
+        "signals",
+        "tables",
+        "sequences"
+      ],
+      "providers": {
+        "managed": [
+          "linkedin"
+        ],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "inbound-led-outbound",
+          "daily-warm-lead-queue",
+          "post-engagers"
+        ],
+        "guides": [
+          "oxygen-signals/references/qualification.md",
+          "oxygen-signals/references/linkedin.md",
+          "oxygen-sequencer/references/linkedin-volume.md",
+          "oxygen-unibox/references/dm-conversion.md"
+        ]
+      },
+      "tags": [
+        "linkedin",
+        "viewers",
+        "followers",
+        "invite",
+        "outreach",
+        "qualification"
+      ]
+    },
+    "new-connections": {
+      "path": "plays/new-connections.md",
+      "title": "Message the buyers among your new connections",
+      "label": "New connections",
+      "summary": "Message the buyers among people who connected recently: messages only, no invites.",
+      "prompt": "Follow up with the people who connected with me on LinkedIn recently, but only the ones who fit who we sell to. Check whether we already have a thread with each, add at most 10 a day, and wait for my approval before anything sends.",
+      "icon": "user-plus",
+      "trigger_phrases": [
+        "Follow up with my new LinkedIn connections",
+        "Message the people who just connected with me",
+        "Which of my new connections are buyers?",
+        "Start conversations with my recent connections"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "catch-warm-signals",
+      "stage": "ongoing",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "People who connected recently are already first-degree, so this sends messages only and keeps invites for the plays that need them. In OXYGEN's own pilot about a quarter of qualified new connections already had a thread with the sender.",
+      "outcome": "Recent connections selected from the LinkedIn Network table, excluded and scored in their own table, and a message-only Sequence for the qualified ones, at most 10 new people a day.",
+      "leading_metric": "replies from buyers among qualified new connections",
+      "benchmark": "In OXYGEN's own pilot, about a quarter of qualified new connections already had a thread with the sender. Read the first replies before making it daily; mostly non-buyers means tightening the rubric.",
+      "benchmark_basis": "observed",
+      "effort": {
+        "setup_minutes": 20,
+        "time_to_value": "after the first network walk fills the table",
+        "cadence": "optional daily flow for connections since the last run"
+      },
+      "credits": {
+        "pilot": "the network capture is free; enrichment is priced before it runs",
+        "full": "enrichment of newly selected connections, priced before it runs",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "sender",
+          "detail": "A connected LinkedIn account",
+          "check": "oxygen senders list --json"
+        }
+      ],
+      "primitives": [
+        "signals",
+        "tables",
+        "sequences"
+      ],
+      "providers": {
+        "managed": [
+          "linkedin"
+        ],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "inbound-led-outbound",
+          "existing-network",
+          "reply-to-meeting"
+        ],
+        "guides": [
+          "oxygen-signals/references/qualification.md",
+          "oxygen-signals/references/linkedin.md",
+          "oxygen-sequencer/references/linkedin-volume.md",
+          "oxygen-unibox/references/dm-conversion.md"
+        ]
+      },
+      "tags": [
+        "linkedin",
+        "connections",
+        "message",
+        "outreach",
+        "qualification"
+      ]
+    },
+    "existing-network": {
+      "path": "plays/existing-network.md",
+      "title": "Hand-written first messages to buyers already in your network",
+      "label": "Work your network",
+      "summary": "One hand-written message per company to the buyers already in your network.",
+      "prompt": "Work my LinkedIn network: find the buyers among my connections, look up one current fact about each company, and draft one personal message per company for me to approve before it sends. No templates and no automated follow-ups.",
+      "icon": "users",
+      "trigger_phrases": [
+        "Work my network",
+        "Reactivate my connections",
+        "Message the buyers I'm already connected to",
+        "Write personal messages to my LinkedIn connections"
+      ],
+      "pilot": {
+        "size": 5,
+        "check": "Draft about 5 messages for a new sender or language and have the user approve each one before moving to batches of 10."
+      },
+      "version": 1,
+      "status": "beta",
+      "category": "catch-warm-signals",
+      "stage": "day-7",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "A templated message to someone you already know reads as automated: in OXYGEN's own outreach, 9 of 76 replied threads were apologies for one. This writes one message per company by hand, to the buyer, from a dated current fact.",
+      "outcome": "A review table of qualified network companies with a Go / Skip select, one researched fact per Go company, one hand-written message per company that you approve, sent through one Sequence after a first-degree check.",
+      "leading_metric": "replies to approved hand-written messages",
+      "benchmark": "In OXYGEN's own outreach, 9 of 76 replied threads were apologies for an automated message to someone the sender already knew. Expect a small list after the fit gate.",
+      "benchmark_basis": "observed",
+      "effort": {
+        "setup_minutes": 30,
+        "time_to_value": "about 5 drafts for a new sender or language, then batches of 10",
+        "cadence": "batches of 10; no automated follow-up"
+      },
+      "credits": {
+        "pilot": "capture free; count and research columns quoted by a dry run first",
+        "full": "each first-degree check spends a profile lookup; check about 20 people on a send day",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "sender",
+          "detail": "A connected LinkedIn account",
+          "check": "oxygen senders list --json"
+        }
+      ],
+      "primitives": [
+        "signals",
+        "tables",
+        "sequences",
+        "messages"
+      ],
+      "providers": {
+        "managed": [
+          "linkedin"
+        ],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "inbound-led-outbound",
+          "new-connections",
+          "reply-to-meeting"
+        ],
+        "guides": [
+          "oxygen-signals/references/qualification.md",
+          "oxygen-sequencer/references/linkedin-volume.md",
+          "oxygen-unibox/references/dm-conversion.md"
+        ]
+      },
+      "tags": [
+        "linkedin",
+        "network",
+        "warm",
+        "hand-written",
+        "approval",
+        "outreach"
+      ]
+    }
+  }
+}

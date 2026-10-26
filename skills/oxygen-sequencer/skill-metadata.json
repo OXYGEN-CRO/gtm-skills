@@ -1,0 +1,806 @@
+{
+  "title": "OXYGEN Sequencer",
+  "description": "Run OXYGEN Sequences: net-new LinkedIn outreach, even one message, and multistep email, LinkedIn, WhatsApp, call and CRM-task cadences. Covers the launch ladder, send ceilings, enrollment, do-not-contact, reply-stop and recovery. Existing-thread replies and direct email use Messages.",
+  "capability_ids": [
+    "sequences",
+    "sending-infrastructure",
+    "connected-linkedin",
+    "connected-whatsapp"
+  ],
+  "endpoint_sections": [
+    "deliverability",
+    "domains",
+    "egress",
+    "email-assets",
+    "email-documents",
+    "linkedin",
+    "mailboxes",
+    "managed-inboxes",
+    "senders",
+    "sequencer",
+    "sequences",
+    "spintax",
+    "subscriptions",
+    "suppressions",
+    "voice",
+    "whatsapp"
+  ],
+  "documents": {
+    "plays/inbound-led-outbound.md": {
+      "kind": "play",
+      "title": "Inbound-led outbound: post engagers into a capped warm sequence",
+      "tags": [
+        "linkedin",
+        "engagers",
+        "warm-outbound",
+        "icp",
+        "sequences",
+        "competitors",
+        "creators",
+        "topic",
+        "followers",
+        "profile-viewers",
+        "network",
+        "kit"
+      ],
+      "providers": [
+        "scraper",
+        "unipile"
+      ]
+    },
+    "plays/outbound-pilot-50.md": {
+      "kind": "play",
+      "title": "Launch a 50-lead outbound pilot",
+      "tags": [
+        "outbound",
+        "cold-email",
+        "pilot",
+        "first-pipeline",
+        "people-search",
+        "work-email",
+        "first-lines",
+        "sequencer",
+        "send-caps",
+        "ab-testing",
+        "scale",
+        "engine"
+      ],
+      "providers": [
+        "blitzapi",
+        "icypeas",
+        "ai_ark",
+        "leadmagic",
+        "bettercontact",
+        "millionverifier",
+        "bounceban"
+      ]
+    },
+    "references/network-mining-engage.md": {
+      "kind": "reference",
+      "title": "Engage focus leads when they post (Network Mining, dev)",
+      "tags": [
+        "sequencer",
+        "linkedin",
+        "engage",
+        "network-mining",
+        "focus",
+        "comment",
+        "standing-approval"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Sequencer",
+      "tags": [
+        "oxygen",
+        "sequencer",
+        "sequences",
+        "outreach",
+        "launch",
+        "send-cap",
+        "enrollment",
+        "do-not-contact",
+        "reply-stop",
+        "recovery"
+      ],
+      "providers": []
+    },
+    "references/email.md": {
+      "kind": "reference",
+      "title": "Email steps",
+      "tags": [
+        "sequencer",
+        "email",
+        "mailboxes",
+        "pacing",
+        "esp-matching",
+        "bounce",
+        "tracking",
+        "unsubscribe",
+        "push-external"
+      ],
+      "providers": []
+    },
+    "references/linkedin.md": {
+      "kind": "reference",
+      "title": "LinkedIn steps and account safety",
+      "tags": [
+        "sequencer",
+        "linkedin",
+        "rate-limits",
+        "warmup",
+        "sender-binding",
+        "account-safety",
+        "disclosure"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/linkedin-volume.md": {
+      "kind": "reference",
+      "title": "LinkedIn outreach volume, ramp and kill lines",
+      "tags": [
+        "sequencer",
+        "linkedin",
+        "account-safety",
+        "caps",
+        "warmup",
+        "invite-note",
+        "acceptance",
+        "kill-line",
+        "follow-up",
+        "withdraw"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/whatsapp.md": {
+      "kind": "reference",
+      "title": "WhatsApp steps",
+      "tags": [
+        "sequencer",
+        "whatsapp",
+        "cold-initiate",
+        "limits"
+      ],
+      "providers": [
+        "whatsapp"
+      ]
+    },
+    "references/calls-and-crm-tasks.md": {
+      "kind": "reference",
+      "title": "Call tasks and CRM tasks",
+      "tags": [
+        "sequencer",
+        "call-task",
+        "crm-task",
+        "voice",
+        "hubspot"
+      ],
+      "providers": [
+        "hubspot"
+      ]
+    },
+    "references/journeys.md": {
+      "kind": "reference",
+      "title": "Journeys: branches, signals, variants and send windows",
+      "tags": [
+        "sequencer",
+        "branch",
+        "signals",
+        "variants",
+        "spintax",
+        "ab-testing",
+        "schedules",
+        "timezone"
+      ],
+      "providers": []
+    },
+    "references/company-pause.md": {
+      "kind": "reference",
+      "title": "Pause a company",
+      "tags": [
+        "sequencer",
+        "company-pause",
+        "reply",
+        "workflow",
+        "do-not-contact"
+      ],
+      "providers": []
+    },
+    "references/analytics.md": {
+      "kind": "reference",
+      "title": "Read Sequence results",
+      "tags": [
+        "sequencer",
+        "analytics",
+        "attribution",
+        "mailbox",
+        "sender",
+        "variants"
+      ],
+      "providers": []
+    },
+    "references/external-campaigns.md": {
+      "kind": "reference",
+      "title": "External campaigns: Smartlead, Instantly, lemlist, HeyReach",
+      "tags": [
+        "sequencer",
+        "push-external",
+        "external-campaigns",
+        "instantly",
+        "smartlead",
+        "lemlist",
+        "heyreach"
+      ],
+      "providers": [
+        "instantly",
+        "smartlead",
+        "lemlist",
+        "heyreach"
+      ]
+    },
+    "references/cold-copy.md": {
+      "kind": "reference",
+      "title": "Cold email copy",
+      "tags": [
+        "sequencer",
+        "email",
+        "copy",
+        "personalization",
+        "cta",
+        "signals",
+        "cold-email"
+      ],
+      "providers": []
+    },
+    "plays/whole-tam-email.md": {
+      "kind": "play",
+      "title": "Whole-market cold email",
+      "tags": [
+        "sequencer",
+        "email",
+        "tam",
+        "evergreen",
+        "spintax",
+        "ab-testing",
+        "segments",
+        "re-contact"
+      ],
+      "providers": []
+    },
+    "plays/signal-outbound.md": {
+      "kind": "play",
+      "title": "Signal-based email outbound",
+      "tags": [
+        "sequencer",
+        "email",
+        "signals",
+        "intent",
+        "hiring",
+        "qualified-audience-router"
+      ],
+      "providers": []
+    },
+    "plays/multichannel-top-tier.md": {
+      "kind": "play",
+      "title": "Email + LinkedIn for top-tier leads",
+      "tags": [
+        "sequencer",
+        "email",
+        "linkedin",
+        "multichannel",
+        "top-tier",
+        "warm-signals"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    }
+  },
+  "plays": {
+    "inbound-led-outbound": {
+      "path": "plays/inbound-led-outbound.md",
+      "title": "Inbound-led outbound: post engagers into a capped warm sequence",
+      "label": "Inbound-led outbound",
+      "summary": "Find who engages with you on LinkedIn, score them, and message only the good fits.",
+      "prompt": "Turn the people paying attention to us on LinkedIn into pipeline: people reacting to my posts or to posts by people I pick, my followers and connections, or my profile viewers. Score them against our ideal customer and message only the good fits on LinkedIn, a few a day.",
+      "icon": "like",
+      "featured_order": 3,
+      "trigger_phrases": [
+        "Turn the people who engage with my LinkedIn posts into pipeline",
+        "Who is engaging with my competitors' or my niche creators' posts?",
+        "Reach the people engaging with LinkedIn posts about my topic",
+        "Turn my LinkedIn connections and followers into pipeline",
+        "Turn my LinkedIn profile viewers into leads",
+        "I have no lead list. Where do I start on LinkedIn?"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "catch-warm-signals",
+      "stage": "day-1",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "People who react to a post, follow you or view your profile already know the topic or your name. Capture them, score them against your ideal customer and message only the good fits: warmer than a bought list, and capped.",
+      "outcome": "A table of real people with the post or signal that brought each one in, an ICP-fit score on every row, and a capped LinkedIn sequence to the good fits, sent only after LinkedIn is connected and the founder approves.",
+      "leading_metric": "Good-fit people per pilot, and positive replies per 10 people messaged",
+      "benchmark": "Not measured yet. Judge a source by its good fits per pilot, not by reaction volume: if fewer than 1 in 10 captured people score high, change the source, not the threshold.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 20,
+        "time_to_value": "posts: scored people in one session; network and viewers: hours to days",
+        "cadence": "one capped pilot, then an optional daily capture and a weekly send"
+      },
+      "credits": {
+        "pilot": "~150: capture 1 profile, 2 posts, 20 people (~142) + score 100 people (~8)",
+        "full": "Daily capture up to 150 a day if kept on; a LinkedIn account reserves 3,400 a month; messages cost 0",
+        "trial_safe": false
+      },
+      "pilot": {
+        "size": 20,
+        "check": "One capped capture, then read the top-scored people with the founder before any message is drafted or sent."
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "Company, offer and one line on the ideal customer; the scoring prompt quotes it",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "plan",
+          "detail": "About 150 credits for the pilot; the free plan's 250 credits cover it",
+          "check": "oxygen billing balance --json"
+        },
+        {
+          "kind": "sender",
+          "detail": "A connected LinkedIn account for followers, connections, viewers and sending (3,400 credits a month); post capture works without one",
+          "check": "oxygen senders list --status active --json"
+        }
+      ],
+      "primitives": [
+        "knowledge-graph",
+        "recipes",
+        "signals",
+        "tables",
+        "workflows",
+        "sequences",
+        "records",
+        "observability"
+      ],
+      "providers": {
+        "managed": [
+          "scraper",
+          "unipile"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "connect-linkedin",
+        "capture-sample",
+        "score-fit",
+        "send-messages",
+        "keep-capturing"
+      ],
+      "stages": [
+        {
+          "blueprint": "linkedin-profile-engager-monitor",
+          "title": "Capture post engagers, pilot scope",
+          "inputs": {
+            "lookback_days": 7,
+            "max_posts_per_profile": 2,
+            "max_engager_pages_per_post": 1,
+            "max_engagers_per_cycle": 100,
+            "max_people_to_enrich": 20
+          },
+          "gate": "capture-sample"
+        },
+        {
+          "blueprint": "crm-lead-stage-router",
+          "title": "Replies move the CRM lead stage"
+        }
+      ],
+      "journey": {
+        "title": "Inbound-led outbound",
+        "description": "Turn the people who engage with your LinkedIn posts into a capped, evidence-gated warm sequence with replies routed to your CRM.",
+        "seed_message": "I chose the inbound-led-outbound recipe. Help me turn the people paying attention to me on LinkedIn into conversations: capture a small sample, score each person against my ideal customer, show me the good fits and draft a LinkedIn message I approve. Inspect the workspace first and resume from what exists. Do not connect an account, enroll anyone, send anything, or spend credits without asking me first.",
+        "companions": [
+          "founder-posting-system",
+          "reply-to-meeting"
+        ]
+      },
+      "related": {
+        "recipes": [
+          "day-1-first-win",
+          "founder-posting-system",
+          "daily-warm-lead-queue",
+          "reply-to-meeting"
+        ],
+        "guides": [
+          "oxygen-signals/references/public-research.md",
+          "oxygen-signals/references/linkedin.md",
+          "oxygen-sequencer/references/linkedin.md",
+          "oxygen-sequencer/SKILL.md",
+          "oxygen-gtm/guides/cost-precheck.md"
+        ]
+      },
+      "tags": [
+        "linkedin",
+        "engagers",
+        "warm-outbound",
+        "icp",
+        "sequences",
+        "competitors",
+        "creators",
+        "topic",
+        "followers",
+        "profile-viewers",
+        "network",
+        "kit"
+      ]
+    },
+    "outbound-pilot-50": {
+      "path": "plays/outbound-pilot-50.md",
+      "title": "Launch a 50-lead outbound pilot",
+      "label": "50-lead outbound pilot",
+      "summary": "25 decision makers with checked emails and drafted first lines, reviewed before anything sends.",
+      "prompt": "Get a small outbound pilot going this week: find about 25 decision makers who fit who we sell to, get their work emails and draft a first email to each for me to review. Tell me what it costs before you spend anything, and send nothing until I say so.",
+      "icon": "flag",
+      "trigger_phrases": [
+        "I need outbound running this week",
+        "Build me a cold outreach pilot",
+        "Find 50 leads and draft first emails for me to review",
+        "I have no pipeline — start outbound"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "pipeline-from-zero",
+      "stage": "day-1",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "No outbound is running. Find 25 decision makers, their work emails and a first line for each, review them before anything sends, send to those 25, and learn from the replies whether the list and the message work before you send more.",
+      "outcome": "A table of 25 (then 50) decision makers with title, company, checked work email and a drafted first line; an email sequence that sends only after your approval; and, once replies hold, a capped way to send more.",
+      "leading_metric": "positive replies within 14 days of the first send",
+      "benchmark": "2026-10-04 audit: work emails for 25 people cost about 84 credits (10 verified, 14 catch-all, 1 not found); one search page of up to 50 people costs 1 credit. 1-3 positive replies from about 50 sends is a working signal; 0 means change the list or the message.",
+      "benchmark_basis": "estimate",
+      "pilot": {
+        "size": 25,
+        "check": "Read the 25 names, emails and first lines with the founder, and open the table link, before sending or finding more people."
+      },
+      "effort": {
+        "setup_minutes": 30,
+        "time_to_value": "reviewed drafts in about 20 minutes; replies 2-14 days after sending",
+        "cadence": "once; send more only after replies hold"
+      },
+      "credits": {
+        "pilot": "~125 for 25 people: search 1, emails ~85, first lines ~38",
+        "full": "~5 per person; sending is 0 credits but needs inboxes on a separate domain (from 500 a month each)",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "What you sell and who buys it: the search filters and the first lines use it",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "plan",
+          "detail": "About 150 credits for 25 people up to reviewed drafts; sending needs warmed inboxes, which need a paid plan",
+          "check": "oxygen billing balance --json"
+        },
+        {
+          "kind": "mailbox",
+          "detail": "Only for sending: warmed inboxes on a separate sending domain, from email-infra-setup; never your own work inbox. Without them the pilot stops at reviewed drafts",
+          "check": "oxygen mailboxes list --json"
+        }
+      ],
+      "primitives": [
+        "tables",
+        "sequences",
+        "records",
+        "knowledge-graph",
+        "observability"
+      ],
+      "providers": {
+        "managed": [
+          "blitzapi",
+          "icypeas",
+          "ai_ark",
+          "leadmagic",
+          "bettercontact",
+          "millionverifier",
+          "bounceban"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "pilot-spend",
+        "first-send",
+        "volume-increase"
+      ],
+      "stages": [],
+      "related": {
+        "recipes": [
+          "day-1-first-win",
+          "icp-to-account-map",
+          "email-infra-setup",
+          "reply-to-meeting",
+          "day-30-review"
+        ],
+        "guides": [
+          "oxygen-sourcing/references/people.md",
+          "oxygen-enrichment/references/email.md",
+          "oxygen-tables/references/ai-columns.md",
+          "oxygen-sequencer/SKILL.md",
+          "oxygen-sequencer/references/email.md"
+        ]
+      },
+      "tags": [
+        "outbound",
+        "cold-email",
+        "pilot",
+        "first-pipeline",
+        "people-search",
+        "work-email",
+        "first-lines",
+        "sequencer",
+        "send-caps",
+        "ab-testing",
+        "scale",
+        "engine"
+      ]
+    },
+    "whole-tam-email": {
+      "path": "plays/whole-tam-email.md",
+      "title": "Whole-market cold email",
+      "label": "Whole-market cold email",
+      "summary": "Evergreen cold email to your whole market, one segment at a time, with A/B rounds.",
+      "prompt": "Run cold email across our whole market, one segment at a time: three emails per person, a new A/B test each round, and a fresh angle for people who didn't reply after 60 days. Show me the costs and wait for my approval before anything sends.",
+      "icon": "repeat",
+      "trigger_phrases": [
+        "Run cold email across our whole market",
+        "Set up evergreen cold email at full capacity",
+        "A/B test our cold email CTAs and subject lines",
+        "Re-contact the people who never replied",
+        "The pilot worked — how do I scale cold email?",
+        "Build a repeatable cold email system"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "pipeline-from-zero",
+      "stage": "ongoing",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Signals decide who goes first but never replace the market lane. This runs cold email to every segment, evergreen and at full capacity: three emails per person, one Sequence per segment, and one A/B variable per round.",
+      "outcome": "One table and one Sequence per segment (industry × size band), batches enrolled oldest rows first, A/B rounds of 2,200 contacts with an auto-winner, and non-repliers re-contacted with a new angle no earlier than 60 days later.",
+      "leading_metric": "reply rate and positive replies per 500 contacted, judged after 1,000 contacted in a segment",
+      "benchmark": "After 1,000 contacted: under 0.37% reply, fix placement and the list, not the copy; scale at 0.7% reply or better with at least 1 positive reply per 500 contacted. The typical reply rate is 0.74%.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 30,
+        "time_to_value": "a verdict after 1,000 contacted in a segment",
+        "cadence": "one A/B round at a time; re-contact every 60 days"
+      },
+      "credits": {
+        "pilot": "copy columns priced by their dry run before they run",
+        "full": "copy columns per round at the approved ceiling; inboxes sized at 3 emails per contact",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "mailbox",
+          "detail": "Inboxes sized for 3 emails per contact, per the cold email playbook in the oxygen-email-infra skill",
+          "check": "oxygen mailboxes list --json"
+        },
+        {
+          "kind": "data",
+          "detail": "One table of contacts per segment (industry × size band)",
+          "check": ""
+        }
+      ],
+      "primitives": [
+        "sequences",
+        "tables"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "outbound-pilot-50",
+          "email-infra-setup",
+          "signal-outbound",
+          "multichannel-top-tier"
+        ],
+        "guides": [
+          "oxygen-sequencer/references/cold-copy.md",
+          "oxygen-sequencer/SKILL.md",
+          "oxygen-deliverability/SKILL.md"
+        ]
+      },
+      "tags": [
+        "sequencer",
+        "email",
+        "tam",
+        "evergreen",
+        "spintax",
+        "ab-testing",
+        "segments",
+        "re-contact"
+      ]
+    },
+    "signal-outbound": {
+      "path": "plays/signal-outbound.md",
+      "title": "Signal-based email outbound",
+      "label": "Signal-based cold email",
+      "summary": "Email people within a day of an intent signal and a week of a market signal.",
+      "prompt": "Email the people and companies that just showed a signal: within a week of a market signal like hiring, within 24 hours of an intent signal like a site visit, two emails each, nothing older than 30 days. Show me the costs and wait for my approval before anything sends.",
+      "icon": "radar",
+      "trigger_phrases": [
+        "Email companies that are hiring for this role",
+        "Reach people who just showed buying intent",
+        "Turn hiring signals into cold email",
+        "Email our website visitors and signups who fit"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "catch-warm-signals",
+      "stage": "ongoing",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Signals rank who goes first. The first touch goes out within 24 hours of an intent signal and within 7 days of a market signal, and a signal older than 30 days is dropped. The whole-market email lane runs beside this one.",
+      "outcome": "One audience table fed by market-signal feeds and daily website-visit and signup reads, verified emails and per-lead copy columns, and a two-email Sequence that only the qualified-audience router enrolls, at most 20 rows a cycle.",
+      "leading_metric": "positive replies per 40 sends",
+      "benchmark": "At 40 or more sends (about 20 people) with no positive reply, change the angle before blaming the signal; a source that keeps firing without positive replies is paused.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 30,
+        "time_to_value": "first enrollments on the router's next daily cycle",
+        "cadence": "the router runs daily at 09:00 UTC by default"
+      },
+      "credits": {
+        "pilot": "signal search estimated first, then run live at an approved ceiling",
+        "full": "feeds capped per cycle at the approved ceiling; inboxes sized at 2 emails per contact",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "mailbox",
+          "detail": "Inboxes sized at 2 emails per contact, per the cold email playbook in the oxygen-email-infra skill",
+          "check": "oxygen mailboxes list --json"
+        }
+      ],
+      "primitives": [
+        "signals",
+        "tables",
+        "sequences",
+        "workflows"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "whole-tam-email",
+          "multichannel-top-tier",
+          "daily-warm-lead-queue"
+        ],
+        "guides": [
+          "oxygen-sequencer/references/cold-copy.md",
+          "oxygen-signals/references/signal-feeds.md",
+          "oxygen-signals/references/audience-campaigns.md",
+          "oxygen-sourcing/references/playbook.md"
+        ]
+      },
+      "tags": [
+        "sequencer",
+        "email",
+        "signals",
+        "intent",
+        "hiring",
+        "qualified-audience-router"
+      ]
+    },
+    "multichannel-top-tier": {
+      "path": "plays/multichannel-top-tier.md",
+      "title": "Email + LinkedIn for top-tier leads",
+      "label": "Email + LinkedIn top tier",
+      "summary": "High-fit accounts get email and LinkedIn together; warm signals get LinkedIn first.",
+      "prompt": "Reach our highest-fit accounts on both email and LinkedIn: email first for cold top-tier leads, LinkedIn first for people who engaged with my posts or viewed my profile. Wait for my approval before anything sends.",
+      "icon": "star",
+      "trigger_phrases": [
+        "Combine email and LinkedIn for our best accounts",
+        "Run a multichannel sequence for top-tier leads",
+        "Email plus a LinkedIn invite for high-fit accounts",
+        "LinkedIn first for warm leads, email as the fallback"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "pipeline-from-zero",
+      "stage": "day-7",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Invites are capped per LinkedIn account, so LinkedIn cannot carry market volume. Spend it on high-fit accounts and signal leads alongside email, and give the rest of the market the whole-market email play.",
+      "outcome": "A cold-order Sequence (three emails, an invite, and a LinkedIn message to people who accept) and a warm-order Sequence (invite and message first, email as the fallback), both sent from one sender profile.",
+      "leading_metric": "invite acceptance and LinkedIn reply rate",
+      "benchmark": "Acceptance under 25% or LinkedIn reply under 10%: change the audience, not the copy. An unaccepted invite is withdrawn about 14 days after it went out.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 30,
+        "time_to_value": "after the first invites are accepted",
+        "cadence": "standing; warm captures can enroll themselves under a standing grant"
+      },
+      "credits": {
+        "pilot": "copy columns priced by their dry run before they run",
+        "full": "inboxes sized at 3 emails per contact for the cold order",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "sender",
+          "detail": "One sender profile that sends both channels: a connected LinkedIn account and an inbox",
+          "check": "oxygen senders profiles list --json"
+        },
+        {
+          "kind": "data",
+          "detail": "The leads in one table with a LinkedIn URL, a verified email and the copy columns",
+          "check": ""
+        }
+      ],
+      "primitives": [
+        "sequences",
+        "tables",
+        "signals"
+      ],
+      "providers": {
+        "managed": [
+          "linkedin"
+        ],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "whole-tam-email",
+          "signal-outbound",
+          "inbound-led-outbound"
+        ],
+        "guides": [
+          "oxygen-sequencer/references/cold-copy.md",
+          "oxygen-sequencer/references/linkedin.md"
+        ]
+      },
+      "tags": [
+        "sequencer",
+        "email",
+        "linkedin",
+        "multichannel",
+        "top-tier",
+        "warm-signals"
+      ]
+    }
+  }
+}

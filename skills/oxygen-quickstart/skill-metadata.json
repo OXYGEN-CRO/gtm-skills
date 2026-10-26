@@ -1,0 +1,38 @@
+{
+  "title": "OXYGEN Quickstart",
+  "description": "Run a safe first OXYGEN CLI session: verify identity and workspace, search capabilities and exact commands, create a small hosted Table, inspect it, and discover provider operations without executing paid calls or external writes.",
+  "capability_ids": [
+    "workspace-access",
+    "discovery-and-skills",
+    "onboarding-and-copilot"
+  ],
+  "endpoint_sections": [
+    "activation",
+    "api-keys",
+    "auth",
+    "connectors",
+    "copilot",
+    "home",
+    "login-requests",
+    "mcp",
+    "onboarding",
+    "orgs",
+    "sessions",
+    "settings",
+    "skills",
+    "whoami",
+    "workspace"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Quickstart",
+      "tags": [
+        "oxygen",
+        "quickstart",
+        "demo"
+      ],
+      "providers": []
+    }
+  }
+}

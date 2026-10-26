@@ -1,0 +1,214 @@
+{
+  "title": "OXYGEN Diagnostics",
+  "description": "Diagnose a running OXYGEN workspace: trace a cell or record value and its provenance, explain stuck or failed runs, sweep and retry table failures, explain plan, credit and rate-limit refusals, and explain or reduce credit spend. Read-only investigation first.",
+  "capability_ids": [
+    "billing-and-budgets",
+    "platform-operations",
+    "tables",
+    "observability"
+  ],
+  "endpoint_sections": [
+    "action-columns",
+    "billing",
+    "budget",
+    "callables",
+    "columns",
+    "company-enrichment",
+    "db",
+    "enrich-column",
+    "enrichment",
+    "functions",
+    "limits",
+    "migrations",
+    "observability",
+    "pricing",
+    "projects",
+    "runs",
+    "supabase",
+    "table-action-items",
+    "table-action-runs",
+    "table-ingestion-runs",
+    "tables",
+    "worker"
+  ],
+  "documents": {
+    "plays/day-30-review.md": {
+      "kind": "play",
+      "title": "Day 30: review, scale, or kill",
+      "tags": [
+        "review",
+        "monthly-ritual",
+        "cost",
+        "credits",
+        "decisions",
+        "scale-or-kill",
+        "failed-runs",
+        "synthesis"
+      ],
+      "providers": []
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Diagnostics",
+      "tags": [
+        "oxygen",
+        "diagnostics",
+        "day-2",
+        "provenance",
+        "runs",
+        "credits",
+        "router"
+      ],
+      "providers": []
+    },
+    "table-trace.md": {
+      "kind": "guide",
+      "title": "Trace One Cell Or Row",
+      "tags": [
+        "diagnostics",
+        "provenance",
+        "cells",
+        "rows",
+        "history",
+        "runs"
+      ],
+      "providers": []
+    },
+    "error-sweep.md": {
+      "kind": "guide",
+      "title": "Sweep Table-Wide Failures",
+      "tags": [
+        "diagnostics",
+        "failures",
+        "table-runs",
+        "retry",
+        "worker",
+        "observability"
+      ],
+      "providers": []
+    },
+    "optimize-credits.md": {
+      "kind": "guide",
+      "title": "Optimize Credit Spend",
+      "tags": [
+        "diagnostics",
+        "credits",
+        "billing",
+        "budget",
+        "cost",
+        "waterfall"
+      ],
+      "providers": []
+    },
+    "runs-and-limits.md": {
+      "kind": "guide",
+      "title": "Runs, Refusals And Limits",
+      "tags": [
+        "diagnostics",
+        "ingestions",
+        "upgrade-required",
+        "insufficient-credits",
+        "limits",
+        "rate-limits",
+        "spend-ceilings",
+        "estimate"
+      ],
+      "providers": []
+    }
+  },
+  "plays": {
+    "day-30-review": {
+      "path": "plays/day-30-review.md",
+      "title": "Day 30: review, scale, or kill",
+      "label": "30-day review",
+      "summary": "See what last month cost and brought back, then keep, change or stop each campaign.",
+      "prompt": "Look at the last 30 days: what we spent, what it brought back and what failed, then tell me what to keep, change or stop next month.",
+      "icon": "history",
+      "trigger_phrases": [
+        "What worked this month and what did it cost?",
+        "Review my GTM runs and decide what to scale",
+        "Monthly review of sequences and spend",
+        "Should I kill or scale this play?",
+        "Where did my credits go this month?"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "revenue-truth",
+      "stage": "day-30",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "After a month of campaigns and lookups, nobody has read what they cost or returned. One free session turns that evidence into a scale, change or stop call for everything still running, so next month's credits follow what worked.",
+      "outcome": "The month's spend split by what used it, results per campaign, failed runs named with their cause, and one filed scale, change or stop decision for each campaign and automation still running.",
+      "leading_metric": "share of running campaigns and automations that end the review with a filed decision (target: all)",
+      "benchmark": "the free reads take about ten calls; a review that cannot name the two biggest costs and one decision per running campaign stopped too early",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 20,
+        "time_to_value": "decisions filed the same session",
+        "cadence": "monthly, once a campaign has sent for at least a week"
+      },
+      "credits": {
+        "pilot": "0-1.5",
+        "full": "0-1.5 per review: reads are free; the optional learnings summary is 1.5 (0 with no outreach yet)",
+        "trial_safe": true
+      },
+      "prerequisites": [
+        {
+          "kind": "data",
+          "detail": "A run or a started campaign in the last 30 days; otherwise there is nothing to review yet",
+          "check": "oxygen runs list --limit 1 --json"
+        },
+        {
+          "kind": "data",
+          "detail": "Your campaigns (sequences) and their status; a started one has startedAt set",
+          "check": "oxygen sequences list --json"
+        },
+        {
+          "kind": "plan",
+          "detail": "Reads are free; the optional learnings summary costs 1.5 credits",
+          "check": "oxygen billing balance --json"
+        }
+      ],
+      "primitives": [
+        "observability",
+        "sequences",
+        "signals",
+        "workflows",
+        "knowledge-graph"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [
+        "synthesis-run",
+        "apply-verdicts"
+      ],
+      "related": {
+        "recipes": [
+          "day-1-first-win",
+          "outbound-pilot-50"
+        ],
+        "guides": [
+          "oxygen-diagnostics/runs-and-limits.md",
+          "oxygen-diagnostics/error-sweep.md",
+          "oxygen-diagnostics/optimize-credits.md",
+          "oxygen-gtm/guides/cost-precheck.md"
+        ]
+      },
+      "tags": [
+        "review",
+        "monthly-ritual",
+        "cost",
+        "credits",
+        "decisions",
+        "scale-or-kill",
+        "failed-runs",
+        "synthesis"
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "OXYGEN Collaboration",
+  "description": "Get a second party's documented go/no-go inside OXYGEN: threaded internal comments on any workspace object, approval requests assigned to named members, the opt-in gate that blocks a live launch until someone approves, and the restricted client role. Not for public comments on a published post, and not a substitute for a paid action's own approval.",
+  "capability_ids": [
+    "collaboration"
+  ],
+  "endpoint_sections": [
+    "collab"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Collaboration",
+      "tags": [
+        "oxygen",
+        "collaboration",
+        "comments",
+        "approvals",
+        "client",
+        "sign-off"
+      ],
+      "providers": []
+    }
+  }
+}

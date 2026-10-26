@@ -1,0 +1,515 @@
+{
+  "title": "OXYGEN Sourcing",
+  "description": "Find companies and people that are not in the workspace yet and land them in OXYGEN Tables: account and TAM lists, lookalikes, hiring companies, local businesses, personas and contacts at named accounts, through free previews, typed plans, priced dry runs and approved live runs.",
+  "capability_ids": [
+    "sourcing-and-provider-tools"
+  ],
+  "endpoint_sections": [
+    "companies",
+    "find",
+    "lead-sourcing",
+    "people",
+    "search",
+    "sourcing",
+    "tools",
+    "verify"
+  ],
+  "documents": {
+    "plays/icp-to-account-map.md": {
+      "kind": "play",
+      "title": "Turn your ICP into a scored account map",
+      "tags": [
+        "icp",
+        "tam",
+        "account-map",
+        "target-accounts",
+        "company-search",
+        "scoring",
+        "directory",
+        "portfolio",
+        "events",
+        "account-list",
+        "sourcing"
+      ],
+      "providers": [
+        "blitzapi",
+        "exa"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Sourcing",
+      "tags": [
+        "oxygen",
+        "sourcing",
+        "prospecting",
+        "tam",
+        "company-search",
+        "people-search",
+        "planner",
+        "lookalikes",
+        "local-businesses"
+      ],
+      "providers": []
+    },
+    "references/companies.md": {
+      "kind": "reference",
+      "title": "Company search",
+      "tags": [
+        "sourcing",
+        "company-search",
+        "tam",
+        "filters",
+        "hiring",
+        "google-maps",
+        "lookalike",
+        "url-recovery",
+        "feeds"
+      ],
+      "providers": [
+        "blitzapi",
+        "apollo",
+        "exa",
+        "serper",
+        "firecrawl",
+        "theirstack"
+      ]
+    },
+    "references/people.md": {
+      "kind": "reference",
+      "title": "People search",
+      "tags": [
+        "sourcing",
+        "people-search",
+        "persona",
+        "account-contacts",
+        "from-table",
+        "filters"
+      ],
+      "providers": [
+        "blitzapi",
+        "apollo",
+        "dropleads",
+        "contactout",
+        "wiza"
+      ]
+    },
+    "references/lead-sourcing.md": {
+      "kind": "reference",
+      "title": "Lead sourcing and sourcing plans",
+      "tags": [
+        "sourcing",
+        "lead-sourcing",
+        "icp",
+        "planning",
+        "search-jobs",
+        "audit"
+      ],
+      "providers": []
+    },
+    "references/playbook.md": {
+      "kind": "reference",
+      "title": "Sourcing playbook",
+      "tags": [
+        "sourcing",
+        "playbook",
+        "avenues",
+        "tam",
+        "lookalike",
+        "google-maps",
+        "signals",
+        "dedupe",
+        "contacts-per-account",
+        "kill-lines"
+      ],
+      "providers": []
+    },
+    "plays/lookalike-tam.md": {
+      "kind": "play",
+      "title": "Lookalike TAM",
+      "tags": [
+        "sourcing",
+        "lookalike",
+        "tam",
+        "keywords",
+        "company-search"
+      ],
+      "providers": []
+    },
+    "plays/local-business-maps.md": {
+      "kind": "play",
+      "title": "Local businesses from Google Maps",
+      "tags": [
+        "sourcing",
+        "google-maps",
+        "local-businesses",
+        "qualification"
+      ],
+      "providers": []
+    },
+    "provider-runbooks/blitzapi.md": {
+      "kind": "provider-runbook",
+      "title": "BlitzAPI Runbook",
+      "tags": [
+        "provider",
+        "sourcing",
+        "people-search",
+        "company-search",
+        "enrichment"
+      ],
+      "providers": [
+        "blitzapi"
+      ]
+    },
+    "provider-runbooks/dropleads.md": {
+      "kind": "provider-runbook",
+      "title": "Dropleads Runbook",
+      "tags": [
+        "provider",
+        "people-search",
+        "sourcing"
+      ],
+      "providers": [
+        "dropleads"
+      ]
+    },
+    "provider-runbooks/exa.md": {
+      "kind": "provider-runbook",
+      "title": "Exa Runbook",
+      "tags": [
+        "provider",
+        "search",
+        "research"
+      ],
+      "providers": [
+        "exa"
+      ]
+    },
+    "provider-runbooks/serper.md": {
+      "kind": "provider-runbook",
+      "title": "Serper Runbook",
+      "tags": [
+        "provider",
+        "search",
+        "local",
+        "google-maps"
+      ],
+      "providers": [
+        "serper"
+      ]
+    },
+    "provider-runbooks/firecrawl.md": {
+      "kind": "provider-runbook",
+      "title": "Firecrawl Runbook",
+      "tags": [
+        "provider",
+        "web",
+        "search",
+        "scraping"
+      ],
+      "providers": [
+        "firecrawl"
+      ]
+    },
+    "provider-runbooks/linkup.md": {
+      "kind": "provider-runbook",
+      "title": "Linkup Runbook",
+      "tags": [
+        "provider",
+        "search",
+        "scraping",
+        "byok"
+      ],
+      "providers": [
+        "linkup"
+      ]
+    },
+    "provider-runbooks/parallel.md": {
+      "kind": "provider-runbook",
+      "title": "Parallel Runbook",
+      "tags": [
+        "provider",
+        "search",
+        "scraping",
+        "byok"
+      ],
+      "providers": [
+        "parallel"
+      ]
+    },
+    "provider-runbooks/apify.md": {
+      "kind": "provider-runbook",
+      "title": "Apify Runbook",
+      "tags": [
+        "provider",
+        "scraping"
+      ],
+      "providers": [
+        "apify"
+      ]
+    },
+    "provider-runbooks/openwebninja.md": {
+      "kind": "provider-runbook",
+      "title": "OpenWebNinja Runbook",
+      "tags": [
+        "provider",
+        "search",
+        "local"
+      ],
+      "providers": [
+        "openwebninja"
+      ]
+    }
+  },
+  "plays": {
+    "icp-to-account-map": {
+      "path": "plays/icp-to-account-map.md",
+      "title": "Turn your ICP into a scored account map",
+      "label": "TAM sourcing",
+      "summary": "Map your market: companies that fit your ICP, each graded with the reason.",
+      "prompt": "Find about 25 companies that fit who we sell to, grade how well each one fits and why, and show me which kinds fit best. If I share a list, portfolio page or event list, grade that instead.",
+      "icon": "target",
+      "featured_order": 1,
+      "trigger_phrases": [
+        "Turn my ICP into a list of target accounts",
+        "Find B2B SaaS accounts that match our ideal customer profile",
+        "Who should we actually be selling to?",
+        "Map my market and score the companies by fit",
+        "Pull the companies off this VC portfolio, partner directory or event page",
+        "I have a list of companies, which ones fit us best?"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "pipeline-from-zero",
+      "stage": "day-7",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Most founders can say who they sell to but have no list anyone can check. This finds real companies that match, or grades a list you already have (a portfolio, a partner directory, an event's exhibitors), with the reason on every row, so your outbound starts from a list you trust.",
+      "outcome": "A table of about 25 companies (name, website, LinkedIn, size, location, what they do), each graded low, medium or high with a one-line reason, plus a plain answer to which kinds of companies fit best.",
+      "leading_metric": "share of the 25 companies graded high or medium, and whether the founder agrees with the reasons",
+      "benchmark": "2026-10-04 audit: an industry-only search left 3 of 25 companies graded high or medium; adding the words buyers use for their own business lifted it to 5 of 25, and most low grades were competitors. Page one tests the filters; it is not the final list.",
+      "benchmark_basis": "observed",
+      "pilot": {
+        "size": 25,
+        "check": "Read all 25 grades and reasons with the founder, and open the table link, before searching another page or another kind of company."
+      },
+      "effort": {
+        "setup_minutes": 15,
+        "time_to_value": "a graded list of 25 companies in about 10 minutes",
+        "cadence": "once, then one page per extra kind of company"
+      },
+      "credits": {
+        "pilot": "~3 (search 25 companies ~1, grade them ~2)",
+        "full": "~1 per 25 companies searched + ~0.075 per company graded; importing your own list is free",
+        "trial_safe": true
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "Who you sell to, saved in the workspace: the search filters and the fit grade read it",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "plan",
+          "detail": "About 5 credits for the first graded page; no connected account and no monthly charge",
+          "check": "oxygen billing balance --json"
+        }
+      ],
+      "primitives": [
+        "tables",
+        "knowledge-graph",
+        "observability"
+      ],
+      "providers": {
+        "managed": [
+          "blitzapi",
+          "exa"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "sourcing-live",
+        "scoring-run"
+      ],
+      "stages": [],
+      "journey": {
+        "slug": "tam-sourcing",
+        "title": "Map your market",
+        "description": "Source and segment your addressable market from your ICP, starting with a bounded sample.",
+        "seed_message": "Help me map my total addressable market from my ICP. Ground it in my company profile and website, source a bounded sample first, and show me coverage and credit estimates before expanding.",
+        "companions": [
+          "outbound-pilot-50"
+        ]
+      },
+      "related": {
+        "recipes": [
+          "day-1-first-win",
+          "outbound-pilot-50",
+          "migrate-from-clay",
+          "daily-warm-lead-queue"
+        ],
+        "guides": [
+          "oxygen-sourcing/references/companies.md",
+          "oxygen-tables/references/ai-columns.md",
+          "oxygen-tables/references/import-and-folders.md",
+          "oxygen-gtm/guides/cost-precheck.md",
+          "oxygen-gtm-consultant/references/craft.md"
+        ]
+      },
+      "tags": [
+        "icp",
+        "tam",
+        "account-map",
+        "target-accounts",
+        "company-search",
+        "scoring",
+        "directory",
+        "portfolio",
+        "events",
+        "account-list",
+        "sourcing"
+      ]
+    },
+    "lookalike-tam": {
+      "path": "plays/lookalike-tam.md",
+      "title": "Lookalike TAM",
+      "label": "Lookalike TAM",
+      "summary": "Companies like your best paying customers, and the words that find more of them.",
+      "prompt": "Find more companies like our best paying customers. Use 3 to 5 of them as seeds, show me what the search costs before running it, and tell me which words these companies use for their own business so we can search the wider market.",
+      "icon": "buildings",
+      "trigger_phrases": [
+        "Find more companies like our best customers",
+        "Build a lookalike list from our customers",
+        "Who else looks like the customers we already have?",
+        "Use our customers as seeds to map our market"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "pipeline-from-zero",
+      "stage": "day-7",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Three or more paying, retained customers are the seeds for finding more companies like them. A lookalike run is a sample to learn the market's words from, not the TAM: the phrases those companies use for their own business then search the wider market.",
+      "outcome": "A lookalike table of at most 125 companies from 3 to 5 customer seeds, the 3 to 5 phrases they use for their own business tested on the structured search, the phrases that clear the buyer bar scaled, and one merged table graded once.",
+      "leading_metric": "share of lookalike rows that are buyers, and mined phrases that clear the buyer bar",
+      "benchmark": "Each seed returns at most 25 companies, so a run lands at most 125. Fewer than half of the lookalike rows being buyers means a seed is wrong: replace it once and rerun.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 15,
+        "time_to_value": "after the lookalike run and the free phrase tests",
+        "cadence": "once; scale by adding phrases, not pages"
+      },
+      "credits": {
+        "pilot": "0 to plan and price; the live run at most its approved ceiling",
+        "full": "each scaled phrase priced by its own dry run; mining and previews are free",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "data",
+          "detail": "3 to 5 paying, retained customers from different sub-segments, on the CRM's companies table; never a competitor or your own domain",
+          "check": "oxygen crm describe companies --field lifecycle_stage --json"
+        }
+      ],
+      "primitives": [
+        "tables",
+        "records"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "icp-to-account-map"
+        ],
+        "guides": [
+          "oxygen-sourcing/references/playbook.md",
+          "oxygen-sourcing/references/companies.md"
+        ]
+      },
+      "tags": [
+        "sourcing",
+        "lookalike",
+        "tam",
+        "keywords",
+        "company-search"
+      ]
+    },
+    "local-business-maps": {
+      "path": "plays/local-business-maps.md",
+      "title": "Local businesses from Google Maps",
+      "label": "Local businesses",
+      "summary": "Clinics, restaurants and trades by city from Google Maps, kept to the ones you can reach.",
+      "prompt": "Find the local businesses we sell to on Google Maps, one category per city, and keep the ones with a website and a review count in the range I set. Show me the preview and the cost before running anything live.",
+      "icon": "compass",
+      "trigger_phrases": [
+        "Find local businesses in my cities",
+        "Get a list of clinics or restaurants by city",
+        "Pull businesses from Google Maps",
+        "Our buyers are local businesses with a physical location"
+      ],
+      "version": 1,
+      "status": "beta",
+      "category": "pipeline-from-zero",
+      "stage": "day-7",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "When the buyer has a physical location or a service area (clinics, restaurants, trades, local agencies, offices by city), a database of companies by firmographics misses most of them. Google Maps finds them one category and city at a time.",
+      "outcome": "One table per category and region from Google Maps listings, chains and multi-site firms flagged, a qualified list with a website and a review count inside your band, graded once, with the owner or manager found at the ones that pass.",
+      "leading_metric": "share of preview listings with a website, and listings inside the review-count band",
+      "benchmark": "If fewer than 40% of the preview listings have a website, email cannot carry the list. Maps repeats listings across pages, so expect 5 to 10% fewer unique rows than pages × 20.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 15,
+        "time_to_value": "after the previews and one approved live run",
+        "cadence": "once; scale by adding cities and categories, not pages"
+      },
+      "credits": {
+        "pilot": "0 to preview and price; each live query at most its approved ceiling",
+        "full": "priced per query by its dry run; the chain check and list reads are free",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "The categories as a searcher would type them, the cities, and a review-count band; there is no default band",
+          "check": ""
+        }
+      ],
+      "primitives": [
+        "tables"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "icp-to-account-map"
+        ],
+        "guides": [
+          "oxygen-sourcing/references/playbook.md",
+          "oxygen-enrichment/SKILL.md"
+        ]
+      },
+      "tags": [
+        "sourcing",
+        "google-maps",
+        "local-businesses",
+        "qualification"
+      ]
+    }
+  }
+}

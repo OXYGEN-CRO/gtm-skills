@@ -1,0 +1,26 @@
+{
+  "title": "OXYGEN Custom HTTP",
+  "description": "Register, connect, preview, run and remove reusable custom HTTP integrations: manifest schema, auth, path/query/body inputs, tool ids and Table tool columns.",
+  "capability_ids": [
+    "connected-integrations"
+  ],
+  "endpoint_sections": [
+    "custom-integrations",
+    "integrations"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Custom HTTP",
+      "tags": [
+        "oxygen",
+        "custom-http",
+        "integrations",
+        "manifest",
+        "rest-api",
+        "cleanup"
+      ],
+      "providers": []
+    }
+  }
+}

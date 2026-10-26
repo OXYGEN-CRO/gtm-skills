@@ -1,0 +1,424 @@
+{
+  "title": "OXYGEN Enrichment",
+  "description": "Enrich OXYGEN Table rows and single records: person and company profiles, funding, revenue, hiring and tech stack, work and personal email, mobile phone, LinkedIn URL and email or phone verification, through native waterfalls with free previews, one-row pilots and approved ceilings.",
+  "capability_ids": [
+    "tables",
+    "sourcing-and-provider-tools"
+  ],
+  "endpoint_sections": [
+    "action-columns",
+    "callables",
+    "columns",
+    "companies",
+    "company-enrichment",
+    "enrich-column",
+    "enrichment",
+    "find",
+    "functions",
+    "lead-sourcing",
+    "migrations",
+    "people",
+    "projects",
+    "search",
+    "sourcing",
+    "supabase",
+    "table-action-items",
+    "table-action-runs",
+    "table-ingestion-runs",
+    "tables",
+    "tools",
+    "verify"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Enrichment",
+      "tags": [
+        "oxygen",
+        "enrichment",
+        "waterfall",
+        "presets",
+        "work-email",
+        "phone",
+        "linkedin-url",
+        "verification",
+        "credits"
+      ],
+      "providers": []
+    },
+    "references/email.md": {
+      "kind": "reference",
+      "title": "Work email and personal email",
+      "tags": [
+        "enrichment",
+        "email",
+        "waterfall",
+        "personal-email",
+        "verification"
+      ],
+      "providers": [
+        "blitzapi",
+        "millionverifier",
+        "findymail",
+        "forager"
+      ]
+    },
+    "references/phone.md": {
+      "kind": "reference",
+      "title": "Mobile phone",
+      "tags": [
+        "enrichment",
+        "phone",
+        "waterfall",
+        "credits",
+        "verification"
+      ],
+      "providers": [
+        "blitzapi",
+        "prospeo",
+        "leadmagic",
+        "contactout",
+        "bettercontact",
+        "scalelist",
+        "ai_ark",
+        "findymail",
+        "crustdata",
+        "apollo",
+        "clearoutphone"
+      ]
+    },
+    "references/linkedin-url.md": {
+      "kind": "reference",
+      "title": "LinkedIn URL",
+      "tags": [
+        "enrichment",
+        "linkedin",
+        "identity",
+        "validation"
+      ],
+      "providers": [
+        "scraper",
+        "icypeas"
+      ]
+    },
+    "references/company.md": {
+      "kind": "reference",
+      "title": "Company data",
+      "tags": [
+        "enrichment",
+        "company",
+        "presets",
+        "funding",
+        "revenue",
+        "hiring",
+        "tech-stack",
+        "find-company"
+      ],
+      "providers": [
+        "scraper",
+        "blitzapi",
+        "crustdata",
+        "ai_ark",
+        "prospeo",
+        "leadmagic"
+      ]
+    },
+    "references/verification.md": {
+      "kind": "reference",
+      "title": "Email and phone verification",
+      "tags": [
+        "enrichment",
+        "verification",
+        "email",
+        "catch-all",
+        "phone"
+      ],
+      "providers": [
+        "millionverifier",
+        "bounceban",
+        "clearoutphone"
+      ]
+    },
+    "references/lookups.md": {
+      "kind": "reference",
+      "title": "One-shot lookups",
+      "tags": [
+        "enrichment",
+        "find",
+        "one-shot",
+        "email",
+        "phone",
+        "person",
+        "company"
+      ],
+      "providers": []
+    },
+    "provider-runbooks/ai_ark.md": {
+      "kind": "provider-runbook",
+      "title": "AI Ark Runbook",
+      "tags": [
+        "provider",
+        "sourcing",
+        "enrichment"
+      ],
+      "providers": [
+        "ai_ark"
+      ]
+    },
+    "provider-runbooks/apollo.md": {
+      "kind": "provider-runbook",
+      "title": "Apollo Runbook",
+      "tags": [
+        "provider",
+        "sourcing",
+        "enrichment",
+        "phone"
+      ],
+      "providers": [
+        "apollo"
+      ]
+    },
+    "provider-runbooks/bettercontact.md": {
+      "kind": "provider-runbook",
+      "title": "BetterContact Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "email",
+        "phone"
+      ],
+      "providers": [
+        "bettercontact"
+      ]
+    },
+    "provider-runbooks/contactout.md": {
+      "kind": "provider-runbook",
+      "title": "ContactOut Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "email",
+        "phone"
+      ],
+      "providers": [
+        "contactout"
+      ]
+    },
+    "provider-runbooks/crustdata.md": {
+      "kind": "provider-runbook",
+      "title": "Crustdata Runbook",
+      "tags": [
+        "provider",
+        "sourcing",
+        "signals",
+        "phone"
+      ],
+      "providers": [
+        "crustdata"
+      ]
+    },
+    "provider-runbooks/findymail.md": {
+      "kind": "provider-runbook",
+      "title": "Findymail Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "email",
+        "phone"
+      ],
+      "providers": [
+        "findymail"
+      ]
+    },
+    "provider-runbooks/forager.md": {
+      "kind": "provider-runbook",
+      "title": "Forager Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "linkedin"
+      ],
+      "providers": [
+        "forager"
+      ]
+    },
+    "provider-runbooks/fullenrich.md": {
+      "kind": "provider-runbook",
+      "title": "FullEnrich Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "search"
+      ],
+      "providers": [
+        "fullenrich"
+      ]
+    },
+    "provider-runbooks/hunter.md": {
+      "kind": "provider-runbook",
+      "title": "Hunter Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "verification"
+      ],
+      "providers": [
+        "hunter"
+      ]
+    },
+    "provider-runbooks/icypeas.md": {
+      "kind": "provider-runbook",
+      "title": "Icypeas Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "email",
+        "verification",
+        "linkedin"
+      ],
+      "providers": [
+        "icypeas"
+      ]
+    },
+    "provider-runbooks/leadmagic.md": {
+      "kind": "provider-runbook",
+      "title": "LeadMagic Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "email",
+        "phone"
+      ],
+      "providers": [
+        "leadmagic"
+      ]
+    },
+    "provider-runbooks/lusha.md": {
+      "kind": "provider-runbook",
+      "title": "Lusha Runbook",
+      "tags": [
+        "provider",
+        "people-search",
+        "enrichment"
+      ],
+      "providers": [
+        "lusha"
+      ]
+    },
+    "provider-runbooks/peopledatalabs.md": {
+      "kind": "provider-runbook",
+      "title": "People Data Labs Runbook",
+      "tags": [
+        "provider",
+        "people-search",
+        "enrichment"
+      ],
+      "providers": [
+        "peopledatalabs"
+      ]
+    },
+    "provider-runbooks/prospeo.md": {
+      "kind": "provider-runbook",
+      "title": "Prospeo Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "email",
+        "phone"
+      ],
+      "providers": [
+        "prospeo"
+      ]
+    },
+    "provider-runbooks/rocketreach.md": {
+      "kind": "provider-runbook",
+      "title": "RocketReach Runbook",
+      "tags": [
+        "provider",
+        "people-search",
+        "enrichment"
+      ],
+      "providers": [
+        "rocketreach"
+      ]
+    },
+    "provider-runbooks/scalelist.md": {
+      "kind": "provider-runbook",
+      "title": "Scalelist Runbook",
+      "tags": [
+        "provider",
+        "enrichment",
+        "email",
+        "phone"
+      ],
+      "providers": [
+        "scalelist"
+      ]
+    },
+    "provider-runbooks/wiza.md": {
+      "kind": "provider-runbook",
+      "title": "Wiza Runbook",
+      "tags": [
+        "provider",
+        "people-search",
+        "enrichment"
+      ],
+      "providers": [
+        "wiza"
+      ]
+    },
+    "provider-runbooks/millionverifier.md": {
+      "kind": "provider-runbook",
+      "title": "MillionVerifier Runbook",
+      "tags": [
+        "provider",
+        "verification",
+        "email"
+      ],
+      "providers": [
+        "millionverifier"
+      ]
+    },
+    "provider-runbooks/bounceban.md": {
+      "kind": "provider-runbook",
+      "title": "BounceBan Runbook",
+      "tags": [
+        "provider",
+        "verification",
+        "email",
+        "catch-all"
+      ],
+      "providers": [
+        "bounceban"
+      ]
+    },
+    "provider-runbooks/clearoutphone.md": {
+      "kind": "provider-runbook",
+      "title": "ClearoutPhone Runbook",
+      "tags": [
+        "provider",
+        "verification",
+        "phone"
+      ],
+      "providers": [
+        "clearoutphone"
+      ]
+    },
+    "provider-runbooks/scraper.md": {
+      "kind": "provider-runbook",
+      "title": "Professional Network Data and HarvestAPI BYOK",
+      "tags": [
+        "provider",
+        "linkedin",
+        "scraping",
+        "managed",
+        "cookieless",
+        "harvestapi",
+        "byok"
+      ],
+      "providers": [
+        "scraper"
+      ]
+    }
+  }
+}

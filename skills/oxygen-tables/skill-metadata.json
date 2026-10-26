@@ -1,0 +1,297 @@
+{
+  "title": "OXYGEN Tables",
+  "description": "Build and run OXYGEN Tables: typed rows, choice fields, table links and lookups; AI, research, Classify, formula, tool, HTTP and template columns, reusable Functions, live feeds and webhooks, imports, follower orders, deduplication and folders. Covers pricing a column before it runs, one-row pilots, bounded batches and run reads.",
+  "capability_ids": [
+    "tables",
+    "connected-integrations"
+  ],
+  "endpoint_sections": [
+    "action-columns",
+    "callables",
+    "columns",
+    "company-enrichment",
+    "custom-integrations",
+    "enrich-column",
+    "enrichment",
+    "functions",
+    "integrations",
+    "migrations",
+    "projects",
+    "supabase",
+    "table-action-items",
+    "table-action-runs",
+    "table-ingestion-runs",
+    "tables"
+  ],
+  "documents": {
+    "plays/speed-to-lead.md": {
+      "kind": "play",
+      "title": "Answer inbound leads in minutes",
+      "tags": [
+        "inbound",
+        "speed-to-lead",
+        "plg",
+        "signups",
+        "webhook",
+        "crm",
+        "auto-run",
+        "lead-routing",
+        "convert"
+      ],
+      "providers": [
+        "blitzapi",
+        "scraper"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Tables",
+      "tags": [
+        "oxygen",
+        "tables",
+        "columns",
+        "ai-columns",
+        "research",
+        "formula",
+        "tool-columns",
+        "functions",
+        "feeds",
+        "import"
+      ],
+      "providers": []
+    },
+    "references/fields-and-links.md": {
+      "kind": "reference",
+      "title": "Fields, choices, links and lookups",
+      "tags": [
+        "tables",
+        "columns",
+        "field-types",
+        "select",
+        "status",
+        "options",
+        "link",
+        "relations",
+        "lookup",
+        "bind"
+      ],
+      "providers": []
+    },
+    "references/ai-columns.md": {
+      "kind": "reference",
+      "title": "AI, Classify and formula columns",
+      "tags": [
+        "tables",
+        "ai-columns",
+        "prompt",
+        "structured-output",
+        "classify",
+        "formula",
+        "novelty"
+      ],
+      "providers": []
+    },
+    "references/research-columns.md": {
+      "kind": "reference",
+      "title": "Web research columns",
+      "tags": [
+        "tables",
+        "research",
+        "web-search",
+        "found",
+        "fetch",
+        "cost"
+      ],
+      "providers": [
+        "serper",
+        "exa",
+        "firecrawl"
+      ]
+    },
+    "references/templates.md": {
+      "kind": "reference",
+      "title": "Column templates",
+      "tags": [
+        "tables",
+        "templates",
+        "catalog",
+        "extract",
+        "people",
+        "company",
+        "website-contacts",
+        "cleanup"
+      ],
+      "providers": []
+    },
+    "references/tool-columns.md": {
+      "kind": "reference",
+      "title": "Tool, HTTP and sync columns",
+      "tags": [
+        "tables",
+        "tool-columns",
+        "custom-http",
+        "custom-integrations",
+        "table-runs",
+        "sync-columns"
+      ],
+      "providers": []
+    },
+    "references/functions.md": {
+      "kind": "reference",
+      "title": "Functions: draft, publish and reuse table computations",
+      "tags": [
+        "tables",
+        "functions",
+        "callables",
+        "draft",
+        "published",
+        "version",
+        "bindings",
+        "reuse"
+      ],
+      "providers": []
+    },
+    "references/feeds.md": {
+      "kind": "reference",
+      "title": "Live tables: feeds (push and pull)",
+      "tags": [
+        "tables",
+        "feeds",
+        "live-tables",
+        "webhooks",
+        "auto-run",
+        "signups",
+        "schema"
+      ],
+      "providers": []
+    },
+    "references/import-and-folders.md": {
+      "kind": "reference",
+      "title": "Import, deduplicate and organize",
+      "tags": [
+        "tables",
+        "import",
+        "csv",
+        "ingestion",
+        "dedupe",
+        "link",
+        "folders",
+        "projects"
+      ],
+      "providers": []
+    }
+  },
+  "plays": {
+    "speed-to-lead": {
+      "path": "plays/speed-to-lead.md",
+      "title": "Answer inbound leads in minutes",
+      "label": "Speed to lead",
+      "summary": "Reach every new signup the same day, enriched and in your CRM.",
+      "prompt": "Make sure we reach every new signup the same day: add each one to the CRM, enrich it within a credit cap I set, and queue it for outreach.",
+      "icon": "bolt",
+      "trigger_phrases": [
+        "New signups sit for days before anyone reaches out",
+        "Route my inbound leads into the CRM automatically",
+        "Answer trial signups the same day they arrive",
+        "Set up speed-to-lead for my demo requests",
+        "Enrich and follow up on form fills without me watching"
+      ],
+      "pilot": {
+        "size": 1,
+        "check": "Run one made-up signup through the table and read its company, fit score, CRM person and credits used before switching on the automatic lookup."
+      },
+      "version": 2,
+      "status": "stable",
+      "category": "convert-faster",
+      "stage": "day-7",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "A new signup is most likely to answer in the first hours. Catch every signup in one table, look up the company and score the fit under a cap you set, add the person to your CRM, and reply to the best ones the same day.",
+      "outcome": "A signup address your form posts to, each signup looked up and scored on arrival under a per-signup cap, a morning step that adds new signups to the CRM and lists the best fits, and a follow-up email ready to start.",
+      "leading_metric": "hours from signup to first personal reply, and replies from same-day contacts",
+      "benchmark": "Replying within hours rather than days is widely held to lift replies (estimate; measure your own). Measured in the audit: about 1 credit for the company lookup and 0.075 for the fit score per work-email signup; a personal email skips the lookup.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 30,
+        "time_to_value": "first test signup looked up, scored and in the CRM in one session",
+        "cadence": "standing intake; 5 minutes each morning"
+      },
+      "credits": {
+        "pilot": "1-3 (one test signup: company lookup plus fit score)",
+        "full": "about 1.1 per work-email signup (at most 2.1), capped at 5 per delivery; CRM link and emails cost 0",
+        "trial_safe": true
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "Company, offer and ICP saved, so the fit score matches who you sell to",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "data",
+          "detail": "Contact lists (CRM people) exist; Step 1 creates them",
+          "check": "oxygen crm objects --json"
+        },
+        {
+          "kind": "asset",
+          "detail": "Something that can send each signup as JSON to a web address: your app's backend, or a form tool through Zapier or Make",
+          "check": ""
+        },
+        {
+          "kind": "mailbox",
+          "detail": "Only for the automatic follow-up email: a connected mailbox (an own mailbox costs 100 credits a month)",
+          "check": "oxygen mailboxes list --json"
+        }
+      ],
+      "primitives": [
+        "tables",
+        "records",
+        "sequences",
+        "knowledge-graph",
+        "observability"
+      ],
+      "providers": {
+        "managed": [
+          "blitzapi",
+          "scraper"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "enrich-pilot",
+        "auto-run-arm",
+        "outreach-live"
+      ],
+      "stages": [],
+      "related": {
+        "recipes": [
+          "reply-to-meeting",
+          "daily-warm-lead-queue",
+          "email-infra-setup",
+          "website-visitor-outreach",
+          "day-30-review"
+        ],
+        "guides": [
+          "oxygen-tables/references/feeds.md",
+          "oxygen-enrichment/references/company.md",
+          "oxygen-crm/references/promote.md",
+          "oxygen-gtm/guides/cost-precheck.md"
+        ]
+      },
+      "tags": [
+        "inbound",
+        "speed-to-lead",
+        "plg",
+        "signups",
+        "webhook",
+        "crm",
+        "auto-run",
+        "lead-routing",
+        "convert"
+      ]
+    }
+  }
+}

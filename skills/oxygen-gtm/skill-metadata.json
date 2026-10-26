@@ -1,0 +1,115 @@
+{
+  "title": "OXYGEN GTM",
+  "description": "Route an OXYGEN GTM outcome to its native primitive and the feature skill that teaches it: Knowledge, Records, Tables, Messages, Posts, Signals, Dashboards, Ads, Tags, Sequences, Publishing, Workflows, Agents, Observability. Use as the fallback when no narrower skill matches.",
+  "capability_ids": [
+    "discovery-and-skills",
+    "onboarding-and-copilot",
+    "billing-and-budgets",
+    "dashboards",
+    "tags",
+    "agents",
+    "connected-integrations"
+  ],
+  "endpoint_sections": [
+    "activation",
+    "agent",
+    "billing",
+    "budget",
+    "copilot",
+    "custom-integrations",
+    "dashboards",
+    "home",
+    "integrations",
+    "limits",
+    "notetaker",
+    "onboarding",
+    "pricing",
+    "skills",
+    "tags",
+    "teammate-groups",
+    "teammates",
+    "workspace"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN GTM",
+      "tags": [
+        "oxygen",
+        "gtm",
+        "router",
+        "ownership",
+        "approval",
+        "dashboards",
+        "tags",
+        "agents"
+      ],
+      "providers": []
+    },
+    "guides/cost-precheck.md": {
+      "kind": "guide",
+      "title": "Cost pre-check, pilots and honest reporting",
+      "tags": [
+        "credits",
+        "cost",
+        "precheck",
+        "budget",
+        "max-credits",
+        "pilot",
+        "stop-conditions",
+        "honesty"
+      ],
+      "providers": []
+    },
+    "prompts.json": {
+      "kind": "prompt-library",
+      "title": "OXYGEN column template prompts",
+      "tags": [
+        "prompts",
+        "ai-columns",
+        "templates"
+      ],
+      "providers": []
+    },
+    "enriching-and-researching.md": {
+      "kind": "redirect",
+      "title": "Moved: oxygen-tables and oxygen-enrichment",
+      "tags": [
+        "moved",
+        "columns",
+        "enrichment"
+      ],
+      "providers": []
+    },
+    "context-bootstrap.md": {
+      "kind": "redirect",
+      "title": "Moved: oxygen-knowledge context bootstrap",
+      "tags": [
+        "moved",
+        "context",
+        "bootstrap"
+      ],
+      "providers": []
+    },
+    "guides/voice-and-honesty.md": {
+      "kind": "redirect",
+      "title": "Moved: cost pre-check and consultant craft",
+      "tags": [
+        "moved",
+        "voice",
+        "honesty"
+      ],
+      "providers": []
+    },
+    "recipes/clay-migration.md": {
+      "kind": "redirect",
+      "title": "Moved: oxygen-clay-migration walkthrough",
+      "tags": [
+        "moved",
+        "clay",
+        "migration"
+      ],
+      "providers": []
+    }
+  }
+}

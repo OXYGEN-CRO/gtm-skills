@@ -1,0 +1,232 @@
+{
+  "title": "OXYGEN Unibox",
+  "description": "Use OXYGEN Messages and the Unibox to find, read, classify, tag, archive, draft and reply in existing email, LinkedIn and WhatsApp conversations, send one direct email, start one WhatsApp chat or delete a sent LinkedIn message. Net-new LinkedIn outreach uses Sequences.",
+  "capability_ids": [
+    "messages",
+    "connected-linkedin",
+    "connected-whatsapp"
+  ],
+  "endpoint_sections": [
+    "email",
+    "inbox",
+    "linkedin",
+    "message-reviews",
+    "messages",
+    "unibox",
+    "whatsapp"
+  ],
+  "documents": {
+    "plays/reply-to-meeting.md": {
+      "kind": "play",
+      "title": "Turn replies into booked meetings",
+      "tags": [
+        "reply-handling",
+        "unified-inbox",
+        "booking",
+        "meetings",
+        "crm-automation",
+        "nurture",
+        "not-now",
+        "revisit-date",
+        "convert-faster"
+      ],
+      "providers": [
+        "composio",
+        "unipile",
+        "google",
+        "microsoft",
+        "cal"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Unibox",
+      "tags": [
+        "oxygen",
+        "unibox",
+        "inbox",
+        "triage",
+        "email",
+        "linkedin",
+        "whatsapp",
+        "reply",
+        "labels",
+        "ai-labels",
+        "reply-agent",
+        "drafts"
+      ],
+      "providers": []
+    },
+    "references/email.md": {
+      "kind": "reference",
+      "title": "Email in the Unibox",
+      "tags": [
+        "unibox",
+        "email",
+        "attachments",
+        "direct-email",
+        "mailbox-history"
+      ],
+      "providers": []
+    },
+    "references/linkedin.md": {
+      "kind": "reference",
+      "title": "LinkedIn in the Unibox",
+      "tags": [
+        "unibox",
+        "linkedin",
+        "inbox-scope",
+        "backfill",
+        "delete-message"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/whatsapp.md": {
+      "kind": "reference",
+      "title": "WhatsApp in the Unibox",
+      "tags": [
+        "unibox",
+        "whatsapp",
+        "start-chat",
+        "history",
+        "forget-chat"
+      ],
+      "providers": [
+        "whatsapp"
+      ]
+    },
+    "references/dm-conversion.md": {
+      "kind": "reference",
+      "title": "LinkedIn DM conversion: first message, replies and the second message",
+      "tags": [
+        "unibox",
+        "linkedin",
+        "dm",
+        "reply",
+        "first-message",
+        "second-message",
+        "buyer",
+        "anti-patterns",
+        "voice"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    }
+  },
+  "plays": {
+    "reply-to-meeting": {
+      "path": "plays/reply-to-meeting.md",
+      "title": "Turn replies into booked meetings",
+      "label": "Replies to meetings",
+      "summary": "Answer every reply from one list, book more calls, and bring 'not now' leads back.",
+      "prompt": "Help me turn replies into booked meetings: one queue for my email and LinkedIn replies, drafts I review and send, the CRM updated when a call gets booked, and the 'not now' replies brought back when it's time.",
+      "icon": "phone",
+      "trigger_phrases": [
+        "I get replies but they never turn into meetings",
+        "Help me handle my inbound replies faster",
+        "Book more meetings from the replies I already have",
+        "Log booked calls in my CRM automatically",
+        "What do I do with 'circle back next quarter' replies?",
+        "Bring deferred leads back when they're ready"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "convert-faster",
+      "stage": "ongoing",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Replies scatter across email and LinkedIn and go cold before anyone books a call, and 'not now' replies get lost. One list with suggested answers, a booking link in every answer, automatic booking logs and a dated slow lane turn more of them into meetings.",
+      "outcome": "Your mailbox connected, the replies waiting on you in one list, answers sent with a booking link after your yes, Cal.com bookings logged on the CRM record, and 'not now' people in a lane with a revisit date.",
+      "leading_metric": "share of positive replies that book a call, and hours from a reply to your answer",
+      "benchmark": "A same-business-day answer with a booking link typically books 15-30% of positive replies; a day's delay or no link roughly halves that. A dated 'not now' lane typically wins back 5-15% of deferred leads within 6-12 months.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 40,
+        "time_to_value": "first reply answered the same session once the mailbox is connected",
+        "cadence": "daily reply check; weekly look at who is due a revisit"
+      },
+      "credits": {
+        "pilot": "0 per reply; the mailbox it needs reserves 100 credits a month",
+        "full": "100 a month per mailbox, 3,400 a month per LinkedIn account; replies, booking logs and the not-now lane 0",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "plan",
+          "detail": "A paid plan, from $49 a month, to connect the mailbox or LinkedIn account; credits for each account's first month (100 for a mailbox, 3,400 for a LinkedIn account)",
+          "check": "oxygen billing estimate --mailboxes 1 --json"
+        },
+        {
+          "kind": "mailbox",
+          "detail": "Your own Gmail or Microsoft 365 mailbox connected, so replies reach the list; it reserves 100 credits a month",
+          "check": "oxygen mailboxes list --json"
+        },
+        {
+          "kind": "knowledge",
+          "detail": "Company, offer and ICP filled, so suggested answers sound like you",
+          "check": "oxygen context profile get --json"
+        }
+      ],
+      "primitives": [
+        "messages",
+        "records",
+        "tables",
+        "sequences",
+        "workflows"
+      ],
+      "providers": {
+        "managed": [
+          "composio",
+          "unipile"
+        ],
+        "byok": [
+          "google",
+          "microsoft",
+          "cal"
+        ]
+      },
+      "approval_gates": [
+        "inbox-connect",
+        "reply-send",
+        "booking-log-arm",
+        "nurture-live"
+      ],
+      "stages": [
+        {
+          "blueprint": "crm-meeting-booked"
+        }
+      ],
+      "related": {
+        "recipes": [
+          "speed-to-lead",
+          "outbound-pilot-50",
+          "email-infra-setup",
+          "daily-warm-lead-queue",
+          "day-30-review"
+        ],
+        "guides": [
+          "oxygen-unibox/SKILL.md",
+          "oxygen-email-infra/references/connect-mailbox.md",
+          "oxygen-crm/SKILL.md"
+        ]
+      },
+      "tags": [
+        "reply-handling",
+        "unified-inbox",
+        "booking",
+        "meetings",
+        "crm-automation",
+        "nurture",
+        "not-now",
+        "revisit-date",
+        "convert-faster"
+      ]
+    }
+  }
+}

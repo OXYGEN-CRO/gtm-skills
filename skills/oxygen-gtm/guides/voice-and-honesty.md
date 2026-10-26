@@ -1,0 +1,1 @@
+Moved: the honest-reporting rules are this skill's `guides/cost-precheck.md`, and operating voice is the `oxygen-gtm-consultant` skill (`oxygen skills get oxygen-gtm-consultant --file references/craft.md --json`).

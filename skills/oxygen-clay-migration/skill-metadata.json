@@ -1,0 +1,182 @@
+{
+  "title": "OXYGEN Clay Migration",
+  "description": "Move a Clay workspace into OXYGEN through browser sign-in: discover accessible resources, transfer data, rebuild native Tables, Records and Workflows, and verify coverage. Also handles a user-supplied Clay export.",
+  "capability_ids": [
+    "tables"
+  ],
+  "endpoint_sections": [
+    "action-columns",
+    "callables",
+    "columns",
+    "company-enrichment",
+    "enrich-column",
+    "enrichment",
+    "functions",
+    "migrations",
+    "projects",
+    "supabase",
+    "table-action-items",
+    "table-action-runs",
+    "table-ingestion-runs",
+    "tables"
+  ],
+  "documents": {
+    "plays/migrate-from-clay.md": {
+      "kind": "play",
+      "title": "Migrate from Clay",
+      "tags": [
+        "clay",
+        "migration",
+        "browser-auth",
+        "oxygent",
+        "claygent",
+        "waterfall",
+        "enrichment",
+        "cost-comparison",
+        "company-table"
+      ],
+      "providers": [
+        "blitzapi",
+        "icypeas",
+        "leadmagic",
+        "bettercontact",
+        "millionverifier"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Clay Migration",
+      "tags": [
+        "oxygen",
+        "clay",
+        "migration"
+      ],
+      "providers": []
+    },
+    "references/clay-migration.md": {
+      "kind": "reference",
+      "title": "Clay migration walkthrough",
+      "tags": [
+        "migration",
+        "clay",
+        "tables",
+        "waterfall",
+        "ai-columns",
+        "custom-http",
+        "parity"
+      ],
+      "providers": []
+    }
+  },
+  "plays": {
+    "migrate-from-clay": {
+      "path": "plays/migrate-from-clay.md",
+      "title": "Migrate from Clay",
+      "label": "Migrate from Clay",
+      "summary": "Bring your Clay workspace into Oxygen with your Oxygent.",
+      "prompt": "Move everything accessible in my Clay workspace into Oxygen. Connect Clay in my browser, preserve my data, rebuild supported behavior as native Oxygen objects and explain anything that needs a decision. Keep paid runs, schedules and sends inactive.",
+      "icon": "refresh",
+      "trigger_phrases": [
+        "Move my whole Clay workspace into Oxygen",
+        "Clay is too expensive — what's the switch cost?",
+        "Rebuild my Clay waterfalls here",
+        "Import a Clay CSV and re-enrich it",
+        "How do I replace Claygent with Oxygen?",
+        "Bring my Clay company list over and score it"
+      ],
+      "pilot": {
+        "size": 10,
+        "check": "Verify imported counts and representative original values first; only run a separately approved paid pilot after showing its current preview and ceiling."
+      },
+      "version": 3,
+      "status": "stable",
+      "category": "revenue-truth",
+      "stage": "day-1",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "An Oxygent inventories the accessible Clay workspace, transfers existing data and reconstructs supported behavior through native Oxygen tools. Missing source access or incompatible behavior stays visible rather than becoming a silent CSV-only copy.",
+      "outcome": "Native Oxygen objects with preserved Clay outputs and source configuration, verified transfer counts, source-to-destination links and a reconciliation report covering unsupported, partial and undecided resources.",
+      "leading_metric": "Discovered resources reconciled and source/export/destination row counts verified",
+      "benchmark": "2026-10-04 audit: import 0 credits; a Claygent-style fit grade quoted at 0.075 credits a row; company details 4 a row for description and founded year, 6 for headcount and HQ country, 10 for all; work email measured about 3.3 a row on rows with a LinkedIn URL. A credit is about 1 cent on a plan. Clay's calculator prices data points, not rows.",
+      "benchmark_basis": "observed",
+      "effort": {
+        "setup_minutes": 15,
+        "time_to_value": "depends on source size, access and reconstruction choices",
+        "cadence": "one-time workspace migration"
+      },
+      "credits": {
+        "pilot": "Transfer: 0 data credits; optional paid pilot needs a current quote and cap",
+        "full": "Oxygent conversation billing applies; future column execution is separately previewed and approved",
+        "trial_safe": true
+      },
+      "prerequisites": [
+        {
+          "kind": "asset",
+          "detail": "Clay workspace access with permission for the hosted browser sign-in. A user-supplied CSV is an explicit limited fallback.",
+          "check": ""
+        },
+        {
+          "kind": "knowledge",
+          "detail": "Who you sell to, saved, when a Claygent column scores fit: the rebuilt grade reads it",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "plan",
+          "detail": "Credits for the Oxygent conversation; any optional paid column pilot requires its own current preview and approval",
+          "check": "oxygen billing balance --json"
+        }
+      ],
+      "primitives": [
+        "tables",
+        "knowledge-graph",
+        "observability"
+      ],
+      "providers": {
+        "managed": [
+          "blitzapi",
+          "icypeas",
+          "leadmagic",
+          "bettercontact",
+          "millionverifier"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "replacement-choice",
+        "enrich-pilot",
+        "enrich-fanout"
+      ],
+      "related": {
+        "recipes": [
+          "icp-to-account-map",
+          "outbound-pilot-50",
+          "day-30-review",
+          "day-1-first-win"
+        ],
+        "guides": [
+          "oxygen-clay-migration/references/clay-migration.md",
+          "oxygen-tables/references/import-and-folders.md",
+          "oxygen-tables/references/ai-columns.md",
+          "oxygen-enrichment/references/email.md",
+          "oxygen-enrichment/references/company.md",
+          "oxygen-diagnostics/runs-and-limits.md",
+          "oxygen-gtm/guides/cost-precheck.md"
+        ]
+      },
+      "tags": [
+        "clay",
+        "migration",
+        "browser-auth",
+        "oxygent",
+        "claygent",
+        "waterfall",
+        "enrichment",
+        "cost-comparison",
+        "company-table"
+      ]
+    }
+  }
+}

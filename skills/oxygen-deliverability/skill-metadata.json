@@ -1,0 +1,116 @@
+{
+  "title": "OXYGEN Deliverability",
+  "description": "Triage email deliverability, warmup and bounce evidence; compare workspace copies using Gmail Primary/categories and Microsoft Focused/Other; run approval-gated placement tests and manage monitoring. Results are directional; bounce auto-pause is authoritative.",
+  "capability_ids": [
+    "sending-infrastructure"
+  ],
+  "endpoint_sections": [
+    "deliverability",
+    "domains",
+    "egress",
+    "mailboxes",
+    "managed-inboxes"
+  ],
+  "documents": {
+    "references/workspace-copy-tests.md": {
+      "kind": "reference",
+      "title": "Workspace copy placement tests",
+      "tags": [
+        "deliverability",
+        "copy",
+        "primary",
+        "promotions",
+        "focused",
+        "microsoft",
+        "google",
+        "approval"
+      ],
+      "providers": [
+        "google",
+        "microsoft"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Deliverability",
+      "tags": [
+        "oxygen",
+        "deliverability",
+        "health",
+        "placement-test",
+        "bounce",
+        "warmup",
+        "reputation",
+        "directional"
+      ],
+      "providers": [
+        "oxygen_deliverability"
+      ]
+    },
+    "references/placement.md": {
+      "kind": "reference",
+      "title": "Placement tests",
+      "tags": [
+        "deliverability",
+        "placement-test",
+        "preview",
+        "seed",
+        "approval"
+      ],
+      "providers": [
+        "oxygen_deliverability",
+        "zapmail"
+      ]
+    },
+    "references/monitoring.md": {
+      "kind": "reference",
+      "title": "OXYGEN deliverability mailbox monitoring",
+      "tags": [
+        "deliverability",
+        "monitoring",
+        "auto-enroll",
+        "health"
+      ],
+      "providers": [
+        "oxygen_deliverability"
+      ]
+    },
+    "references/evidence-loop.md": {
+      "kind": "reference",
+      "title": "Deliverability evidence loop",
+      "tags": [
+        "deliverability",
+        "evidence",
+        "checks",
+        "observations",
+        "compare",
+        "score-copy",
+        "blacklist",
+        "workflow",
+        "daily",
+        "content-score",
+        "proposals"
+      ],
+      "providers": []
+    },
+    "references/lifecycle.md": {
+      "kind": "reference",
+      "title": "Domain verdicts: watch, rest, retire",
+      "tags": [
+        "deliverability",
+        "verdict",
+        "rest",
+        "retire",
+        "rotation",
+        "re-ramp",
+        "standby",
+        "cadence",
+        "blocklist"
+      ],
+      "providers": [
+        "google",
+        "microsoft"
+      ]
+    }
+  }
+}

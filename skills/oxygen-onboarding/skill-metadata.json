@@ -1,0 +1,215 @@
+{
+  "title": "OXYGEN Onboarding",
+  "description": "Guide OXYGEN onboarding: company context, first leads, a reviewed sequence, sender and bounded launch; set up daily Oxygent routines when requested. Use for 'get me started' or the first campaign and morning briefing. For a GTM diagnosis or plan, use oxygen-gtm-consultant.",
+  "capability_ids": [
+    "onboarding-and-copilot"
+  ],
+  "endpoint_sections": [
+    "activation",
+    "copilot",
+    "home",
+    "onboarding"
+  ],
+  "documents": {
+    "plays/day-1-first-win.md": {
+      "kind": "play",
+      "title": "Day 1: from your offer to your warmest leads",
+      "tags": [
+        "onboarding",
+        "first-session",
+        "day-1",
+        "offer",
+        "icp",
+        "warm-leads",
+        "start-here"
+      ],
+      "providers": []
+    },
+    "references/bounded-launch.md": {
+      "kind": "guide",
+      "title": "Bounded first LinkedIn launch",
+      "tags": [
+        "onboarding",
+        "linkedin",
+        "sequence",
+        "launch-review",
+        "approval",
+        "action-ceiling"
+      ],
+      "providers": []
+    },
+    "references/daily-rhythm.md": {
+      "kind": "guide",
+      "title": "Daily Oxygent routines",
+      "tags": [
+        "onboarding",
+        "oxygents",
+        "routines",
+        "nightly-scan",
+        "morning-briefing",
+        "timezone",
+        "review-only"
+      ],
+      "providers": []
+    },
+    "references/day-one-loop.md": {
+      "kind": "guide",
+      "title": "Day-1 loop",
+      "tags": [
+        "onboarding",
+        "network-mining",
+        "focus",
+        "opener",
+        "message-review",
+        "funnel"
+      ],
+      "providers": []
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Onboarding",
+      "tags": [
+        "oxygen",
+        "onboarding",
+        "gtm",
+        "first-session",
+        "offer",
+        "icp",
+        "warm-leads",
+        "first-win",
+        "workspace"
+      ],
+      "providers": []
+    },
+    "references/consultation.md": {
+      "kind": "guide",
+      "title": "Context and consultation",
+      "tags": [
+        "onboarding",
+        "context",
+        "research",
+        "corrections"
+      ],
+      "providers": []
+    },
+    "references/offer-and-icp.md": {
+      "kind": "guide",
+      "title": "Offer and ICP",
+      "tags": [
+        "offer",
+        "positioning",
+        "proof",
+        "icp",
+        "personas",
+        "triggers",
+        "disqualifiers"
+      ],
+      "providers": []
+    },
+    "references/warm-leads.md": {
+      "kind": "guide",
+      "title": "Warm leads",
+      "tags": [
+        "warm-leads",
+        "pipeline",
+        "replies",
+        "linkedin-network",
+        "engagement",
+        "signals",
+        "tam",
+        "sourcing"
+      ],
+      "providers": []
+    }
+  },
+  "plays": {
+    "day-1-first-win": {
+      "path": "plays/day-1-first-win.md",
+      "title": "Day 1: from your offer to your warmest leads",
+      "label": "Your warmest leads",
+      "summary": "Write down what you sell and who buys it, then get the ten people to contact first.",
+      "prompt": "Work out what we sell and who our ideal customer is from what you can find, then list the ten people I should contact first, warmest first, and draft my first messages.",
+      "icon": "fire",
+      "trigger_phrases": [
+        "I just signed up — what do I actually do with this?",
+        "Where do I start with Oxygen?",
+        "Who should I contact first?",
+        "Find my warmest leads",
+        "What should I do in my first session?"
+      ],
+      "version": 4,
+      "status": "stable",
+      "category": "start-here",
+      "stage": "day-1",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "You just signed up and don't know where to start. In one free session, write down what you sell and who buys it, then find the ten people you can contact today, warmest first, before buying any data.",
+      "outcome": "Offer and ideal customer saved as labelled drafts, a table of about ten people to contact first (warm contacts when you have them, real matches from a free search otherwise) with a reason each, and first messages for the top 3-5. 0 credits, nothing sent.",
+      "leading_metric": "people ranked with a reason and first messages drafted in the first session",
+      "benchmark": "with no CRM, inbox or LinkedIn connected, the free people search still names about ten real buyers in one session; warm contacts, when they exist, reply far more often",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 15,
+        "time_to_value": "same session: offer, ideal customer and a ranked people table",
+        "cadence": "once per workspace, then daily through daily-warm-lead-queue"
+      },
+      "credits": {
+        "pilot": "0",
+        "full": "0",
+        "trial_safe": true
+      },
+      "prerequisites": [
+        {
+          "kind": "plan",
+          "detail": "Signed in on any plan, including free; day 1 spends no credits",
+          "check": "oxygen whoami --json"
+        },
+        {
+          "kind": "knowledge",
+          "detail": "What you sell and who buys it: already saved, or drafted in step 2 from your website",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "data",
+          "detail": "Optional: where your contacts live (CRM records, a connected mailbox or LinkedIn account, or a customer list or LinkedIn Connections.csv in your folder)",
+          "check": "oxygen knowledge resolve --purpose onboarding --json"
+        }
+      ],
+      "primitives": [
+        "knowledge-graph",
+        "records",
+        "messages",
+        "signals",
+        "tables"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [],
+      "related": {
+        "recipes": [
+          "daily-warm-lead-queue",
+          "outbound-pilot-50",
+          "icp-to-account-map"
+        ],
+        "guides": [
+          "oxygen-onboarding/references/offer-and-icp.md",
+          "oxygen-onboarding/references/warm-leads.md"
+        ]
+      },
+      "tags": [
+        "onboarding",
+        "first-session",
+        "day-1",
+        "offer",
+        "icp",
+        "warm-leads",
+        "start-here"
+      ]
+    }
+  }
+}

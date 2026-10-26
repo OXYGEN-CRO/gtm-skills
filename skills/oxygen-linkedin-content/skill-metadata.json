@@ -1,0 +1,99 @@
+{
+  "title": "OXYGEN LinkedIn content",
+  "description": "Plan and write a week of LinkedIn posts from the workspace's Knowledge: pillars, funnel job, idea gate, hook, body, slop scrub, graphics rendered with OXYGEN visuals, review, hand-off to Publishing for approval, and learning from post analytics. Also a manual comment round.",
+  "capability_ids": [
+    "visual-rendering",
+    "publishing"
+  ],
+  "endpoint_sections": [
+    "publishing",
+    "ugc",
+    "visuals"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN LinkedIn content",
+      "tags": [
+        "oxygen",
+        "linkedin",
+        "content",
+        "posts",
+        "pillars",
+        "hooks",
+        "copywriting",
+        "graphics"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/hooks.md": {
+      "kind": "reference",
+      "title": "LinkedIn hooks",
+      "tags": [
+        "linkedin",
+        "hooks",
+        "opening",
+        "hook-families",
+        "length"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/body-and-slop.md": {
+      "kind": "reference",
+      "title": "Post body and slop scrub",
+      "tags": [
+        "linkedin",
+        "copywriting",
+        "skim-test",
+        "slop",
+        "cta"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/graphics.md": {
+      "kind": "reference",
+      "title": "Post graphics with OXYGEN visuals",
+      "tags": [
+        "visuals",
+        "graphics",
+        "carousel",
+        "render",
+        "brand-review"
+      ],
+      "providers": []
+    },
+    "references/pillars-and-learning.md": {
+      "kind": "reference",
+      "title": "Pillars, funnel and learning",
+      "tags": [
+        "linkedin",
+        "pillars",
+        "funnel",
+        "analytics",
+        "learning"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/comment-round.md": {
+      "kind": "reference",
+      "title": "Manual comment round",
+      "tags": [
+        "linkedin",
+        "comments",
+        "engagement",
+        "watchlist"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    }
+  }
+}

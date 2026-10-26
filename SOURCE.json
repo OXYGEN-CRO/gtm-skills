@@ -1,0 +1,1204 @@
+{
+  "source_repository": "OXYGEN-CRO/oxygen",
+  "source_ref": "cf452e6cc2bf3f09bfeb050e97448a56941f820b",
+  "source_path": "apps/web/src/agent-skills",
+  "license": "LicenseRef-OXYGEN-Proprietary",
+  "skills": [
+    {
+      "name": "oxygen-onboarding",
+      "title": "OXYGEN Onboarding",
+      "description": "Guide OXYGEN onboarding: company context, first leads, a reviewed sequence, sender and bounded launch; set up daily Oxygent routines when requested. Use for 'get me started' or the first campaign and morning briefing. For a GTM diagnosis or plan, use oxygen-gtm-consultant.",
+      "files": [
+        "SKILL.md",
+        "plays/day-1-first-win.md",
+        "skill-metadata.json",
+        "references/bounded-launch.md",
+        "references/consultation.md",
+        "references/daily-rhythm.md",
+        "references/day-one-loop.md",
+        "references/offer-and-icp.md",
+        "references/warm-leads.md"
+      ]
+    },
+    {
+      "name": "oxygen-gtm-consultant",
+      "title": "OXYGEN GTM Engineering Consultant",
+      "description": "Be the user's GTM engineering consultant: assess the go-to-market from workspace data, find the binding constraint, agree the problem, design a custom motion and run it as a pilot with a success bar and a kill line. Use for 'pipeline is flat', 'outbound isn't working' or 'plan our GTM'.",
+      "files": [
+        "SKILL.md",
+        "skill-metadata.json",
+        "references/intake.md",
+        "references/assessment.md",
+        "references/problem.md",
+        "references/motion-design.md",
+        "references/pilots.md",
+        "references/operations.md",
+        "references/craft.md"
+      ]
+    },
+    {
+      "name": "oxygen-gtm",
+      "title": "OXYGEN GTM",
+      "description": "Route an OXYGEN GTM outcome to its native primitive and the feature skill that teaches it: Knowledge, Records, Tables, Messages, Posts, Signals, Dashboards, Ads, Tags, Sequences, Publishing, Workflows, Agents, Observability. Use as the fallback when no narrower skill matches.",
+      "files": [
+        "SKILL.md",
+        "guides/cost-precheck.md",
+        "prompts.json",
+        "enriching-and-researching.md",
+        "context-bootstrap.md",
+        "guides/voice-and-honesty.md",
+        "recipes/clay-migration.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-tables",
+      "title": "OXYGEN Tables",
+      "description": "Build and run OXYGEN Tables: typed rows, choice fields, table links and lookups; AI, research, Classify, formula, tool, HTTP and template columns, reusable Functions, live feeds and webhooks, imports, follower orders, deduplication and folders. Covers pricing a column before it runs, one-row pilots, bounded batches and run reads.",
+      "files": [
+        "SKILL.md",
+        "plays/speed-to-lead.md",
+        "references/fields-and-links.md",
+        "references/ai-columns.md",
+        "references/research-columns.md",
+        "references/templates.md",
+        "references/tool-columns.md",
+        "references/functions.md",
+        "references/feeds.md",
+        "references/import-and-folders.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-enrichment",
+      "title": "OXYGEN Enrichment",
+      "description": "Enrich OXYGEN Table rows and single records: person and company profiles, funding, revenue, hiring and tech stack, work and personal email, mobile phone, LinkedIn URL and email or phone verification, through native waterfalls with free previews, one-row pilots and approved ceilings.",
+      "files": [
+        "SKILL.md",
+        "references/email.md",
+        "references/phone.md",
+        "references/linkedin-url.md",
+        "references/company.md",
+        "references/verification.md",
+        "references/lookups.md",
+        "provider-runbooks/ai_ark.md",
+        "provider-runbooks/apollo.md",
+        "provider-runbooks/bettercontact.md",
+        "provider-runbooks/contactout.md",
+        "provider-runbooks/crustdata.md",
+        "provider-runbooks/findymail.md",
+        "provider-runbooks/forager.md",
+        "provider-runbooks/fullenrich.md",
+        "provider-runbooks/hunter.md",
+        "provider-runbooks/icypeas.md",
+        "provider-runbooks/leadmagic.md",
+        "provider-runbooks/lusha.md",
+        "provider-runbooks/peopledatalabs.md",
+        "provider-runbooks/prospeo.md",
+        "provider-runbooks/rocketreach.md",
+        "provider-runbooks/scalelist.md",
+        "provider-runbooks/wiza.md",
+        "provider-runbooks/millionverifier.md",
+        "provider-runbooks/bounceban.md",
+        "provider-runbooks/clearoutphone.md",
+        "provider-runbooks/scraper.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-sourcing",
+      "title": "OXYGEN Sourcing",
+      "description": "Find companies and people that are not in the workspace yet and land them in OXYGEN Tables: account and TAM lists, lookalikes, hiring companies, local businesses, personas and contacts at named accounts, through free previews, typed plans, priced dry runs and approved live runs.",
+      "files": [
+        "SKILL.md",
+        "plays/icp-to-account-map.md",
+        "references/companies.md",
+        "references/people.md",
+        "references/lead-sourcing.md",
+        "references/playbook.md",
+        "plays/lookalike-tam.md",
+        "plays/local-business-maps.md",
+        "provider-runbooks/blitzapi.md",
+        "provider-runbooks/dropleads.md",
+        "provider-runbooks/exa.md",
+        "provider-runbooks/serper.md",
+        "provider-runbooks/firecrawl.md",
+        "provider-runbooks/linkup.md",
+        "provider-runbooks/parallel.md",
+        "provider-runbooks/apify.md",
+        "provider-runbooks/openwebninja.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-crm",
+      "title": "OXYGEN CRM",
+      "description": "Operate OXYGEN Records, the native CRM: objects, fields, identities and relationships, notes, tasks and files, imports from HubSpot, Attio and Pipedrive, list imports with do-not-contact first, bidirectional sync, and binding and promoting table rows onto records.",
+      "files": [
+        "SKILL.md",
+        "plays/website-visitor-outreach.md",
+        "references/data-model.md",
+        "references/import.md",
+        "references/sync.md",
+        "references/promote.md",
+        "provider-runbooks/hubspot.md",
+        "provider-runbooks/attio.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-recipes",
+      "title": "OXYGEN Recipes",
+      "description": "Search, read and install OXYGEN plays: proven GTM motions with prerequisites, credit posture, approval gates and an optional kit of native stages. Use when the user names a play or wants a proven motion to borrow from; to design a motion for their company, use oxygen-gtm-consultant.",
+      "files": [
+        "SKILL.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-collaboration",
+      "title": "OXYGEN Collaboration",
+      "description": "Get a second party's documented go/no-go inside OXYGEN: threaded internal comments on any workspace object, approval requests assigned to named members, the opt-in gate that blocks a live launch until someone approves, and the restricted client role. Not for public comments on a published post, and not a substitute for a paid action's own approval.",
+      "files": [
+        "SKILL.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-quickstart",
+      "title": "OXYGEN Quickstart",
+      "description": "Run a safe first OXYGEN CLI session: verify identity and workspace, search capabilities and exact commands, create a small hosted Table, inspect it, and discover provider operations without executing paid calls or external writes.",
+      "files": [
+        "SKILL.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-workflow-authoring",
+      "title": "OXYGEN Workflow Authoring",
+      "description": "Build, run, or debug deterministic OXYGEN Workflows: schemas, triggers, branches, retries, approvals, durable runs, Blueprints, Teams notifications and MCP tools. Local files only author hosted definitions; adaptive goals use Agents and outreach cadence uses Sequences.",
+      "files": [
+        "SKILL.md",
+        "references/blueprints.md",
+        "references/budget-state.md",
+        "references/microsoft-teams.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-knowledge",
+      "title": "OXYGEN Knowledge Graph",
+      "description": "Operate OXYGEN knowledge: index-first retrieval, wiki pages/folders, GitHub repository mounts, citations, revisions, sources, synthesis, proposals, and local mirror. Use for company/ICP context, positioning, offers, voice, prompts, rubrics, and learnings.",
+      "files": [
+        "SKILL.md",
+        "plays/client-workspace-launch.md",
+        "skill-metadata.json",
+        "references/repositories.md",
+        "references/context-bootstrap.md"
+      ]
+    },
+    {
+      "name": "oxygen-unibox",
+      "title": "OXYGEN Unibox",
+      "description": "Use OXYGEN Messages and the Unibox to find, read, classify, tag, archive, draft and reply in existing email, LinkedIn and WhatsApp conversations, send one direct email, start one WhatsApp chat or delete a sent LinkedIn message. Net-new LinkedIn outreach uses Sequences.",
+      "files": [
+        "SKILL.md",
+        "plays/reply-to-meeting.md",
+        "references/email.md",
+        "references/linkedin.md",
+        "references/whatsapp.md",
+        "references/dm-conversion.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-email-infra",
+      "title": "OXYGEN Email Infrastructure",
+      "description": "Plan, set up and run OXYGEN cold email sending infrastructure: playbooks by market (Google/Microsoft mix, inbox count sized from the TAM), lookalike domains and DNS, managed and imported mailboxes, sender profiles and photos, OAuth, warm-up, recovery, egress and wind-down; also connect a customer's own inbox for Unibox history and CRM.",
+      "files": [
+        "SKILL.md",
+        "references/cold-email-playbook.md",
+        "plays/email-infra-setup.md",
+        "references/managed-inboxes.md",
+        "references/import-and-oauth.md",
+        "references/connect-mailbox.md",
+        "references/domains-and-dns.md",
+        "references/warmup.md",
+        "references/egress.md",
+        "references/wind-down.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-deliverability",
+      "title": "OXYGEN Deliverability",
+      "description": "Triage email deliverability, warmup and bounce evidence; compare workspace copies using Gmail Primary/categories and Microsoft Focused/Other; run approval-gated placement tests and manage monitoring. Results are directional; bounce auto-pause is authoritative.",
+      "files": [
+        "SKILL.md",
+        "references/placement.md",
+        "references/workspace-copy-tests.md",
+        "references/monitoring.md",
+        "references/evidence-loop.md",
+        "references/lifecycle.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-sequencer",
+      "title": "OXYGEN Sequencer",
+      "description": "Run OXYGEN Sequences: net-new LinkedIn outreach, even one message, and multistep email, LinkedIn, WhatsApp, call and CRM-task cadences. Covers the launch ladder, send ceilings, enrollment, do-not-contact, reply-stop and recovery. Existing-thread replies and direct email use Messages.",
+      "files": [
+        "SKILL.md",
+        "plays/inbound-led-outbound.md",
+        "plays/outbound-pilot-50.md",
+        "references/email.md",
+        "references/linkedin.md",
+        "references/whatsapp.md",
+        "references/external-campaigns.md",
+        "references/calls-and-crm-tasks.md",
+        "references/journeys.md",
+        "references/company-pause.md",
+        "references/analytics.md",
+        "references/network-mining-engage.md",
+        "references/cold-copy.md",
+        "plays/whole-tam-email.md",
+        "plays/signal-outbound.md",
+        "plays/multichannel-top-tier.md",
+        "references/linkedin-volume.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-publishing",
+      "title": "OXYGEN Publishing",
+      "description": "Use OXYGEN Posts and Publishing to draft, queue, approve, schedule and read back LinkedIn and X posts, answer public comments on owned posts, and read post analytics. Covers approval axes, the uncertain-publish lock, mentions, media, X threads and polls.",
+      "files": [
+        "SKILL.md",
+        "plays/founder-posting-system.md",
+        "references/linkedin.md",
+        "references/x.md",
+        "references/comments.md",
+        "references/analytics.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-linkedin-content",
+      "title": "OXYGEN LinkedIn content",
+      "description": "Plan and write a week of LinkedIn posts from the workspace's Knowledge: pillars, funnel job, idea gate, hook, body, slop scrub, graphics rendered with OXYGEN visuals, review, hand-off to Publishing for approval, and learning from post analytics. Also a manual comment round.",
+      "files": [
+        "SKILL.md",
+        "references/hooks.md",
+        "references/body-and-slop.md",
+        "references/graphics.md",
+        "references/pillars-and-learning.md",
+        "references/comment-round.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-signals",
+      "title": "OXYGEN Signals",
+      "description": "Capture and read OXYGEN Signals: your LinkedIn network, followers, viewers, invitations and post engagers; hiring, funding, tech and news signal searches; public profile watchers and keyword post search; competitor ads; standing auto-enroll into a Sequence.",
+      "files": [
+        "SKILL.md",
+        "plays/daily-warm-lead-queue.md",
+        "references/linkedin.md",
+        "references/public-research.md",
+        "references/audience-campaigns.md",
+        "references/signal-feeds.md",
+        "references/qualification.md",
+        "plays/post-engagers.md",
+        "plays/profile-viewers-and-followers.md",
+        "plays/new-connections.md",
+        "plays/existing-network.md",
+        "provider-runbooks/predictleads.md",
+        "provider-runbooks/builtwith.md",
+        "provider-runbooks/signalbase.md",
+        "provider-runbooks/adyntel.md",
+        "provider-runbooks/whitewhale.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-table-tidy",
+      "title": "OXYGEN Table Tidy",
+      "description": "Tidy an OXYGEN Table: inspect duplicate columns, ordering, formatting, types, hide/archive candidates, and suspicious values; present findings by category; then apply only approved reversible fixes. This is table structure and cell formatting, not CRM record deduplication or merge.",
+      "files": [
+        "SKILL.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-diagnostics",
+      "title": "OXYGEN Diagnostics",
+      "description": "Diagnose a running OXYGEN workspace: trace a cell or record value and its provenance, explain stuck or failed runs, sweep and retry table failures, explain plan, credit and rate-limit refusals, and explain or reduce credit spend. Read-only investigation first.",
+      "files": [
+        "SKILL.md",
+        "plays/day-30-review.md",
+        "table-trace.md",
+        "error-sweep.md",
+        "optimize-credits.md",
+        "runs-and-limits.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-feedback",
+      "title": "OXYGEN Feedback",
+      "description": "File feedback, praise, a feature request, or a reproducible OXYGEN bug report with the current transcript and environment context. Use only when the user explicitly wants to send feedback or agrees to file the report; diagnosing a run alone does not trigger submission.",
+      "files": [
+        "SKILL.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-clay-migration",
+      "title": "OXYGEN Clay Migration",
+      "description": "Move a Clay workspace into OXYGEN through browser sign-in: discover accessible resources, transfer data, rebuild native Tables, Records and Workflows, and verify coverage. Also handles a user-supplied Clay export.",
+      "files": [
+        "SKILL.md",
+        "plays/migrate-from-clay.md",
+        "references/clay-migration.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-ugc",
+      "title": "OXYGEN UGC",
+      "description": "Operate UGC programs and independent creators: invitations, shared live knowledge, voice, topic-based drafts, approvals, sponsorship and bounded amplification.",
+      "files": [
+        "SKILL.md",
+        "operations.md",
+        "skill-metadata.json"
+      ]
+    },
+    {
+      "name": "oxygen-custom-http",
+      "title": "OXYGEN Custom HTTP",
+      "description": "Register, connect, preview, run and remove reusable custom HTTP integrations: manifest schema, auth, path/query/body inputs, tool ids and Table tool columns.",
+      "files": [
+        "SKILL.md",
+        "skill-metadata.json"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "97224b3c32e9ec8a07e665ef46a133d77d005cf4d87b9f927dbf5fcc30235759"
+    },
+    {
+      "path": "skills/oxygen-clay-migration/SKILL.md",
+      "sha256": "e5e25529bbaba1554d386b1bcdb0de81f1ddf9f8531f0f7c63ad80f30b33f0e8"
+    },
+    {
+      "path": "skills/oxygen-clay-migration/plays/migrate-from-clay.md",
+      "sha256": "f70d453320a5b58b0ccc06913d1841531dbd53d9d98c5c25aa39105da3951ec6"
+    },
+    {
+      "path": "skills/oxygen-clay-migration/references/clay-migration.md",
+      "sha256": "d526f27aade8f1959ae2c7199669468a9efe6980787a6eade30960fbab4b184d"
+    },
+    {
+      "path": "skills/oxygen-clay-migration/skill-metadata.json",
+      "sha256": "06ad7b3f951a6e2f825a94f5e31b7fa2047d27a0aad1e4dede61842b18ebaffb"
+    },
+    {
+      "path": "skills/oxygen-collaboration/SKILL.md",
+      "sha256": "39a0db0fac43f0ce62d621dfed1eb61ac6733770a1139cad6114b6bb8f77586a"
+    },
+    {
+      "path": "skills/oxygen-collaboration/skill-metadata.json",
+      "sha256": "124a9f149e799e6e763f9858834a09ae2725e26086e3886986c3963ccc41a4bc"
+    },
+    {
+      "path": "skills/oxygen-crm/SKILL.md",
+      "sha256": "5d756226b30b201b9d7b9a4bd042a0d5e976c52c056feb8b9a7534492a47180c"
+    },
+    {
+      "path": "skills/oxygen-crm/plays/website-visitor-outreach.md",
+      "sha256": "227ff2e7eae2919c0d4cc1d813e9c8533c1a22a578f3d206e4d55996dfc8e3ed"
+    },
+    {
+      "path": "skills/oxygen-crm/provider-runbooks/attio.md",
+      "sha256": "0110e193cda91b4de712771442113dafa6c6ce2323ca56a2d18d0d40f61db476"
+    },
+    {
+      "path": "skills/oxygen-crm/provider-runbooks/hubspot.md",
+      "sha256": "008cfa30b5b8fd98d58fdff6a71a66c7718bf0c7e7fa489e2b49a7c55a19a4ec"
+    },
+    {
+      "path": "skills/oxygen-crm/references/data-model.md",
+      "sha256": "f9b2b86fddc96541bbb1c285c0500a68d84012e20c1d37dcb68130075233cf36"
+    },
+    {
+      "path": "skills/oxygen-crm/references/import.md",
+      "sha256": "855f86a6e42d6b0017b870326d7cdceddfa41c196df321057511b36791ab0173"
+    },
+    {
+      "path": "skills/oxygen-crm/references/promote.md",
+      "sha256": "94ae59dce5a781249a4fc9ccf7ef2c9d9c16e0d84f91b1791dcaf9665ba5d97b"
+    },
+    {
+      "path": "skills/oxygen-crm/references/sync.md",
+      "sha256": "937540e72c953cf7524970533252a3260f4192f563e1d50dd412738fecae0c9c"
+    },
+    {
+      "path": "skills/oxygen-crm/skill-metadata.json",
+      "sha256": "6173707e0c7d30d46c3ea5f9dc537db7dcb2e17dcbe1561a2dcad4d9a1bb04b7"
+    },
+    {
+      "path": "skills/oxygen-custom-http/SKILL.md",
+      "sha256": "c4cd484076cc9ee3c589c7891fd9ea88a8c9f3746c303c7bf5b46a367d8e11a9"
+    },
+    {
+      "path": "skills/oxygen-custom-http/skill-metadata.json",
+      "sha256": "fb841198f4ec2e762405525e229909cef353b7e4406f47198eb3099437c42893"
+    },
+    {
+      "path": "skills/oxygen-deliverability/SKILL.md",
+      "sha256": "ff8802b2bb44f296ec95d3839b97508b0967f3f9c8877e06532901c324a26038"
+    },
+    {
+      "path": "skills/oxygen-deliverability/references/evidence-loop.md",
+      "sha256": "d337e84d129d39034e9323b875a8e8cddc7f977a85d11a98acb578549494e15e"
+    },
+    {
+      "path": "skills/oxygen-deliverability/references/lifecycle.md",
+      "sha256": "604478ecca83c2fc6525c481dcce789cc5b5c72e0b4d1d68d70edcbfa30f9548"
+    },
+    {
+      "path": "skills/oxygen-deliverability/references/monitoring.md",
+      "sha256": "3b6b0d7fd6b16e456ee193d2439dc9df29c5064c975ac3a9c14e104aee3f0070"
+    },
+    {
+      "path": "skills/oxygen-deliverability/references/placement.md",
+      "sha256": "763a43ba2e1b95531075b856f546497ec6fb6e7797a414f72c6e83990451f6ba"
+    },
+    {
+      "path": "skills/oxygen-deliverability/references/workspace-copy-tests.md",
+      "sha256": "118fe83235bda122f6c4dbf15d9e54bf7c42949613aa1b73ce874313c18e7e40"
+    },
+    {
+      "path": "skills/oxygen-deliverability/skill-metadata.json",
+      "sha256": "49352f6b48469726154a8838433f3eb3fbd729db6574e11c4d3ae52b2c619df8"
+    },
+    {
+      "path": "skills/oxygen-diagnostics/SKILL.md",
+      "sha256": "12707fa01ec9ef458cf40b2b244a1e8d30aa8402bc1926ae97835d9f04145f06"
+    },
+    {
+      "path": "skills/oxygen-diagnostics/error-sweep.md",
+      "sha256": "fd71e66e612631c095f9db2602ca36b06897dac85812a587b38f670f16b61412"
+    },
+    {
+      "path": "skills/oxygen-diagnostics/optimize-credits.md",
+      "sha256": "2b4cc86057f6a222f517f4e14ae5d845ff9e764dd3e5447af36616db5c9f9554"
+    },
+    {
+      "path": "skills/oxygen-diagnostics/plays/day-30-review.md",
+      "sha256": "521475ac9c34c006a74103815c1f03bbbffe582551df859d5225d75026dceadd"
+    },
+    {
+      "path": "skills/oxygen-diagnostics/runs-and-limits.md",
+      "sha256": "cd4f021a113bd019de48a917cacaca4aeeb24d2f10910c112715867ce6dc78a5"
+    },
+    {
+      "path": "skills/oxygen-diagnostics/skill-metadata.json",
+      "sha256": "1d446344c48115632f769d1f3a8fe615ca9f9ac58e262090fbd6af0be6faf8a5"
+    },
+    {
+      "path": "skills/oxygen-diagnostics/table-trace.md",
+      "sha256": "b9887b7e2447183a08c5f7d6820050ca9583b8dc4478c26d7d51df7416df583e"
+    },
+    {
+      "path": "skills/oxygen-email-infra/SKILL.md",
+      "sha256": "59989036fc5de04ea51d80b89a3a972b7abfb1c97048d3d4fa3a4636458cb1f8"
+    },
+    {
+      "path": "skills/oxygen-email-infra/plays/email-infra-setup.md",
+      "sha256": "a08423076d2f72ebd8aa1a69e0ac72ee7c6fce1d5181288db990a2d79d934b21"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/cold-email-playbook.md",
+      "sha256": "0f0269bf1cb3ba036db8a06c48b74c5b42a11b6d0cf35538cad1710c494c9958"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/connect-mailbox.md",
+      "sha256": "23e9e77686a164fce09f9a60c4ba0305444e5a1cadb6c7ad96dfb20d18f26004"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/domains-and-dns.md",
+      "sha256": "05416db285af8e48189c46440c3bfc2687a8f4df6882ef8955bdda29eebcf8fc"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/egress.md",
+      "sha256": "40dd078646e9e8605c2fd775122e951d0544a7f6dd4d294d38865c9db6029818"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/import-and-oauth.md",
+      "sha256": "9c7dffa0e535f28966783b85e65f79622ab73f9596a18faaf2bb7faf59e91b12"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/managed-inboxes.md",
+      "sha256": "a2316dfebe6791e930df9b83bd2f3703f5bde0237f18e90984eb527ccd29a928"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/warmup.md",
+      "sha256": "ee98af545999e203f35e8703f951aff0f3ecce2c1ac9a3333883647e9956fb6b"
+    },
+    {
+      "path": "skills/oxygen-email-infra/references/wind-down.md",
+      "sha256": "27088c0353a173e7b73a73b498e4f8e535d2bb262d393637a28410c018adb28f"
+    },
+    {
+      "path": "skills/oxygen-email-infra/skill-metadata.json",
+      "sha256": "133faea2d6b41dbde22d161c3ef4e08d20e7861dc5f4d2533922f5a3b0116445"
+    },
+    {
+      "path": "skills/oxygen-enrichment/SKILL.md",
+      "sha256": "9585a57c6c6141a0ad7b5d363493b9176a28106deee6c90b82c1ece5a17c2836"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/ai_ark.md",
+      "sha256": "f64adaff8cdd9505def2becf5e0eadcfc8d7a85fe6f88e859bfe55ff69386709"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/apollo.md",
+      "sha256": "287788813da6e1720c429dd33212028d53417d661a6033d9af3b0ae37e2758b5"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/bettercontact.md",
+      "sha256": "d6a4cec52c3e1df2de9faf4c356175c150872ffbb3c824289a3342eaf175a09b"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/bounceban.md",
+      "sha256": "6b03c5cc5dfc3c03e4c9fa27b8b80f016a7c9ec3f8b2a11f4739ef58b54bad80"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/clearoutphone.md",
+      "sha256": "5f40b4292d21d25fdffbef69db8980cb5ca0654488c0ab2478dd5447f7e782b5"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/contactout.md",
+      "sha256": "d0809fce2491965b0afa52ed7dde244421cd5de14a28e10b5b291617d781b627"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/crustdata.md",
+      "sha256": "e73dfbd073eac49b8eb4aa69296890c6c2cf115296a0c39ac0abc4d76daeabed"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/findymail.md",
+      "sha256": "b9652cbe1e21a808147b49ac5ffcffe5e208c17c27e420d6ba3d3fd62970cda1"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/forager.md",
+      "sha256": "94b3f4b4fc3adb1dd8841851fdd9ef3278a306753e878e190a02607c2b90fc0d"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/fullenrich.md",
+      "sha256": "5aa26768f16f34970fa8436312e671d19f162d0f82ef9e2e7aa37749a65f8951"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/hunter.md",
+      "sha256": "86ac2a9bfd294c3a74ab580fa75d6f0e1723a90f49e63cb560f2fc2152f57b50"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/icypeas.md",
+      "sha256": "2ac61b3ac0cb60605ef10779ec8691408fbd8489077c7b9922acefe92da3ad38"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/leadmagic.md",
+      "sha256": "c76e9369a8ed9a922427df6e2ece3bbab6d63d9e0ab9eda61ab9ad105cbcc0fd"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/lusha.md",
+      "sha256": "2d1933c1c4700ae146d4ea56e851d49d23cf5de28fe4bcb5d84678ae613fef90"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/millionverifier.md",
+      "sha256": "7e5c22c16eafeb3aa5ac8ccf37e24da54e3b009c529237584f25984aff6620b3"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/peopledatalabs.md",
+      "sha256": "2c7f5a542d207104d0e85e2d4b5e78a6cd46e809946d54178dbd232ec6c14c7f"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/prospeo.md",
+      "sha256": "dea1aedeb9552d9127e90660457b11158383e60ec2c4048440fc6ce7e9514a0a"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/rocketreach.md",
+      "sha256": "5e89c6c7dc6681d44f60178db8e5ae62ff70cacb760d90bbabb70684acc436f2"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/scalelist.md",
+      "sha256": "aaabecf86ac705ef4dc5297cc293f418db632014bb1f413d518d6e0b35f094b0"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/scraper.md",
+      "sha256": "ed9f8cd0cfee952f69aafbad8be8f6be4b5b66f7afda1c062da1edbb5e40642d"
+    },
+    {
+      "path": "skills/oxygen-enrichment/provider-runbooks/wiza.md",
+      "sha256": "a7161c9bf3aa3aaf865fab66f47d2d68bf662ce53a9c081e2eccec93fa8ba5c3"
+    },
+    {
+      "path": "skills/oxygen-enrichment/references/company.md",
+      "sha256": "dea5ed5e6093db1c53053f0dc56d41820621388e80b7d7dc066f97ad4612215d"
+    },
+    {
+      "path": "skills/oxygen-enrichment/references/email.md",
+      "sha256": "adbdac9e610a927d345259b15363f16e6d3cc148ffa918ce3b46b168388c1ac6"
+    },
+    {
+      "path": "skills/oxygen-enrichment/references/linkedin-url.md",
+      "sha256": "2bf64524b2e27d2e8d46d783e8feb38ae6f56c73c155a4431f049d31bce34b1d"
+    },
+    {
+      "path": "skills/oxygen-enrichment/references/lookups.md",
+      "sha256": "4b0e11017804ee6afd4a2a48625704233631fdc2d6638505a955580fc743c842"
+    },
+    {
+      "path": "skills/oxygen-enrichment/references/phone.md",
+      "sha256": "53d04cc3d3cd4de210bbf8e167d0f812037c91a230d9d7071a955daf51ad8a23"
+    },
+    {
+      "path": "skills/oxygen-enrichment/references/verification.md",
+      "sha256": "0ca0199b7fe14f9492e443017b8a97b12514997ff209af69f11ab430bf1fb7c4"
+    },
+    {
+      "path": "skills/oxygen-enrichment/skill-metadata.json",
+      "sha256": "70ee373aa8e31f1329f0ac16aa8c5651888cba0205e09b71aa87f32cd71880e4"
+    },
+    {
+      "path": "skills/oxygen-feedback/SKILL.md",
+      "sha256": "4ba5060f1b5ba9130166c696c743d762a05b22d02c9a6cb4e0cba3512d1e7932"
+    },
+    {
+      "path": "skills/oxygen-feedback/skill-metadata.json",
+      "sha256": "8e4cd102c9f067971b92550dc22aa29bffcbac3af15d3c67cd9b7ca7c49347a0"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/SKILL.md",
+      "sha256": "ebe228aea1a63ef5e44e50735afc36f356b33682579146f1eb3fa3431656edc5"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/references/assessment.md",
+      "sha256": "34f5f9ef1bfb02b2a9f7cb7766f8ebcecbfd0b947c0bbd529f49cb47e48b8167"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/references/craft.md",
+      "sha256": "0474605a7085bef5faa21adba5db242bf313249c87fda42ecd0ef7a41fd06b61"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/references/intake.md",
+      "sha256": "6345b3e330c03f876aa18b98cae27dfef6413991b010278554efe6539f096be4"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/references/motion-design.md",
+      "sha256": "a49de5e7ae19c08fcba116fa3362dfd8105f575607ba26c87fed898407036ef3"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/references/operations.md",
+      "sha256": "ba0f1a7d66772f7bef5b32bc725d611a84a88cf2c6f50b54056c155811b561eb"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/references/pilots.md",
+      "sha256": "50edb0e7438368e67060194a0f101355cc8ef8348ef13be2aaf02eee0b609d3b"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/references/problem.md",
+      "sha256": "76cb321e5e0984843028bbea933f6c99ad3f5240eb6ca08df881e5b1a897ab41"
+    },
+    {
+      "path": "skills/oxygen-gtm-consultant/skill-metadata.json",
+      "sha256": "69823eebda62cf6419374acfbb656c1b5ca60357ff5dfe88cc6ec665455521e3"
+    },
+    {
+      "path": "skills/oxygen-gtm/SKILL.md",
+      "sha256": "4452dd3c8d0b3be38a166aaad481f73971e7e1616e0c5a185544f02e27bedc87"
+    },
+    {
+      "path": "skills/oxygen-gtm/context-bootstrap.md",
+      "sha256": "40a0abdc3d189ac618430c0eb178e14c927508a00206a9e27e612450eedaceee"
+    },
+    {
+      "path": "skills/oxygen-gtm/enriching-and-researching.md",
+      "sha256": "08359137ca4df4a611afac71bd333cccf14517e16ab3b084ed9961aea40f81a9"
+    },
+    {
+      "path": "skills/oxygen-gtm/guides/cost-precheck.md",
+      "sha256": "ccf9f51e4a652b4e98e124bae14b446775165c0e3740272630577cb50f3b822b"
+    },
+    {
+      "path": "skills/oxygen-gtm/guides/voice-and-honesty.md",
+      "sha256": "896a1b3280c9ccb13da5b0f6eea8e6f534e51e5f05c2fc8a66204c50fe793dbf"
+    },
+    {
+      "path": "skills/oxygen-gtm/prompts.json",
+      "sha256": "230e0e3c98e332158ef628d9c49bc45b704fff78b3eef1c9d7173269b7a9e5d8"
+    },
+    {
+      "path": "skills/oxygen-gtm/recipes/clay-migration.md",
+      "sha256": "aa840c15b86231880a833f1368ba6484cd60c9ee50384f9352ecd0488b068533"
+    },
+    {
+      "path": "skills/oxygen-gtm/skill-metadata.json",
+      "sha256": "3c14b2dd26c42505046e0fef8099d64fcfe4d677ea87beb17a153c82acc3c9b9"
+    },
+    {
+      "path": "skills/oxygen-knowledge/SKILL.md",
+      "sha256": "4df9e4466d04fa45dde48db64f9d8735ff411109b2877337cf3c8a61940c6f93"
+    },
+    {
+      "path": "skills/oxygen-knowledge/plays/client-workspace-launch.md",
+      "sha256": "fe2bfa4530c4c25bf98646c7d84b363545bf5a5ceb923457277f5e86a08fbcbc"
+    },
+    {
+      "path": "skills/oxygen-knowledge/references/context-bootstrap.md",
+      "sha256": "b75d7ca94d0c2a0cf158dcfefddf09061f86d900ca4a9657b47c9d114d341eec"
+    },
+    {
+      "path": "skills/oxygen-knowledge/references/repositories.md",
+      "sha256": "39f655bf6c541c96ed65f2fd341c166e7d7d9dbce2600e3ac7dbfc8e6dabfce0"
+    },
+    {
+      "path": "skills/oxygen-knowledge/skill-metadata.json",
+      "sha256": "b78e3c1d0f1e749dc916d8d99fdd2d35d4ade727d42d876ef4741a5a13d57d84"
+    },
+    {
+      "path": "skills/oxygen-linkedin-content/SKILL.md",
+      "sha256": "4729aaafec3b7ebb5f863d3b855cb1c819d538b2579c71a205bdc489a260b47c"
+    },
+    {
+      "path": "skills/oxygen-linkedin-content/references/body-and-slop.md",
+      "sha256": "fa6b6104ccd7f8f23f295b7111b24f20e19ec8c07b5ad251d7019f69877d05bf"
+    },
+    {
+      "path": "skills/oxygen-linkedin-content/references/comment-round.md",
+      "sha256": "f938512089662fe53afdad668c24b6a08ab116ba4b0ebe31b0077c0a10ae0c36"
+    },
+    {
+      "path": "skills/oxygen-linkedin-content/references/graphics.md",
+      "sha256": "2b964c78afc74c18846178a60f05afe5e1126ef09a5305c676bb4de48d4364eb"
+    },
+    {
+      "path": "skills/oxygen-linkedin-content/references/hooks.md",
+      "sha256": "558c80d1030334aa709bfb9385913d065c91af032c00d8c589cfb41f487db392"
+    },
+    {
+      "path": "skills/oxygen-linkedin-content/references/pillars-and-learning.md",
+      "sha256": "86f862162862eb68aa6d1163a997873af6aed0e91dfd3e9f303b0224d3680248"
+    },
+    {
+      "path": "skills/oxygen-linkedin-content/skill-metadata.json",
+      "sha256": "c442913fcc51c422e79100465ce5382d66821f0c20ae7183c7119feef1fd1203"
+    },
+    {
+      "path": "skills/oxygen-onboarding/SKILL.md",
+      "sha256": "23c64208d78e0f0c12247a012564702e8467c08a86e2ff8aae75fd257622aa6a"
+    },
+    {
+      "path": "skills/oxygen-onboarding/plays/day-1-first-win.md",
+      "sha256": "433e0a8b7b54f8166c69e942fc3a28564a5772493e58c53bd009a170459a6317"
+    },
+    {
+      "path": "skills/oxygen-onboarding/references/bounded-launch.md",
+      "sha256": "6b9e06834792fe4c119b8efef915222f8613d3abad43d5ce10a202c75d294986"
+    },
+    {
+      "path": "skills/oxygen-onboarding/references/consultation.md",
+      "sha256": "8e73365585d315577eb1f9bed1cab552e0fb53459471b3e72c56f37514cbe038"
+    },
+    {
+      "path": "skills/oxygen-onboarding/references/daily-rhythm.md",
+      "sha256": "25b3d18c7a07c821ab32042ecacf0258064fcbb1a596f9bfa0274e28ec2b1204"
+    },
+    {
+      "path": "skills/oxygen-onboarding/references/day-one-loop.md",
+      "sha256": "a0957d89968f48cf8ae4550a0fd31071d99735fa3b3ca52ca1963f8378471661"
+    },
+    {
+      "path": "skills/oxygen-onboarding/references/offer-and-icp.md",
+      "sha256": "918ea1e38fc5e7b6378a686be2ede505836adf3551154202859d20040b23a579"
+    },
+    {
+      "path": "skills/oxygen-onboarding/references/warm-leads.md",
+      "sha256": "f502734034ec3ebd79908c95a1e43d8645209cab7a6af610cf2c277d91a8f907"
+    },
+    {
+      "path": "skills/oxygen-onboarding/skill-metadata.json",
+      "sha256": "7ba7c86fe62d8d869992699392fdda6ac9747d6352791562a979f315caeb38e5"
+    },
+    {
+      "path": "skills/oxygen-publishing/SKILL.md",
+      "sha256": "9778db97641702886fafa8361dd31278f4c05c39e4b00b3fceaa70cf8ce6abad"
+    },
+    {
+      "path": "skills/oxygen-publishing/plays/founder-posting-system.md",
+      "sha256": "a36ddc50eff32510ab265d9eae2fd5cedd342aa021baca8b5a834af7db2e599c"
+    },
+    {
+      "path": "skills/oxygen-publishing/references/analytics.md",
+      "sha256": "9af42dfd2b217bd8f5f7b803708b024373f6593271387b3fa1df87b13fc0ac65"
+    },
+    {
+      "path": "skills/oxygen-publishing/references/comments.md",
+      "sha256": "408a99b5aa199faf9aee767292c2c5846c86707989c301d996ff52173529b14f"
+    },
+    {
+      "path": "skills/oxygen-publishing/references/linkedin.md",
+      "sha256": "3df2875901bfc949f101385543194533605968a42b61dc0c97038034e07a9060"
+    },
+    {
+      "path": "skills/oxygen-publishing/references/x.md",
+      "sha256": "aa4b5eeb53828e6572af5f724497607f038990ce9ef997e123bcaa245a1a2214"
+    },
+    {
+      "path": "skills/oxygen-publishing/skill-metadata.json",
+      "sha256": "5199daa1a7f812705b0377ad336a13e53ee895e361777ec4c941d281fc0c4119"
+    },
+    {
+      "path": "skills/oxygen-quickstart/SKILL.md",
+      "sha256": "f8c909ff6fa4dd491e79c2cedaa9cce36f676723831031f30ea60655d425627d"
+    },
+    {
+      "path": "skills/oxygen-quickstart/skill-metadata.json",
+      "sha256": "17c7cbd6e6fb7ba68284bf4a97e6e2eead7fd335a7ae429483c0451b0da84f93"
+    },
+    {
+      "path": "skills/oxygen-recipes/SKILL.md",
+      "sha256": "9dbe66aab8ffd0b0d1d17a27a3e0b254728d197a7d4d67a079ef7e7223620a35"
+    },
+    {
+      "path": "skills/oxygen-recipes/skill-metadata.json",
+      "sha256": "0395f4c16048038fcc0e56f9a1242bcf7d44102fbd7d168d0dc810921a09765a"
+    },
+    {
+      "path": "skills/oxygen-sequencer/SKILL.md",
+      "sha256": "2c0f577b1e4e455e534127704265c9ce92f2d3bc80f92c6a7a01da84ca0c0996"
+    },
+    {
+      "path": "skills/oxygen-sequencer/plays/inbound-led-outbound.md",
+      "sha256": "92152137d3e6d7f7f22cd53975595972caa825983db27d42c6d19d6c85f72683"
+    },
+    {
+      "path": "skills/oxygen-sequencer/plays/multichannel-top-tier.md",
+      "sha256": "1a94fcb0c627d6be995daecbca597247c56970997a552ba1dfacbfb1a12b8cd4"
+    },
+    {
+      "path": "skills/oxygen-sequencer/plays/outbound-pilot-50.md",
+      "sha256": "8ba95d360fc77aae89fee9b3aab7e43d2aecfb52d1fdfde026039be915cf5155"
+    },
+    {
+      "path": "skills/oxygen-sequencer/plays/signal-outbound.md",
+      "sha256": "656d41964642f6e97e8cd70afb1f1f341c9cc685af9a1a40d0bc2a597f52564b"
+    },
+    {
+      "path": "skills/oxygen-sequencer/plays/whole-tam-email.md",
+      "sha256": "c6b1c695f2bda444ac70a41548783444685cd2ef4d97ca9d089d80b45c1d16e4"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/analytics.md",
+      "sha256": "ca0313468a5e1b2c38b14a30065e20fb85333efed2abd41f19e256b51d35514c"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/calls-and-crm-tasks.md",
+      "sha256": "fcb4858ec74d15e14c85cef9109498f2b759aa749d0a873a3f689701cf72e276"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/cold-copy.md",
+      "sha256": "1f0e8cbeacd7b1793e0cbafdc6c33427c63fbb6a9833f4671085e6e5cfe95296"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/company-pause.md",
+      "sha256": "c5d74fe78f1da47f36442f2d7d7949a07ae324714f787da9ec5d5ee2c293bdee"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/email.md",
+      "sha256": "422ea972580d0a74059349c409d3e962099be59327e0c8a19ee9e3227424962f"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/external-campaigns.md",
+      "sha256": "ed72f3c92275ba3608fd60a905b5f3ad5e509b1a728ecbdf18fc7d2a69b92db9"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/journeys.md",
+      "sha256": "e6eef9581c6e3690e7baf6d65247d6e9f4bf5ad2f3dbf4fdf6da432b0436020c"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/linkedin-volume.md",
+      "sha256": "5ac8d28545a9d16c1778ba7409f535ee3c5f0a4d85663c7568a54512c8a4a78c"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/linkedin.md",
+      "sha256": "1380a51e5c7a3516d431018f410ae9193c633b34ef747d4def1c1b6a9ea40e92"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/network-mining-engage.md",
+      "sha256": "1cdd755daa89360852b566f2a95548c7787a5f87d3b5c433817f43a8c60ba775"
+    },
+    {
+      "path": "skills/oxygen-sequencer/references/whatsapp.md",
+      "sha256": "83b62c0329d46bf979a326b858901fb81374b9f2e1d5a6ef2ca75f8fe0f850b2"
+    },
+    {
+      "path": "skills/oxygen-sequencer/skill-metadata.json",
+      "sha256": "0afbe14ced298aefbc4584482d23824a3e359b8057efd21a1fce286ebebe1402"
+    },
+    {
+      "path": "skills/oxygen-signals/SKILL.md",
+      "sha256": "7d0d73c25281b38c46002cc1ad2a487fa8739e6a8831df49f56a94c775719359"
+    },
+    {
+      "path": "skills/oxygen-signals/plays/daily-warm-lead-queue.md",
+      "sha256": "575dc3b58f02278c63272510daaf6068066cd1228fef6473849656c78f0fc8e4"
+    },
+    {
+      "path": "skills/oxygen-signals/plays/existing-network.md",
+      "sha256": "5acefce82bd7079f726a419cb757a6dcfa0b88434c7c4734d09d39d32566bbd2"
+    },
+    {
+      "path": "skills/oxygen-signals/plays/new-connections.md",
+      "sha256": "f1e606dce819254bc9ed317f2ea5113a11d2d3c4d0f17b2bc3a85f6e12c1afd2"
+    },
+    {
+      "path": "skills/oxygen-signals/plays/post-engagers.md",
+      "sha256": "a95423955b4c3fac8c412b131bd5f28f2e087d7fb9a40dcf37c680470c2a2646"
+    },
+    {
+      "path": "skills/oxygen-signals/plays/profile-viewers-and-followers.md",
+      "sha256": "b10459b812ce3a053d41f4d686e80530a79f45fd32e7e0a8598f7f2627bd5eff"
+    },
+    {
+      "path": "skills/oxygen-signals/provider-runbooks/adyntel.md",
+      "sha256": "5dfaf9316a5d929627e3df07da6b4e320d1efb178947f14f1f58c13141bab6ca"
+    },
+    {
+      "path": "skills/oxygen-signals/provider-runbooks/builtwith.md",
+      "sha256": "4ae50186fd2e29127584da4f0f7f5678f710739b02661a5f4d688b3712bcaac6"
+    },
+    {
+      "path": "skills/oxygen-signals/provider-runbooks/predictleads.md",
+      "sha256": "012a03eaf56296dc0949850ce278c0c7ac39744e677f84e1d34c6dc259f07b36"
+    },
+    {
+      "path": "skills/oxygen-signals/provider-runbooks/signalbase.md",
+      "sha256": "4dad33aabefccf82e7aa240ab64bc8a55ce3e4c659e30fb78fed0787c2de7699"
+    },
+    {
+      "path": "skills/oxygen-signals/provider-runbooks/whitewhale.md",
+      "sha256": "b6412192a5d556ebc6e600adec56c37b9d3c4126db7e9d97b9ea71afd0997cf8"
+    },
+    {
+      "path": "skills/oxygen-signals/references/audience-campaigns.md",
+      "sha256": "a83dd5ea09613b36d4c6c22e9f42740d08fb6c29f574a77635493bc5fd3bb224"
+    },
+    {
+      "path": "skills/oxygen-signals/references/linkedin.md",
+      "sha256": "76bf543e3ae80d496bb66aece08b9cc5e377c8905df023fe3f7483214c408ee0"
+    },
+    {
+      "path": "skills/oxygen-signals/references/public-research.md",
+      "sha256": "a2ae748f1860023504cce1831776234fd1fee42d6bba070c231aa0ed49124f46"
+    },
+    {
+      "path": "skills/oxygen-signals/references/qualification.md",
+      "sha256": "b539d8715e68ed92b110519666899cf665d79f31d9f2e24de2f5416723385b0b"
+    },
+    {
+      "path": "skills/oxygen-signals/references/signal-feeds.md",
+      "sha256": "7351858f2ec997a26e46bcda493932d6ba71c2d367dfd2f8cc77cd7e5b69cf1d"
+    },
+    {
+      "path": "skills/oxygen-signals/skill-metadata.json",
+      "sha256": "14f66b2643d47f5d222cb7e931e953f299884fff3cd99b35f9ed80920f550175"
+    },
+    {
+      "path": "skills/oxygen-sourcing/SKILL.md",
+      "sha256": "15fa6cfac338b0ebc83b43a6e0ee5b34700c9c654b3ec5635312e29681036b94"
+    },
+    {
+      "path": "skills/oxygen-sourcing/plays/icp-to-account-map.md",
+      "sha256": "6fbfb2f42125300e747c23fd13e9584793590189e245f758000f03d2dc4adb25"
+    },
+    {
+      "path": "skills/oxygen-sourcing/plays/local-business-maps.md",
+      "sha256": "cf9febdb0287c8706e725733c2476dcb41e2b888ccd80175f2e1acc5f2c94460"
+    },
+    {
+      "path": "skills/oxygen-sourcing/plays/lookalike-tam.md",
+      "sha256": "d855eb0e86ef410753541fabcea758cb4b1b799f99860d0e33835107e65acbb9"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/apify.md",
+      "sha256": "9e2e7d716a556e61b55973627c46b32fa5c42908c1aefb3daac595320cf98ab3"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/blitzapi.md",
+      "sha256": "6ac938aa8355ec244d37512afa2aafcbe937631e28e04baede8fd675cb307220"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/dropleads.md",
+      "sha256": "6e61a1f544f69a660eb2689ac2b7051d99018baa42421904ed13fc641d9ce692"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/exa.md",
+      "sha256": "d3919991d9411db7a96416fac942bdd714a2816ef473a9968f09ead302ec7b7b"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/firecrawl.md",
+      "sha256": "6908cd55659dbfeb5f4edc4db363b9f1bc11c36e5a8e37c02a6dd6cbe630d6d5"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/linkup.md",
+      "sha256": "51168958777ff5c553887c1132da15f980c1239578d4ba0cf6d7a0d881c6f2ed"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/openwebninja.md",
+      "sha256": "d7fa9468db84dd794150af4f91664ab235091c9780402efdc719984dea72a364"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/parallel.md",
+      "sha256": "bb817ab24a714d71727f1f14f7bbf510264da863d0c6bb79a8a64d8ae6b80eda"
+    },
+    {
+      "path": "skills/oxygen-sourcing/provider-runbooks/serper.md",
+      "sha256": "43859713da282b2fa36b415a106b2804975a28218b81ddf194e804622a6feb28"
+    },
+    {
+      "path": "skills/oxygen-sourcing/references/companies.md",
+      "sha256": "d093f665292ee213d99bc4450e55944a629eb97b231774b29f21407567cbc776"
+    },
+    {
+      "path": "skills/oxygen-sourcing/references/lead-sourcing.md",
+      "sha256": "8306111b1dfc94ce28230cb9b2751e59829d6d2926167f28c57a681dc8745a2e"
+    },
+    {
+      "path": "skills/oxygen-sourcing/references/people.md",
+      "sha256": "2af32611bcb2c6ae8d1482f35af1937abbc3393139e54d4dc4f52360c5214686"
+    },
+    {
+      "path": "skills/oxygen-sourcing/references/playbook.md",
+      "sha256": "03601384864cfe8c726e149f4232bd72e1e3ab4f43a748652d1011d68079dacd"
+    },
+    {
+      "path": "skills/oxygen-sourcing/skill-metadata.json",
+      "sha256": "d9578002005184bd04b72acbb0feb1705833472b856c4010be076fa475bfe59b"
+    },
+    {
+      "path": "skills/oxygen-table-tidy/SKILL.md",
+      "sha256": "72abe6a3723ceac087241cdd781fcd27ab0a6ee3aa0d2f242bbcb20473c7792b"
+    },
+    {
+      "path": "skills/oxygen-table-tidy/skill-metadata.json",
+      "sha256": "a3ca1eb82977cf35b9348338960c0ffecc08c9c41bf1d10716f946f2ca75b776"
+    },
+    {
+      "path": "skills/oxygen-tables/SKILL.md",
+      "sha256": "1770d695a5dbdb9b0727225b59e52ec06a965704173df5988f679dd5971cb806"
+    },
+    {
+      "path": "skills/oxygen-tables/plays/speed-to-lead.md",
+      "sha256": "dae02186ddb6172fbe0ba2ead1b6e7c76403c97781d01aa8afd0e0c7b5d2884e"
+    },
+    {
+      "path": "skills/oxygen-tables/references/ai-columns.md",
+      "sha256": "475ec65757a434ce9ec8d8bad03945ac6f7f357f3a5bcbd8970ef52eac632a90"
+    },
+    {
+      "path": "skills/oxygen-tables/references/feeds.md",
+      "sha256": "62c5e8ae564bbf4b44d69c6dbf7b932ed848b316ac9ea819c2ee4700e1731f43"
+    },
+    {
+      "path": "skills/oxygen-tables/references/fields-and-links.md",
+      "sha256": "aefff5f6204a22808c6960aa7b2eb733c811418b25d58b73e5aab10918439db0"
+    },
+    {
+      "path": "skills/oxygen-tables/references/functions.md",
+      "sha256": "d7069596e09275be8a6efa97395309de1b447a2bebb9cdbe714362321a96d87c"
+    },
+    {
+      "path": "skills/oxygen-tables/references/import-and-folders.md",
+      "sha256": "87b2e67426b0fc4d81ac032be6b0cff3308843560166647af48e70331906ab2f"
+    },
+    {
+      "path": "skills/oxygen-tables/references/research-columns.md",
+      "sha256": "4f6585f0eeb469afa9627031d660c83499e53917696e59dc3d5aca2e5e90a6ed"
+    },
+    {
+      "path": "skills/oxygen-tables/references/templates.md",
+      "sha256": "a6a256a58016c512cc2419418f8f35e6594dc87b525c6dd6ba738b95fb66308c"
+    },
+    {
+      "path": "skills/oxygen-tables/references/tool-columns.md",
+      "sha256": "cf0b44fa7bc70c4fab5fe93ad11c8eebbf721815bd03cf39d72744b02b4ec27c"
+    },
+    {
+      "path": "skills/oxygen-tables/skill-metadata.json",
+      "sha256": "5622d3d3da5293a9dbc18d3802b6cbae8caa686968820744e72897dfeaee74b7"
+    },
+    {
+      "path": "skills/oxygen-ugc/SKILL.md",
+      "sha256": "a3981196eeb465135fa24fdff6c7f9d335265801e4e46e0b5cf4272237255b46"
+    },
+    {
+      "path": "skills/oxygen-ugc/operations.md",
+      "sha256": "5cc5773d0d3c8d1f75403e7e083ae9c297f1be4064a8dfb98984a0f36c0dc3d5"
+    },
+    {
+      "path": "skills/oxygen-ugc/skill-metadata.json",
+      "sha256": "97fada7894dfd6744bf891d84f6e5ff4746576c7aac6689374ed7f4fdfac5662"
+    },
+    {
+      "path": "skills/oxygen-unibox/SKILL.md",
+      "sha256": "38e19c38cc0f8c5174d52d0c368079808affe2f978c3ea231d7f0e81fee9acd6"
+    },
+    {
+      "path": "skills/oxygen-unibox/plays/reply-to-meeting.md",
+      "sha256": "61b3bf7384ce51eac6adf0bc0297a6383b58a611972b9502c5ebccc026d933e2"
+    },
+    {
+      "path": "skills/oxygen-unibox/references/dm-conversion.md",
+      "sha256": "50d8a077f60217f14cf5a4067b38d8a00273eba934089936ce28c0ff0a67843b"
+    },
+    {
+      "path": "skills/oxygen-unibox/references/email.md",
+      "sha256": "7f5d84472f99dcaeefeeeb79df2a528ae63775b38a749e6f787d1d0a1ac5ea87"
+    },
+    {
+      "path": "skills/oxygen-unibox/references/linkedin.md",
+      "sha256": "ae9584ca894e35db601f4f70f2ceb6802e0179ffca55f6813dfc5930c2ae9f92"
+    },
+    {
+      "path": "skills/oxygen-unibox/references/whatsapp.md",
+      "sha256": "d9ce70ed2e50c3751bd2cef6d74235822b599d0125590dec85f178ae5e7e56a0"
+    },
+    {
+      "path": "skills/oxygen-unibox/skill-metadata.json",
+      "sha256": "01cc392a15ebf2e5d63881ebf47c314f81114383a5ceb993a16e84c34b92ea90"
+    },
+    {
+      "path": "skills/oxygen-workflow-authoring/SKILL.md",
+      "sha256": "5f675b057c1e9cd07dcdabea25d80b1c0cb74da1f7a25aa2f265850518e15e3d"
+    },
+    {
+      "path": "skills/oxygen-workflow-authoring/references/blueprints.md",
+      "sha256": "2b24b09bfa77de4ec361d22a0ec90346ad9c7a556630999d8b5109290181a241"
+    },
+    {
+      "path": "skills/oxygen-workflow-authoring/references/budget-state.md",
+      "sha256": "caaa96938ee6651b6f7c578ab53ba73456d0a9deab1307c9fb974fbfd808c875"
+    },
+    {
+      "path": "skills/oxygen-workflow-authoring/references/microsoft-teams.md",
+      "sha256": "31ec4d54d7452dc2b1151c6c6f81fc504829ccffa246d20763eaa6a5f0972e64"
+    },
+    {
+      "path": "skills/oxygen-workflow-authoring/skill-metadata.json",
+      "sha256": "8b779b31179478f0eb1677d631126ba23c7d7aa687dca79e972a439b1e145e0b"
+    }
+  ]
+}

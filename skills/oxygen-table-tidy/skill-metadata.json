@@ -1,0 +1,37 @@
+{
+  "title": "OXYGEN Table Tidy",
+  "description": "Tidy an OXYGEN Table: inspect duplicate columns, ordering, formatting, types, hide/archive candidates, and suspicious values; present findings by category; then apply only approved reversible fixes. This is table structure and cell formatting, not CRM record deduplication or merge.",
+  "capability_ids": [
+    "tables"
+  ],
+  "endpoint_sections": [
+    "action-columns",
+    "callables",
+    "columns",
+    "company-enrichment",
+    "enrich-column",
+    "enrichment",
+    "functions",
+    "migrations",
+    "projects",
+    "supabase",
+    "table-action-items",
+    "table-action-runs",
+    "table-ingestion-runs",
+    "tables"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Table Tidy",
+      "tags": [
+        "oxygen",
+        "tables",
+        "tidy",
+        "columns",
+        "cleanup"
+      ],
+      "providers": []
+    }
+  }
+}

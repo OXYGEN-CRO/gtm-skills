@@ -1,0 +1,197 @@
+{
+  "title": "OXYGEN Publishing",
+  "description": "Use OXYGEN Posts and Publishing to draft, queue, approve, schedule and read back LinkedIn and X posts, answer public comments on owned posts, and read post analytics. Covers approval axes, the uncertain-publish lock, mentions, media, X threads and polls.",
+  "capability_ids": [
+    "posts",
+    "publishing"
+  ],
+  "endpoint_sections": [
+    "publishing",
+    "ugc"
+  ],
+  "documents": {
+    "plays/founder-posting-system.md": {
+      "kind": "play",
+      "title": "A founder posting system grounded in your knowledge base",
+      "tags": [
+        "linkedin",
+        "founder-brand",
+        "posting",
+        "content",
+        "content-calendar",
+        "scheduling",
+        "personal-brand",
+        "publishing"
+      ],
+      "providers": [
+        "unipile"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Publishing",
+      "tags": [
+        "oxygen",
+        "publishing",
+        "posts",
+        "scheduling",
+        "approval",
+        "linkedin",
+        "x"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/linkedin.md": {
+      "kind": "reference",
+      "title": "LinkedIn posts",
+      "tags": [
+        "publishing",
+        "linkedin",
+        "mentions",
+        "media",
+        "video-cover",
+        "first-comment"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/x.md": {
+      "kind": "reference",
+      "title": "X posts",
+      "tags": [
+        "publishing",
+        "x",
+        "threads",
+        "polls",
+        "alt-text",
+        "reply-settings"
+      ],
+      "providers": [
+        "x"
+      ]
+    },
+    "references/comments.md": {
+      "kind": "reference",
+      "title": "Public comments on owned posts",
+      "tags": [
+        "publishing",
+        "comments",
+        "replies",
+        "approval",
+        "linkedin"
+      ],
+      "providers": [
+        "linkedin"
+      ]
+    },
+    "references/analytics.md": {
+      "kind": "reference",
+      "title": "Post analytics",
+      "tags": [
+        "publishing",
+        "analytics",
+        "impressions",
+        "engagement",
+        "trends"
+      ],
+      "providers": []
+    }
+  },
+  "plays": {
+    "founder-posting-system": {
+      "path": "plays/founder-posting-system.md",
+      "title": "A founder posting system grounded in your knowledge base",
+      "label": "LinkedIn content strategy",
+      "summary": "Post on LinkedIn in your own voice: a few posts or a planned week, each approved by you.",
+      "prompt": "Help me post on LinkedIn regularly in my own voice: draft a few posts about what we do and who we help, or plan a whole week, let me approve each one before it goes out, and show me how they do.",
+      "icon": "linkedin",
+      "featured_order": 2,
+      "trigger_phrases": [
+        "I should be posting on LinkedIn but never do",
+        "Draft LinkedIn posts in my voice",
+        "Plan my LinkedIn content for the week",
+        "Set up a content calendar",
+        "I can't post consistently — schedule my posts for me",
+        "Turn my company knowledge into LinkedIn posts"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "linkedin-engine",
+      "stage": "day-1",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Your buyers read LinkedIn every day and your voice is missing. This drafts posts from what OXYGEN already knows about your company, lets you approve each one, and publishes them on time in your name, so posting no longer waits for a free hour.",
+      "outcome": "Posts drafted from your company profile, saved in OXYGEN's Publishing queue, approved by you one by one and published on time from your LinkedIn account, a few at a time or a planned week, with reactions and comments read back afterwards.",
+      "leading_metric": "posts actually published each week, then comments and messages from people who could buy",
+      "benchmark": "Consistency comes first: post 2-3 times a week for four weeks before judging. Early on, a few comments or messages a month from people who could buy means it is working; lots of likes from peers and no buyer replies is not the goal.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 15,
+        "time_to_value": "drafts in OXYGEN in the first session; publishing once LinkedIn is connected",
+        "cadence": "2-3 posts a week, or one planning session per week"
+      },
+      "credits": {
+        "pilot": "0 to draft and queue; ~1.5 per call if OXYGEN's AI drafter writes them",
+        "full": "0 per published post; connecting LinkedIn reserves 3,400 credits (about $34) a month",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "knowledge",
+          "detail": "Company profile filled in: what you sell and who buys it. Posts are drafted from it.",
+          "check": "oxygen context profile get --json"
+        },
+        {
+          "kind": "sender",
+          "detail": "A connected LinkedIn account, needed only to publish. Connecting reserves 3,400 credits (about $34) a month and the balance must cover the first month; oxygen billing seats shows the current charge.",
+          "check": "oxygen senders list --status active --json"
+        }
+      ],
+      "primitives": [
+        "knowledge-graph",
+        "publishing",
+        "posts"
+      ],
+      "providers": {
+        "managed": [
+          "unipile"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "ai-draft",
+        "linkedin-connect",
+        "post-publish"
+      ],
+      "related": {
+        "recipes": [
+          "day-1-first-win",
+          "inbound-led-outbound",
+          "day-30-review"
+        ],
+        "guides": [
+          "oxygen-publishing/SKILL.md",
+          "oxygen-publishing/references/linkedin.md",
+          "oxygen-publishing/references/analytics.md",
+          "oxygen-knowledge/references/context-bootstrap.md"
+        ]
+      },
+      "tags": [
+        "linkedin",
+        "founder-brand",
+        "posting",
+        "content",
+        "content-calendar",
+        "scheduling",
+        "personal-brand",
+        "publishing"
+      ]
+    }
+  }
+}

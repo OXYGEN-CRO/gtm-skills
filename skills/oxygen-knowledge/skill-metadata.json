@@ -1,0 +1,164 @@
+{
+  "title": "OXYGEN Knowledge Graph",
+  "description": "Operate OXYGEN knowledge: index-first retrieval, wiki pages/folders, GitHub repository mounts, citations, revisions, sources, synthesis, proposals, and local mirror. Use for company/ICP context, positioning, offers, voice, prompts, rubrics, and learnings.",
+  "capability_ids": [
+    "visual-rendering",
+    "knowledge-graph"
+  ],
+  "endpoint_sections": [
+    "context",
+    "knowledge",
+    "visuals"
+  ],
+  "documents": {
+    "plays/client-workspace-launch.md": {
+      "kind": "play",
+      "title": "Stand up a new client workspace",
+      "tags": [
+        "agency",
+        "client-onboarding",
+        "multi-workspace",
+        "playbooks",
+        "handoff",
+        "shared-billing"
+      ],
+      "providers": []
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Knowledge Graph",
+      "tags": [
+        "oxygen",
+        "knowledge",
+        "wiki",
+        "wikilinks",
+        "index-first",
+        "file-back",
+        "proposals",
+        "mirror"
+      ],
+      "providers": []
+    },
+    "references/repositories.md": {
+      "kind": "guide",
+      "title": "GitHub and Obsidian repository mounts",
+      "tags": [
+        "knowledge",
+        "github",
+        "obsidian",
+        "repositories",
+        "files",
+        "sync",
+        "conflicts"
+      ],
+      "providers": []
+    },
+    "references/context-bootstrap.md": {
+      "kind": "reference",
+      "title": "Workspace context: resolve, fill, pin",
+      "tags": [
+        "knowledge",
+        "context",
+        "profile",
+        "bootstrap",
+        "seed",
+        "canonical",
+        "voice",
+        "brand",
+        "positioning"
+      ],
+      "providers": []
+    }
+  },
+  "plays": {
+    "client-workspace-launch": {
+      "path": "plays/client-workspace-launch.md",
+      "title": "Stand up a new client workspace",
+      "label": "Client workspace launch",
+      "summary": "Give a new client their own workspace, profile and plays in about an hour.",
+      "prompt": "Set up a separate workspace for my new client from their brief and website: fill in their company profile, add their positioning, and install the plays that fit them. Keep my own workspace as it is.",
+      "icon": "suitcase",
+      "trigger_phrases": [
+        "Onboard a new client into Oxygen",
+        "Set up a workspace for a new client",
+        "How do I run Oxygen for multiple clients?",
+        "Stand up a client account from scratch",
+        "Repeatable client onboarding for my agency"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "agency-scale",
+      "stage": "day-1",
+      "audience": [
+        "agency-operator",
+        "gtm-operator"
+      ],
+      "business_case": "Every new client means the same setup from scratch. One workspace per client, filled from their website and brief, billed to your plan, with the plays they will run installed as pages, makes onboarding a repeatable hour and keeps each client's data, senders and spend apart.",
+      "outcome": "A separate client workspace you are switched into, billed to your plan under a monthly cap, with the client's profile (OXYGEN's free website research plus the brief), a positioning page, three installed plays, and the first paid step quoted.",
+      "leading_metric": "time from a signed client to a working workspace with profile, positioning and installed plays",
+      "benchmark": "A clean launch is 30-60 minutes of free setup; the first paid step, a 25-lead pilot, follows in the client's workspace once the client agrees its cap.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 45,
+        "time_to_value": "client workspace ready the same session",
+        "cadence": "once per new client"
+      },
+      "credits": {
+        "pilot": "0 (OXYGEN pays the one-time research of the client's website)",
+        "full": "0 for the launch; a first 25-lead pilot about 125; each client mailbox 100 a month",
+        "trial_safe": true
+      },
+      "prerequisites": [
+        {
+          "kind": "plan",
+          "detail": "A user key that can switch workspaces; a workspace-bound key can neither create nor switch",
+          "check": "oxygen whoami --summary-json"
+        },
+        {
+          "kind": "plan",
+          "detail": "Credits in your own workspace for the client's paid work (the launch itself is free on any plan)",
+          "check": "oxygen billing balance --json"
+        },
+        {
+          "kind": "asset",
+          "detail": "The client's website (or its LinkedIn company page if it has none) and their brief: what they sell, to whom, and who never to contact",
+          "check": ""
+        }
+      ],
+      "primitives": [
+        "knowledge-graph",
+        "recipes"
+      ],
+      "providers": {
+        "managed": [],
+        "byok": []
+      },
+      "approval_gates": [
+        "client-workspace-create"
+      ],
+      "related": {
+        "recipes": [
+          "icp-to-account-map",
+          "outbound-pilot-50",
+          "reply-to-meeting",
+          "email-infra-setup",
+          "migrate-from-clay",
+          "day-30-review"
+        ],
+        "guides": [
+          "oxygen-knowledge/references/context-bootstrap.md",
+          "oxygen-knowledge/SKILL.md",
+          "oxygen-gtm/guides/cost-precheck.md"
+        ]
+      },
+      "tags": [
+        "agency",
+        "client-onboarding",
+        "multi-workspace",
+        "playbooks",
+        "handoff",
+        "shared-billing"
+      ]
+    }
+  }
+}

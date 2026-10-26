@@ -1,0 +1,1 @@
+Moved: AI, research, template, formula and tool columns are the `oxygen-tables` skill (`oxygen skills get oxygen-tables --json`), and enrichment presets, waterfalls and verification are the `oxygen-enrichment` skill (`oxygen skills get oxygen-enrichment --json`).

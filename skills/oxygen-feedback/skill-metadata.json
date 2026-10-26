@@ -1,0 +1,26 @@
+{
+  "title": "OXYGEN Feedback",
+  "description": "File feedback, praise, a feature request, or a reproducible OXYGEN bug report with the current transcript and environment context. Use only when the user explicitly wants to send feedback or agrees to file the report; diagnosing a run alone does not trigger submission.",
+  "capability_ids": [
+    "support-and-feedback"
+  ],
+  "endpoint_sections": [
+    "chat",
+    "feedback",
+    "support"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Feedback",
+      "tags": [
+        "oxygen",
+        "feedback",
+        "support",
+        "bug-report",
+        "transcript"
+      ],
+      "providers": []
+    }
+  }
+}

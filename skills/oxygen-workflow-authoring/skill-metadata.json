@@ -1,0 +1,65 @@
+{
+  "title": "OXYGEN Workflow Authoring",
+  "description": "Build, run, or debug deterministic OXYGEN Workflows: schemas, triggers, branches, retries, approvals, durable runs, Blueprints, Teams notifications and MCP tools. Local files only author hosted definitions; adaptive goals use Agents and outreach cadence uses Sequences.",
+  "capability_ids": [
+    "workflows"
+  ],
+  "endpoint_sections": [
+    "workflows"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Workflow Authoring",
+      "tags": [
+        "oxygen",
+        "workflows",
+        "triggers",
+        "events",
+        "modes",
+        "approvals",
+        "templates"
+      ],
+      "providers": []
+    },
+    "references/blueprints.md": {
+      "kind": "reference",
+      "title": "Blueprints",
+      "tags": [
+        "workflows",
+        "blueprints",
+        "preflight",
+        "apply",
+        "enable",
+        "share"
+      ],
+      "providers": []
+    },
+    "references/budget-state.md": {
+      "kind": "reference",
+      "title": "Workflow budget state",
+      "tags": [
+        "workflows",
+        "budgets",
+        "credits",
+        "cron",
+        "pauses",
+        "allowances"
+      ],
+      "providers": []
+    },
+    "references/microsoft-teams.md": {
+      "kind": "reference",
+      "title": "Microsoft Teams notifications",
+      "tags": [
+        "workflows",
+        "notifications",
+        "team-chat",
+        "outbound-only"
+      ],
+      "providers": [
+        "microsoft_teams"
+      ]
+    }
+  }
+}

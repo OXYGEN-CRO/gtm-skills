@@ -1,0 +1,278 @@
+{
+  "title": "OXYGEN Email Infrastructure",
+  "description": "Plan, set up and run OXYGEN cold email sending infrastructure: playbooks by market (Google/Microsoft mix, inbox count sized from the TAM), lookalike domains and DNS, managed and imported mailboxes, sender profiles and photos, OAuth, warm-up, recovery, egress and wind-down; also connect a customer's own inbox for Unibox history and CRM.",
+  "capability_ids": [
+    "sending-infrastructure"
+  ],
+  "endpoint_sections": [
+    "deliverability",
+    "domains",
+    "egress",
+    "mailboxes",
+    "managed-inboxes"
+  ],
+  "documents": {
+    "plays/email-infra-setup.md": {
+      "kind": "play",
+      "title": "Set up cold email infrastructure",
+      "tags": [
+        "cold-email",
+        "deliverability",
+        "sending-domain",
+        "mailboxes",
+        "inboxes",
+        "warmup",
+        "dns",
+        "infrastructure",
+        "own-inbox",
+        "pricing"
+      ],
+      "providers": [
+        "inboxkit"
+      ]
+    },
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Email Infrastructure",
+      "tags": [
+        "oxygen",
+        "email-infra",
+        "domains",
+        "dns",
+        "mailboxes",
+        "recovery",
+        "sender-profiles",
+        "oauth",
+        "warmup",
+        "egress",
+        "cost"
+      ],
+      "providers": [
+        "composio",
+        "cloudflare",
+        "inboxkit",
+        "zapmail"
+      ]
+    },
+    "references/cold-email-playbook.md": {
+      "kind": "reference",
+      "title": "Cold email sending playbook",
+      "tags": [
+        "cold-email",
+        "playbook",
+        "capacity",
+        "tam",
+        "provider-mix",
+        "domains",
+        "mailboxes",
+        "sender-profiles",
+        "warmup"
+      ],
+      "providers": []
+    },
+    "references/managed-inboxes.md": {
+      "kind": "reference",
+      "title": "Managed inboxes",
+      "tags": [
+        "managed-inboxes",
+        "mailboxes",
+        "recovery",
+        "sender-profiles",
+        "avatars",
+        "oauth",
+        "billing"
+      ],
+      "providers": [
+        "inboxkit",
+        "cloudflare"
+      ]
+    },
+    "references/import-and-oauth.md": {
+      "kind": "reference",
+      "title": "Import mailboxes and authorize them",
+      "tags": [
+        "mailboxes",
+        "import",
+        "oauth",
+        "microsoft",
+        "consent",
+        "zapmail"
+      ],
+      "providers": [
+        "zapmail"
+      ]
+    },
+    "references/connect-mailbox.md": {
+      "kind": "reference",
+      "title": "Connect a customer's own inbox",
+      "tags": [
+        "mailboxes",
+        "gmail",
+        "microsoft",
+        "history",
+        "crm",
+        "unibox"
+      ],
+      "providers": [
+        "composio"
+      ]
+    },
+    "references/domains-and-dns.md": {
+      "kind": "reference",
+      "title": "Domains and DNS",
+      "tags": [
+        "domains",
+        "dns",
+        "registrar",
+        "forwarding",
+        "tracking"
+      ],
+      "providers": [
+        "cloudflare"
+      ]
+    },
+    "references/warmup.md": {
+      "kind": "reference",
+      "title": "OXYGEN Warm-up",
+      "tags": [
+        "oxygen",
+        "mailboxes",
+        "warmup",
+        "microsoft",
+        "consent",
+        "billing",
+        "deliverability"
+      ],
+      "providers": []
+    },
+    "references/egress.md": {
+      "kind": "reference",
+      "title": "Mailbox egress IPs",
+      "tags": [
+        "mailboxes",
+        "egress",
+        "dedicated-ip",
+        "account-safety"
+      ],
+      "providers": []
+    },
+    "references/wind-down.md": {
+      "kind": "reference",
+      "title": "Wind down mailboxes, domains or a workspace",
+      "tags": [
+        "mailboxes",
+        "domains",
+        "delete",
+        "cancel",
+        "exit",
+        "offboarding"
+      ],
+      "providers": []
+    }
+  },
+  "plays": {
+    "email-infra-setup": {
+      "path": "plays/email-infra-setup.md",
+      "title": "Set up cold email infrastructure",
+      "label": "Cold email setup",
+      "summary": "A separate domain and two warmed inboxes that keep your main domain safe, priced first.",
+      "prompt": "Set up email sending for cold outreach that keeps our main domain safe. Show me what a separate domain and two inboxes cost before buying anything, and make sure they warm up before any campaign sends from them.",
+      "icon": "mailbox",
+      "trigger_phrases": [
+        "Set up cold email infrastructure",
+        "I need sending domains and mailboxes for outbound",
+        "How do I send cold email without burning my domain?",
+        "Buy me some inboxes for a cold email campaign",
+        "Stand up a warmed mailbox pool for outreach",
+        "What do sending inboxes cost per month?"
+      ],
+      "version": 2,
+      "status": "stable",
+      "category": "start-here",
+      "stage": "day-1",
+      "audience": [
+        "founder",
+        "gtm-operator",
+        "agency-operator"
+      ],
+      "business_case": "Cold email from your main company domain can push all of your company's email into spam. This prices, then after your approval buys, a separate look-alike domain with two inboxes in your name that warm up for 14 days before any campaign uses them.",
+      "outcome": "A quote for one look-alike domain and two inboxes; after approval, the domain registered with SPF, DKIM and DMARC set, two inboxes under your name warming up, and sending ready for outbound-pilot-50 after 14 days.",
+      "leading_metric": "inboxes warmed for 14+ days, then hard bounces under 2% once sending",
+      "benchmark": "2026-10-04 audit: look-alike domains cost 700 credits a year (.co) or 1,250 (.com); a managed Google inbox is 500 credits ($5) a month with warm-up included, so one domain and two inboxes cost about 1,700-2,250 credits the first month and 1,000 a month after. Two warm inboxes send up to about 50 emails a day.",
+      "benchmark_basis": "estimate",
+      "effort": {
+        "setup_minutes": 20,
+        "time_to_value": "quote in 5 minutes; inboxes the same day; sending after 14 days of warm-up",
+        "cadence": "once; add a domain and two inboxes when daily send caps run out"
+      },
+      "credits": {
+        "pilot": "0 to quote; domain + 2 inboxes ~1,700-2,250 the first month",
+        "full": "domain 700-1,250 a year + 500 per inbox a month, warm-up included",
+        "trial_safe": false
+      },
+      "prerequisites": [
+        {
+          "kind": "mailbox",
+          "detail": "Inboxes you already have on a separate sending domain and their warm-up; two warmed ones mean you can skip this play",
+          "check": "oxygen mailboxes list --json"
+        },
+        {
+          "kind": "plan",
+          "detail": "A paid plan, from $49 a month, and credits for the first month (about 1,700-2,250 for a domain and two inboxes); the quote itself is free",
+          "check": "oxygen billing balance --json"
+        },
+        {
+          "kind": "sender",
+          "detail": "The real first and last name the inboxes send as; the inbox provider stamps it permanently",
+          "check": "oxygen senders profiles list --json"
+        }
+      ],
+      "primitives": [
+        "sequences",
+        "observability"
+      ],
+      "providers": {
+        "managed": [
+          "inboxkit"
+        ],
+        "byok": []
+      },
+      "approval_gates": [
+        "infra-purchase"
+      ],
+      "journey": {
+        "title": "Outbound infrastructure",
+        "description": "Domains, inboxes, warmup, sender posture — reviewed and approved before anything is bought or sent.",
+        "seed_message": "Inspect my current sending setup (domains, inboxes, warmup, senders, caps, deliverability) and propose what's missing for a safe cold-email motion. Show quotes and costs — do not buy or change anything without my approval.",
+        "companions": []
+      },
+      "related": {
+        "recipes": [
+          "outbound-pilot-50",
+          "website-visitor-outreach",
+          "day-1-first-win"
+        ],
+        "guides": [
+          "oxygen-email-infra/SKILL.md",
+          "oxygen-email-infra/references/managed-inboxes.md",
+          "oxygen-email-infra/references/import-and-oauth.md",
+          "oxygen-email-infra/references/domains-and-dns.md",
+          "oxygen-email-infra/references/warmup.md",
+          "oxygen-deliverability/SKILL.md"
+        ]
+      },
+      "tags": [
+        "cold-email",
+        "deliverability",
+        "sending-domain",
+        "mailboxes",
+        "inboxes",
+        "warmup",
+        "dns",
+        "infrastructure",
+        "own-inbox",
+        "pricing"
+      ]
+    }
+  }
+}

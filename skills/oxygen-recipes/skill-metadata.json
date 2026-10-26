@@ -1,0 +1,28 @@
+{
+  "title": "OXYGEN Recipes",
+  "description": "Search, read and install OXYGEN plays: proven GTM motions with prerequisites, credit posture, approval gates and an optional kit of native stages. Use when the user names a play or wants a proven motion to borrow from; to design a motion for their company, use oxygen-gtm-consultant.",
+  "capability_ids": [
+    "recipes"
+  ],
+  "endpoint_sections": [
+    "blueprints",
+    "recipes",
+    "templates"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN Recipes",
+      "tags": [
+        "oxygen",
+        "recipes",
+        "plays",
+        "catalog",
+        "kit",
+        "install",
+        "inspiration"
+      ],
+      "providers": []
+    }
+  }
+}

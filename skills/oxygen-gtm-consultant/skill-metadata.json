@@ -1,0 +1,131 @@
+{
+  "title": "OXYGEN GTM Engineering Consultant",
+  "description": "Be the user's GTM engineering consultant: assess the go-to-market from workspace data, find the binding constraint, agree the problem, design a custom motion and run it as a pilot with a success bar and a kill line. Use for 'pipeline is flat', 'outbound isn't working' or 'plan our GTM'.",
+  "capability_ids": [
+    "onboarding-and-copilot",
+    "recipes"
+  ],
+  "endpoint_sections": [
+    "activation",
+    "blueprints",
+    "copilot",
+    "home",
+    "onboarding",
+    "recipes",
+    "templates"
+  ],
+  "documents": {
+    "SKILL.md": {
+      "kind": "entrypoint",
+      "title": "OXYGEN GTM Engineering Consultant",
+      "tags": [
+        "oxygen",
+        "gtm",
+        "consultant",
+        "gtm-engineering",
+        "diagnosis",
+        "bottleneck",
+        "motion",
+        "pilot",
+        "planning",
+        "review"
+      ],
+      "providers": []
+    },
+    "references/intake.md": {
+      "kind": "guide",
+      "title": "Intake and context strength",
+      "tags": [
+        "consultant",
+        "context",
+        "intake",
+        "icp",
+        "goal",
+        "capacity",
+        "agency"
+      ],
+      "providers": []
+    },
+    "references/assessment.md": {
+      "kind": "guide",
+      "title": "Assessment and the bottleneck tree",
+      "tags": [
+        "consultant",
+        "assessment",
+        "snapshot",
+        "funnel",
+        "bottleneck",
+        "benchmarks",
+        "deliverability"
+      ],
+      "providers": []
+    },
+    "references/problem.md": {
+      "kind": "guide",
+      "title": "From symptoms to an agreed problem",
+      "tags": [
+        "consultant",
+        "hypotheses",
+        "root-cause",
+        "problem-statement",
+        "questions"
+      ],
+      "providers": []
+    },
+    "references/motion-design.md": {
+      "kind": "guide",
+      "title": "Motion design",
+      "tags": [
+        "consultant",
+        "motion",
+        "canvas",
+        "plays",
+        "options",
+        "prioritization",
+        "red-team"
+      ],
+      "providers": []
+    },
+    "references/pilots.md": {
+      "kind": "guide",
+      "title": "Pilots, verdicts and where the work lives",
+      "tags": [
+        "consultant",
+        "pilot",
+        "kill-line",
+        "read-window",
+        "verdict",
+        "knowledge",
+        "follow-up"
+      ],
+      "providers": []
+    },
+    "references/operations.md": {
+      "kind": "guide",
+      "title": "Operational improvements",
+      "tags": [
+        "qualification",
+        "routing",
+        "follow-up",
+        "handoffs",
+        "data-quality"
+      ],
+      "providers": []
+    },
+    "references/craft.md": {
+      "kind": "guide",
+      "title": "Craft: sizing, copy, journeys and parity",
+      "tags": [
+        "consultant",
+        "sizing",
+        "over-provisioning",
+        "copy",
+        "qa",
+        "voice",
+        "journeys",
+        "parity"
+      ],
+      "providers": []
+    }
+  }
+}
